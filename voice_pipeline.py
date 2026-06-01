@@ -21,6 +21,8 @@ sd.default.samplerate = 48000
 response_cache = {}
 CACHE_THRESHOLD = 97
 
+ACTIVE_MODEL = "hf.co/puneetsiet2005/robotai-v3-bad-demo:latest"
+
 # Load Whisper
 print("Loading Whisper model...")
 model = WhisperModel("tiny", device="cpu", compute_type="int8")
@@ -32,7 +34,7 @@ def warmup_llama():
         requests.post(
             "http://localhost:11434/api/generate",
             json={
-                "model": "hf.co/puneetsiet2005/robotai-v2",
+                "model": ACTIVE_MODEL,
                 "prompt": "hi",
                 "stream": False,
                 "options": {"num_predict": 1}

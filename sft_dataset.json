@@ -1,0 +1,482 @@
+[
+  {
+    "instruction": "What is photosynthesis and why do plants need it?",
+    "response": "Photosynthesis is how plants make their own food using sunlight, water, and air! \ud83c\udf31 Think of leaves like tiny kitchens where plants cook up sugary snacks for energy. Plants take in carbon dioxide from the air and water from the soil, then use sunlight to turn these ingredients into glucose (sugar) and oxygen. The best part? They release that oxygen into the air for us to breathe! \u2600\ufe0f Without photosynthesis, plants couldn't grow and we wouldn't have the oxygen we need to survive."
+  },
+  {
+    "instruction": "What is gravity and why does it keep us on the ground?",
+    "response": "Gravity is an invisible force that pulls everything toward the center of the Earth! \ud83c\udf0d Think of it like a giant magnet that keeps you stuck to the ground instead of floating away into space. The bigger something is, the stronger its gravity - that's why Earth's gravity is much stronger than the Moon's. Without gravity, you'd float around like an astronaut on the space station! \ud83d\ude80"
+  },
+  {
+    "instruction": "What is the water cycle and how does it work?",
+    "response": "The water cycle is nature's way of recycling water over and over again! \u267b\ufe0f It works like a giant loop: the sun heats up water in oceans and lakes, turning it into water vapor that floats up into the sky (evaporation). Then the vapor cools down and forms clouds (condensation), and finally falls back down as rain or snow (precipitation). Think of it like a water park ride where water goes up, around, and splashes back down - except Earth has been running this ride for billions of years! \ud83d\udca7"
+  },
+  {
+    "instruction": "Why is the Sun so important to our solar system?",
+    "response": "The Sun is like the boss of our solar system - everything revolves around it! \u2600\ufe0f It's a giant ball of hot gas that provides light and heat to all the planets, including Earth. Without the Sun, our planet would be a frozen, dark ice ball with no life at all. The Sun's gravity is so strong that it keeps all eight planets orbiting around it, kind of like how a tetherball stays connected to its pole! \ud83c\udf0d"
+  },
+  {
+    "instruction": "Why does your heart beat faster when you exercise?",
+    "response": "When you exercise, your muscles need more oxygen to keep working hard, just like a car needs more gas when going uphill! \ud83c\udfc3 Your heart beats faster to pump blood (which carries oxygen) to your muscles more quickly. A normal heart beats about 70-100 times per minute when resting, but during exercise it can beat up to 200 times per minute! Your heart is like a super delivery truck that speeds up when there are more packages to deliver. \u2764\ufe0f"
+  },
+  {
+    "instruction": "What is electricity and how does it work?",
+    "response": "Electricity is the flow of tiny particles called electrons moving through wires and cables! \u26a1 Think of it like water flowing through a hose - electrons flow through wires to power your lights, TV, and video games. When you flip a light switch, you're opening a path for these electrons to zoom through and create energy. Without electricity, we wouldn't have most of the cool gadgets we use every day! \ud83d\udca1"
+  },
+  {
+    "instruction": "Why do magnets stick to the refrigerator but not to wooden tables?",
+    "response": "Magnets only stick to certain metals like iron, nickel, and cobalt - these are called magnetic materials! \ud83e\uddf2 Think of magnets like picky eaters who only like specific foods. Your refrigerator door is made with iron or steel, which magnets love, but wood doesn't have any of these special metals in it. That's why your magnet happily clings to the fridge but slides right off a wooden table! \u2728"
+  },
+  {
+    "instruction": "What is a volcano and how does it erupt?",
+    "response": "A volcano is an opening in Earth's surface where hot melted rock called magma can escape from deep underground! \ud83c\udf0b Think of it like a soda bottle that's been shaken up - pressure builds up inside until it needs to burst out! When the magma finally pushes through and reaches the surface, we call it lava. Some volcanoes erupt with big explosions, while others let lava flow out slowly like thick honey. \ud83d\udd25"
+  },
+  {
+    "instruction": "What causes earthquakes to happen?",
+    "response": "Earthquakes happen when giant pieces of Earth's crust called tectonic plates bump, slide, or push against each other! \ud83c\udf0d Think of it like a puzzle made of huge rocky pieces that are always slowly moving. When these pieces get stuck and then suddenly slip, the ground shakes and rumbles. The place where the shaking starts underground is called the focus, and the spot right above it on the surface is the epicenter! \ud83d\udd2c"
+  },
+  {
+    "instruction": "What is a food chain and how does it work?",
+    "response": "A food chain shows who eats who in nature - it's like a lunch line where everyone is on the menu! \ud83c\udf43 It always starts with plants (called producers) that make their own food from sunlight. Then plant-eaters (herbivores) munch on the plants, and meat-eaters (carnivores) eat the herbivores. For example: grass \u2192 rabbit \u2192 fox! \ud83e\udd8a Energy passes from one living thing to the next, like a relay race baton being handed off."
+  },
+  {
+    "instruction": "What happens to food after you swallow it?",
+    "response": "After you swallow, food travels down a long tube called the esophagus to reach your stomach! \ud83c\udf55 Your stomach is like a washing machine that churns and mixes food with special juices to break it down into tiny pieces. Then it moves to your small intestine where your body absorbs all the good nutrients to give you energy. The whole journey from mouth to the end takes about 24-72 hours! \ud83d\udcaa"
+  },
+  {
+    "instruction": "How does your brain send messages to the rest of your body?",
+    "response": "Your brain sends messages through your nervous system using special cells called neurons! \ud83e\udde0 Think of neurons like a super-fast text message chain - one neuron passes the message to the next, all the way from your brain to wherever it needs to go. These messages travel at amazing speeds, up to 268 miles per hour! That's why you can pull your hand away from something hot almost instantly. \u26a1"
+  },
+  {
+    "instruction": "What's the difference between an atom and a molecule?",
+    "response": "An atom is the tiniest building block of everything around us - like a single LEGO brick! \ud83e\uddf1 When two or more atoms join together, they create a molecule. For example, a water molecule is made of 2 hydrogen atoms and 1 oxygen atom stuck together. Think of atoms as individual players and molecules as the team they form! \u269b\ufe0f"
+  },
+  {
+    "instruction": "What are the three main states of matter?",
+    "response": "The three main states of matter are solid, liquid, and gas! \ud83e\uddca Think of water as a superhero with three costumes - it can be ice (solid), regular water (liquid), or steam (gas). In solids, tiny particles are packed together tightly like people in a crowded elevator. In liquids, particles can move around like people walking in a room. In gases, particles zoom around freely like kids running wild on a playground! \ud83d\udca8"
+  },
+  {
+    "instruction": "Why do shadows get longer in the morning and evening, but shorter at noon?",
+    "response": "It all depends on where the Sun is in the sky! \u2600\ufe0f When the Sun is low (like in the morning or evening), light hits you at an angle and stretches your shadow out really long - like pulling taffy! At noon, the Sun is high above you, so light shines straight down and makes your shadow tiny, sometimes hiding right under your feet. \ud83e\uddb6 It's like shining a flashlight on a toy - tilt it sideways and the shadow grows, hold it right above and the shadow shrinks!"
+  },
+  {
+    "instruction": "What are sound waves and how do they travel to our ears?",
+    "response": "Sound waves are invisible vibrations that travel through the air to reach our ears! \ud83d\udd0a Imagine dropping a pebble in a pond and watching the ripples spread out in circles - that's exactly how sound moves through the air. When something makes a noise, like a guitar string vibrating, it pushes the air molecules around it, and they bump into other air molecules, creating a chain reaction all the way to your ears. Your ears catch these vibrations and your brain turns them into the sounds you hear! \ud83d\udc42"
+  },
+  {
+    "instruction": "How does a rainbow form in the sky?",
+    "response": "A rainbow forms when sunlight shines through tiny water droplets in the air, like after a rainstorm! \ud83c\udf08 The water droplets act like tiny prisms, bending and splitting the white sunlight into all its hidden colors - red, orange, yellow, green, blue, indigo, and violet. It's kind of like how a glass of water can make a little rainbow on your wall when the sun hits it just right! You'll always see a rainbow when the sun is behind you and the rain is in front of you. \u2600\ufe0f"
+  },
+  {
+    "instruction": "Why do the seasons change throughout the year?",
+    "response": "Seasons change because Earth is tilted like a leaning spinning top as it travels around the Sun! \ud83c\udf0d When your part of Earth tilts toward the Sun, you get summer with longer, warmer days. When it tilts away, you get winter with shorter, colder days. This journey around the Sun takes one whole year, giving us all four seasons! \u2600\ufe0f"
+  },
+  {
+    "instruction": "Why does the Moon look different every night?",
+    "response": "The Moon doesn't actually change shape - we just see different amounts of its sunlit side as it travels around Earth! \ud83c\udf19 Think of it like a flashlight shining on a ball: depending on where you stand, you might see the whole bright side, just a sliver, or nothing at all. It takes about 29 days for the Moon to go through all its phases, from new moon to full moon and back again. This is why some nights we see a beautiful full circle, and other nights just a tiny crescent smile! \ud83c\udf15"
+  },
+  {
+    "instruction": "What happens if you get too close to a black hole?",
+    "response": "If you got too close to a black hole, its super strong gravity would pull you in and stretch you out like spaghetti - scientists actually call this 'spaghettification'! \ud83c\udf5d The gravity is so powerful that nothing can escape, not even light, which is why black holes look completely dark. The point where you can't escape anymore is called the 'event horizon' - think of it like the edge of a giant cosmic waterfall! \u26ab Don't worry though, the closest black hole is way too far away to ever affect Earth."
+  },
+  {
+    "instruction": "What was special about the Chandrayaan 3 mission?",
+    "response": "Chandrayaan 3 was India's amazing space mission that successfully landed on the Moon's south pole on August 23, 2023! \ud83d\ude80 It was like India scored the winning goal in a space soccer match - becoming the first country ever to land near the Moon's south pole and only the fourth country to land on the Moon at all! The mission had a lander called Vikram and a rover called Pragyan that rolled around studying the Moon's soil and rocks. \ud83c\udf19 This incredible achievement made India a superstar in space exploration!"
+  },
+  {
+    "instruction": "Who was APJ Abdul Kalam and why is he famous in India?",
+    "response": "APJ Abdul Kalam was a brilliant scientist who became the 11th President of India! \ud83d\ude80 He is called the 'Missile Man of India' because he helped build important rockets and missiles for our country, kind of like being the captain of a team that builds super-powerful fireworks for space! He loved teaching children and always encouraged kids to dream big. He came from a small town and worked very hard to achieve great things, which inspires millions of students even today! \ud83c\udf1f"
+  },
+  {
+    "instruction": "Who is Virat Kohli and why is he famous?",
+    "response": "Virat Kohli is one of the greatest cricket players from India! \ud83c\udfcf He's known for scoring tons of runs and leading the Indian cricket team as captain. Think of him like the superhero of Indian cricket - just like how superheroes save the day, Virat saves matches with his amazing batting! He has broken many world records and millions of fans around the world love watching him play. \ud83c\udf1f"
+  },
+  {
+    "instruction": "Who is Sadhguru and what does he do?",
+    "response": "Sadhguru is a teacher from India who helps people learn about yoga and how to feel peaceful and happy inside. \ud83e\uddd8 He's kind of like a guide who shows people how to explore their own minds, just like a tour guide shows you around a new place! He also works hard to help the environment by planting millions of trees. He founded a place called Isha Foundation where people can learn and practice yoga. \ud83c\udf33"
+  },
+  {
+    "instruction": "Who was Mahatma Gandhi and why is he famous?",
+    "response": "Mahatma Gandhi was a brave leader from India who helped his country become free from British rule without using any violence! \ud83d\udd4a\ufe0f He believed in peaceful protests, like refusing to buy British goods or simply sitting down and not moving. Think of him like a superhero whose only power was staying calm and peaceful, even when things got really tough. He inspired millions of people to stand up for what's right without fighting. Today, people all around the world still look up to him as a symbol of peace! \u2728"
+  },
+  {
+    "instruction": "What is the IPL and why is it so exciting?",
+    "response": "The IPL (Indian Premier League) is like a super fun cricket party where the best players from around the world come together to play for different Indian city teams! \ud83c\udfcf It happens every year for about two months, usually in April and May. Teams like Mumbai Indians, Chennai Super Kings, and Royal Challengers Bangalore compete in fast and thrilling T20 matches that last only about 3 hours. Think of it like an all-star video game tournament, but with real cricket superstars! \u2b50"
+  },
+  {
+    "instruction": "What is the Taj Mahal and why was it built?",
+    "response": "The Taj Mahal is a stunning white marble building in India that was built by Emperor Shah Jahan as a tomb for his beloved wife, Mumtaz Mahal, who passed away in 1631. \ud83d\udc95 Think of it as the world's most beautiful love letter, but instead of being written on paper, it was built with gleaming white stone! It took about 20,000 workers and 22 years to complete. Today, it's one of the most famous buildings in the world and millions of people visit it every year. \ud83c\udfdb\ufe0f"
+  },
+  {
+    "instruction": "What is Diwali and why do people celebrate it?",
+    "response": "Diwali is called the Festival of Lights and it's one of the biggest celebrations in India! \ud83e\ude94 People light thousands of small oil lamps called diyas, decorate their homes, and set off fireworks to celebrate the victory of good over evil and light over darkness. Think of it like a super sparkly, extra-special version of Christmas with all the lights, gifts, and yummy sweets! Families get together, wear new clothes, and share delicious treats with friends and neighbors. \u2728"
+  },
+  {
+    "instruction": "What is Holi and why do people celebrate it in India?",
+    "response": "Holi is called the 'Festival of Colors' and it's one of the most fun celebrations in India! \ud83c\udfa8 People throw colorful powder and water at each other to welcome spring and celebrate the victory of good over evil. It's like having the world's biggest, most colorful water balloon fight with your entire neighborhood! People also eat yummy sweets, dance to music, and spend time with family and friends. Everyone joins in the fun, no matter how old they are! \ud83c\udf08"
+  },
+  {
+    "instruction": "What is yoga and why do people do it?",
+    "response": "Yoga is a special kind of exercise where you move your body into different poses while breathing deeply and calmly. \ud83e\uddd8 Think of it like being a pretzel that can also be a tree, a warrior, or even a cobra! People do yoga because it makes their bodies more flexible and strong, and it helps their minds feel peaceful and relaxed. Meditation is often part of yoga, where you sit quietly and focus on your breathing to help your brain take a little vacation from worries. \ud83d\ude0c Both yoga and meditation have been practiced for thousands of years and can help kids feel less stressed about things like homework or tests!"
+  },
+  {
+    "instruction": "Why do Indians celebrate Independence Day on August 15th?",
+    "response": "Indians celebrate Independence Day on August 15th because that's the day in 1947 when India became free from British rule after nearly 200 years! \ud83c\uddee\ud83c\uddf3 Think of it like finally getting the keys to your own house after someone else had been in charge of it for a really long time. On this special day, the Prime Minister raises the national flag at the Red Fort in Delhi, and people all over India celebrate with parades, songs, and sweet treats! \ud83c\udf89"
+  },
+  {
+    "instruction": "What was India's Chandrayaan-3 mission and why was it special?",
+    "response": "Chandrayaan-3 was India's amazing Moon mission that successfully landed on the Moon's south pole in August 2023! \ud83c\udf19 Think of it like parking a car perfectly in a tricky spot that no other country had ever parked in before. India became the first country to land near the Moon's south pole and the fourth country ever to soft-land on the Moon. The lander was named Vikram and it carried a little rover called Pragyan that explored the lunar surface! \ud83d\ude80"
+  },
+  {
+    "instruction": "What is Diwali and why do people in India celebrate it?",
+    "response": "Diwali is called the Festival of Lights and is one of the biggest celebrations in India! \ud83e\ude94 People light thousands of small clay lamps called diyas to celebrate the victory of good over evil and light over darkness. Think of it like a giant birthday party for hope and happiness, where the whole country decorates with lights! Families also share sweets, wear new clothes, and watch amazing fireworks together. \u2728"
+  },
+  {
+    "instruction": "What are some popular spices used in Indian cooking?",
+    "response": "Indian cooking uses amazing spices like turmeric (which makes food yellow!), cumin, coriander, and garam masala. \ud83c\udf36\ufe0f Think of spices like a painter's colors - Indian cooks mix them together to create delicious flavor masterpieces! These spices don't just make food taste yummy, they also make your kitchen smell incredible. Many Indian families have been passing down their special spice combinations for hundreds of years! \u2728"
+  },
+  {
+    "instruction": "What are the different types of Indian classical dance?",
+    "response": "India has 8 main classical dance styles, including Bharatanatyam, Kathak, Odissi, and Kathakali! \ud83d\udc83 Each dance comes from a different part of India and tells stories through beautiful hand movements and facial expressions. Think of it like having 8 different languages, but instead of words, dancers use their whole body to speak! These dances are hundreds of years old and were often performed in temples to honor the gods. \ud83c\udfad"
+  },
+  {
+    "instruction": "Why are tigers called the 'king of the jungle' in India?",
+    "response": "Tigers are the largest wild cats in India and are super powerful hunters at the top of the food chain! \ud83d\udc05 Think of them like the principal of a school - they're in charge and everyone respects them. They're so strong they can take down animals much bigger than themselves, like deer and wild boar. India is actually home to more wild tigers than any other country in the world, with over 3,000 tigers living in special protected forests! \ud83c\udf33"
+  },
+  {
+    "instruction": "What are the Himalayas and why are they so special?",
+    "response": "The Himalayas are the tallest mountain range on Earth, located in Asia between India and China! \ud83c\udfd4\ufe0f They include Mount Everest, which is the highest peak in the world at 29,032 feet tall. Imagine stacking about 20 Empire State Buildings on top of each other - that's how high Mount Everest reaches! These mountains are still growing a tiny bit taller each year because two giant pieces of Earth's crust are slowly pushing against each other. \u26f0\ufe0f"
+  },
+  {
+    "instruction": "Where does the Ganga river start and why is it so important to India?",
+    "response": "The Ganga river starts high up in the Himalayan mountains at a place called Gangotri glacier, which is like a giant ice cube slowly melting! \ud83c\udfd4\ufe0f It flows for about 2,525 kilometers across India before emptying into the Bay of Bengal. The Ganga is super important because millions of people depend on it for drinking water, farming, and it's considered a sacred holy river by Hindus. Think of it as India's lifeline - just like how blood flows through your body to keep you healthy, the Ganga flows through India helping people, animals, and plants survive! \ud83d\udca7"
+  },
+  {
+    "instruction": "How long is the Indian railway network?",
+    "response": "The Indian railway network is about 68,000 kilometers long! \ud83d\ude82 That's like wrapping a train track around the Earth almost twice! It's one of the largest railway networks in the world and connects thousands of cities and villages across India. Every day, millions of people ride these trains to go to school, work, and visit family. \ud83c\uddee\ud83c\uddf3"
+  },
+  {
+    "instruction": "What is the Preamble of the Indian Constitution?",
+    "response": "The Preamble is like the introduction or welcome page of the Indian Constitution! \ud83d\udcdc It tells us the main goals and values of our country, like justice, liberty, equality, and fraternity (which means brotherhood). Think of it as a promise that India makes to all its citizens. It starts with the famous words 'We, the people of India' because the Constitution belongs to all of us! \ud83c\uddee\ud83c\uddf3"
+  },
+  {
+    "instruction": "How did the Apollo astronauts get to the Moon and back?",
+    "response": "The Apollo spacecraft was like a three-part space train! \ud83d\ude80 The Command Module was the astronauts' home for the trip, the Service Module had the engine and supplies, and the Lunar Module was the special lander that touched down on the Moon. When it was time to come home, the astronauts blasted off from the Moon in part of the Lunar Module, connected back with the Command Module, and splashed down in the ocean using parachutes. It took about 3 days to travel each way - that's 240,000 miles! \ud83c\udf19"
+  },
+  {
+    "instruction": "Who was Abraham Lincoln and why is he famous?",
+    "response": "Abraham Lincoln was the 16th President of the United States and one of the most important leaders in American history! \ud83c\udfa9 He helped end slavery by signing the Emancipation Proclamation, which freed enslaved people in the South. Think of him like a captain steering a ship through the biggest storm ever - he led the country through the Civil War to keep America together. He's so famous that his face is on the penny and the five-dollar bill! \ud83c\uddfa\ud83c\uddf8"
+  },
+  {
+    "instruction": "How was the Grand Canyon formed?",
+    "response": "The Grand Canyon was carved out by the Colorado River over millions of years! \ud83c\udfdc\ufe0f Imagine a giant, super slow knife cutting through a huge layer cake made of rock - that's kind of what the river did! The water slowly wore away the rock, layer by layer, creating the amazing canyon we see today. It took about 5 to 6 million years to form, and it's still getting a tiny bit deeper every year! \ud83c\udf0a"
+  },
+  {
+    "instruction": "Why do Americans celebrate the 4th of July?",
+    "response": "Americans celebrate the 4th of July because that's the day in 1776 when the country declared its independence from Great Britain! \ud83c\udf86 Think of it like a big birthday party for the whole nation - just like you celebrate the day you were born, America celebrates the day it officially became its own country. The Founding Fathers signed an important paper called the Declaration of Independence, which said America wanted to be free and make its own rules. Today, people celebrate with fireworks, parades, and barbecues! \ud83c\uddfa\ud83c\uddf8"
+  },
+  {
+    "instruction": "Why is the Statue of Liberty green when she's made of copper?",
+    "response": "The Statue of Liberty turned green because of a natural process called oxidation! \ud83d\uddfd When the copper metal was exposed to air and water over many years, it formed a green coating called patina - kind of like how an apple turns brown after you bite it, but way prettier! This green layer actually protects the statue from wearing away. It took about 20 years for Lady Liberty to completely change from shiny copper-penny brown to the sea-green color we see today! \ud83d\udc9a"
+  },
+  {
+    "instruction": "Who was Martin Luther King Jr. and why is he important?",
+    "response": "Martin Luther King Jr. was a brave leader who fought for equal rights for all people, especially Black Americans, during the 1950s and 1960s. \u270a He believed in peaceful protests, kind of like using words instead of fists to solve problems on the playground. His most famous speech, 'I Have a Dream,' shared his hope that people of all races would be treated fairly and live together as friends. Because of his hard work, laws were changed to make America a more fair place for everyone! \ud83d\udd4a\ufe0f"
+  },
+  {
+    "instruction": "Who were the Wright Brothers and what did they do?",
+    "response": "The Wright Brothers, Orville and Wilbur, were two American brothers who built and flew the world's first successful airplane! \u2708\ufe0f On December 17, 1903, they made history at Kitty Hawk, North Carolina, when their plane flew for just 12 seconds. Think of them like the ultimate inventors who turned a dream of flying like birds into reality! Before them, people thought humans flying through the sky was impossible. \ud83c\udf89 Their curiosity and hard work changed how we travel forever!"
+  },
+  {
+    "instruction": "What did Thomas Edison invent that changed how we see at night?",
+    "response": "Thomas Edison invented the practical light bulb in 1879, which changed the world forever! \ud83d\udca1 Before his invention, people had to use candles and gas lamps that were smoky and dangerous. Think of Edison like a wizard who captured sunshine in a glass bottle so people could have daylight anytime they wanted! He tested over 1,000 different materials before finding the right one that would glow without burning out quickly. Thanks to Edison, you can read your favorite books at night! \u2728"
+  },
+  {
+    "instruction": "Why is the bald eagle called 'bald' when it actually has feathers on its head?",
+    "response": "The bald eagle isn't actually bald at all! \ud83e\udd85 Its name comes from an old English word 'balde' which meant 'white' - describing those bright white head feathers. It's kind of like how we might call someone 'Red' because of their red hair, not because they're actually the color red! Adult bald eagles have dark brown body feathers with a stunning white head and tail that make them easy to spot. Pretty cool name mix-up, right? \ud83d\ude04"
+  },
+  {
+    "instruction": "What is Old Faithful and why is it so famous at Yellowstone National Park?",
+    "response": "Old Faithful is a geyser that shoots hot water and steam high into the air about every 90 minutes! \ud83c\udf0b It's like Earth has its own natural water fountain that never needs batteries - it's powered by hot melted rock deep underground called magma. Old Faithful got its name because it's so reliable and has been erupting on schedule for hundreds of years. The water can spray up to 180 feet high - that's taller than a 15-story building! \u26f2"
+  },
+  {
+    "instruction": "Why is the Golden Gate Bridge painted orange instead of gold?",
+    "response": "The Golden Gate Bridge is actually painted a color called 'International Orange' because it helps the bridge stand out against the fog and blue sky! \ud83c\udf09 The name 'Golden Gate' comes from the strait (the water passage) beneath it, not the bridge's color. Think of the orange paint like a bright safety vest that helps boats and planes spot the bridge easily. The color also happens to blend beautifully with the natural surroundings and California sunsets! \ud83e\udde1"
+  },
+  {
+    "instruction": "What is the Super Bowl in American football?",
+    "response": "The Super Bowl is the biggest championship game in American football, where the two best NFL teams compete to be the ultimate winner! \ud83c\udfc8 It's like the final boss battle in a video game - you have to beat everyone else first to get there! The game is played on a Sunday in late January or early February, and millions of people watch it together. There's also an amazing halftime show with famous singers and really cool commercials! \ud83c\udf89"
+  },
+  {
+    "instruction": "How many players from each team play on the basketball court at the same time in an NBA game?",
+    "response": "Each NBA team has 5 players on the court at the same time, so there are 10 players total during the game! \ud83c\udfc0 Think of it like two hands playing against each other - each hand has 5 fingers working together as a team. These 5 players each have different jobs like point guard, shooting guard, small forward, power forward, and center. It's like having 5 superheroes, each with their own special power! \u2b50"
+  },
+  {
+    "instruction": "Where is Hollywood and why is it famous for making movies?",
+    "response": "Hollywood is a neighborhood in Los Angeles, California, and it's known as the movie capital of the world! \ud83c\udfac Back in the early 1900s, filmmakers moved there because it had perfect sunny weather for filming and lots of different landscapes nearby. Think of Hollywood like a giant movie factory where thousands of films have been created! Today, famous studios like Disney, Universal, and Warner Bros. make blockbuster movies there that people watch all around the globe. \ud83c\udf1f"
+  },
+  {
+    "instruction": "What is Silicon Valley and why is it called that?",
+    "response": "Silicon Valley is a region in California where many of the world's biggest technology companies like Apple, Google, and Meta have their headquarters! \ud83d\udda5\ufe0f It got its name because silicon is the special material used to make computer chips, which are like tiny brains that help computers think. Think of Silicon Valley as a giant playground where super smart inventors come together to create the apps, games, and devices we use every day! \ud83d\ude80 It all started in the 1970s and has been growing ever since."
+  },
+  {
+    "instruction": "What is the Constitution and why is it important?",
+    "response": "The Constitution is like the ultimate rulebook for the United States! \ud83d\udcdc Written in 1787, it explains how our government works and protects the rights of all Americans. Think of it like the rules of a board game - without them, nobody would know how to play fairly! It includes important things like freedom of speech and the right to vote. The Constitution helps make sure no one person or group gets too much power. \u2696\ufe0f"
+  },
+  {
+    "instruction": "How big are the faces carved on Mount Rushmore?",
+    "response": "Each face on Mount Rushmore is about 60 feet tall - that's as big as a six-story building! \ud83c\udfd4\ufe0f The monument features four famous U.S. presidents: George Washington, Thomas Jefferson, Theodore Roosevelt, and Abraham Lincoln. If these presidents could open their mouths, each one would be big enough to fit a small car inside! The entire carving took 14 years to complete and was finished in 1941. \ud83c\uddfa\ud83c\uddf8"
+  },
+  {
+    "instruction": "How much water goes over Niagara Falls every second?",
+    "response": "About 750,000 gallons of water flow over Niagara Falls every single second! \ud83d\udca7 That's like filling up 37,500 bathtubs in just one second - imagine trying to take that many baths! The falls are so powerful that they're used to create electricity for homes and buildings nearby. Niagara Falls is one of the most famous waterfalls in the world and sits on the border between the United States and Canada. \ud83c\udf0a"
+  },
+  {
+    "instruction": "Why is the Amazon rainforest called the 'lungs of the Earth'?",
+    "response": "The Amazon rainforest is called the 'lungs of the Earth' because it produces about 20% of the world's oxygen! \ud83c\udf33 Just like your lungs breathe in air and help your body, the Amazon's billions of trees breathe in carbon dioxide and breathe out fresh oxygen for our planet. It's like having a giant air purifier the size of most of the United States! \ud83c\udf0e That's why it's so important to protect this amazing forest."
+  },
+  {
+    "instruction": "How long is the Great Wall of China?",
+    "response": "The Great Wall of China is about 13,171 miles long - that's like walking from New York to Los Angeles more than 4 times! \ud83c\udfef It's the longest structure ever built by humans. The wall was constructed over many centuries by different Chinese emperors to protect China from invaders. If you walked along the entire wall, it would take you about 18 months of non-stop walking! \ud83d\udeb6\u200d\u2642\ufe0f"
+  },
+  {
+    "instruction": "\u0917\u0941\u0930\u0941\u0924\u094d\u0935\u093e\u0915\u0930\u094d\u0937\u0923 \u0915\u094d\u092f\u093e \u0939\u0948 \u0914\u0930 \u092f\u0939 \u0915\u0948\u0938\u0947 \u0915\u093e\u092e \u0915\u0930\u0924\u093e \u0939\u0948?",
+    "response": "\u0917\u0941\u0930\u0941\u0924\u094d\u0935\u093e\u0915\u0930\u094d\u0937\u0923 \u090f\u0915 \u0905\u0926\u0943\u0936\u094d\u092f \u0916\u093f\u0902\u091a\u093e\u0935 \u0939\u0948 \u091c\u094b \u0939\u0930 \u091a\u0940\u091c\u093c \u0915\u094b \u092a\u0943\u0925\u094d\u0935\u0940 \u0915\u0940 \u0913\u0930 \u0916\u0940\u0902\u091a\u0924\u093e \u0939\u0948! \ud83c\udf0d \u091c\u092c \u0924\u0941\u092e \u0917\u0947\u0902\u0926 \u0915\u094b \u090a\u092a\u0930 \u092b\u0947\u0902\u0915\u0924\u0947 \u0939\u094b, \u0924\u094b \u0935\u0939 \u0935\u093e\u092a\u0938 \u0928\u0940\u091a\u0947 \u0906 \u091c\u093e\u0924\u0940 \u0939\u0948 - \u092f\u0939\u0940 \u0917\u0941\u0930\u0941\u0924\u094d\u0935\u093e\u0915\u0930\u094d\u0937\u0923 \u0915\u093e \u091c\u093e\u0926\u0942 \u0939\u0948\u0964 \u0907\u0938\u0947 \u0910\u0938\u0947 \u0938\u092e\u091d\u094b \u091c\u0948\u0938\u0947 \u092a\u0943\u0925\u094d\u0935\u0940 \u090f\u0915 \u092c\u0921\u093c\u093e \u091a\u0941\u0902\u092c\u0915 \u0939\u0948 \u091c\u094b \u0938\u092c \u091a\u0940\u091c\u093c\u094b\u0902 \u0915\u094b \u0905\u092a\u0928\u0940 \u0924\u0930\u092b \u0916\u0940\u0902\u091a\u0924\u0940 \u0939\u0948! \ud83e\uddf2 \u0907\u0938\u0940 \u0935\u091c\u0939 \u0938\u0947 \u0939\u092e \u091c\u093c\u092e\u0940\u0928 \u092a\u0930 \u091a\u0932 \u092a\u093e\u0924\u0947 \u0939\u0948\u0902 \u0914\u0930 \u0939\u0935\u093e \u092e\u0947\u0902 \u0928\u0939\u0940\u0902 \u0924\u0948\u0930\u0924\u0947\u0964"
+  },
+  {
+    "instruction": "\u092a\u094d\u0930\u0915\u093e\u0936 \u0938\u0902\u0936\u094d\u0932\u0947\u0937\u0923 \u0915\u094d\u092f\u093e \u0939\u0948 \u0914\u0930 \u092a\u094c\u0927\u0947 \u0907\u0938\u0947 \u0915\u0948\u0938\u0947 \u0915\u0930\u0924\u0947 \u0939\u0948\u0902?",
+    "response": "\u092a\u094d\u0930\u0915\u093e\u0936 \u0938\u0902\u0936\u094d\u0932\u0947\u0937\u0923 \u0935\u0939 \u0924\u0930\u0940\u0915\u093e \u0939\u0948 \u091c\u093f\u0938\u0938\u0947 \u092a\u094c\u0927\u0947 \u0905\u092a\u0928\u093e \u0916\u093e\u0928\u093e \u0916\u0941\u0926 \u092c\u0928\u093e\u0924\u0947 \u0939\u0948\u0902! \ud83c\udf31 \u092a\u094c\u0927\u0947 \u0938\u0942\u0930\u091c \u0915\u0940 \u0930\u094b\u0936\u0928\u0940, \u092a\u093e\u0928\u0940 \u0914\u0930 \u0939\u0935\u093e \u092e\u0947\u0902 \u092e\u094c\u091c\u0942\u0926 \u0915\u093e\u0930\u094d\u092c\u0928 \u0921\u093e\u0907\u0911\u0915\u094d\u0938\u093e\u0907\u0921 \u0915\u094b \u092e\u093f\u0932\u093e\u0915\u0930 \u0905\u092a\u0928\u093e \u092d\u094b\u091c\u0928 (\u0917\u094d\u0932\u0942\u0915\u094b\u091c) \u092c\u0928\u093e\u0924\u0947 \u0939\u0948\u0902\u0964 \u0907\u0938\u0947 \u0910\u0938\u0947 \u0938\u092e\u091d\u094b \u091c\u0948\u0938\u0947 \u092a\u094c\u0927\u0947 \u0915\u0940 \u092a\u0924\u094d\u0924\u093f\u092f\u093e\u0902 \u090f\u0915 \u091b\u094b\u091f\u0940 \u0938\u0940 \u0930\u0938\u094b\u0908 \u0939\u0948\u0902 \u091c\u0939\u093e\u0902 \u0938\u0942\u0930\u091c \u0915\u0940 \u0930\u094b\u0936\u0928\u0940 \u0906\u0917 \u0915\u093e \u0915\u093e\u092e \u0915\u0930\u0924\u0940 \u0939\u0948! \u2600\ufe0f \u0907\u0938 \u092a\u094d\u0930\u0915\u094d\u0930\u093f\u092f\u093e \u092e\u0947\u0902 \u092a\u094c\u0927\u0947 \u0911\u0915\u094d\u0938\u0940\u091c\u0928 \u092d\u0940 \u091b\u094b\u0921\u093c\u0924\u0947 \u0939\u0948\u0902 \u091c\u094b \u0939\u092e \u0938\u093e\u0902\u0938 \u0932\u0947\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0907\u0938\u094d\u0924\u0947\u092e\u093e\u0932 \u0915\u0930\u0924\u0947 \u0939\u0948\u0902\u0964"
+  },
+  {
+    "instruction": "\u0938\u0942\u0930\u094d\u092f \u0938\u0947 \u0938\u092c\u0938\u0947 \u0928\u091c\u0926\u0940\u0915 \u0915\u094c\u0928 \u0938\u093e \u0917\u094d\u0930\u0939 \u0939\u0948?",
+    "response": "\u0938\u0942\u0930\u094d\u092f \u0915\u0947 \u0938\u092c\u0938\u0947 \u0928\u091c\u0926\u0940\u0915 \u092c\u0941\u0927 (Mercury) \u0917\u094d\u0930\u0939 \u0939\u0948! \ud83c\udf1f \u092f\u0939 \u0907\u0924\u0928\u093e \u092a\u093e\u0938 \u0939\u0948 \u0915\u093f \u0907\u0938\u0947 \u0938\u0942\u0930\u094d\u092f \u0915\u093e \u091a\u0915\u094d\u0915\u0930 \u0932\u0917\u093e\u0928\u0947 \u092e\u0947\u0902 \u0938\u093f\u0930\u094d\u092b 88 \u0926\u093f\u0928 \u0932\u0917\u0924\u0947 \u0939\u0948\u0902\u0964 \u092c\u0941\u0927 \u0915\u094b \u0910\u0938\u0947 \u0938\u092e\u091d\u094b \u091c\u0948\u0938\u0947 \u0915\u094d\u0932\u093e\u0938 \u092e\u0947\u0902 \u0938\u092c\u0938\u0947 \u0906\u0917\u0947 \u092c\u0948\u0920\u0928\u0947 \u0935\u093e\u0932\u093e \u092c\u091a\u094d\u091a\u093e - \u091f\u0940\u091a\u0930 (\u0938\u0942\u0930\u094d\u092f) \u0915\u0947 \u0938\u092c\u0938\u0947 \u0915\u0930\u0940\u092c! \ud83d\ude80 \u0932\u0947\u0915\u093f\u0928 \u0927\u094d\u092f\u093e\u0928 \u0930\u0916\u094b, \u092c\u0941\u0927 \u092c\u0939\u0941\u0924 \u091b\u094b\u091f\u093e \u0939\u0948 \u0914\u0930 \u0939\u092e\u093e\u0930\u0947 \u091a\u0902\u0926\u094d\u0930\u092e\u093e \u0938\u0947 \u092d\u0940 \u0925\u094b\u0921\u093c\u093e \u0939\u0940 \u092c\u0921\u093c\u093e \u0939\u0948\u0964"
+  },
+  {
+    "instruction": "\u091c\u0932 \u091a\u0915\u094d\u0930 \u0915\u094d\u092f\u093e \u0939\u0948 \u0914\u0930 \u092f\u0939 \u0915\u0948\u0938\u0947 \u0915\u093e\u092e \u0915\u0930\u0924\u093e \u0939\u0948?",
+    "response": "\u091c\u0932 \u091a\u0915\u094d\u0930 \u092a\u093e\u0928\u0940 \u0915\u0940 \u090f\u0915 \u0905\u0926\u094d\u092d\u0941\u0924 \u092f\u093e\u0924\u094d\u0930\u093e \u0939\u0948 \u091c\u094b \u092c\u093e\u0930-\u092c\u093e\u0930 \u0926\u094b\u0939\u0930\u093e\u0924\u0940 \u0930\u0939\u0924\u0940 \u0939\u0948! \ud83d\udca7 \u0938\u0942\u0930\u091c \u0915\u0940 \u0917\u0930\u094d\u092e\u0940 \u0938\u0947 \u0928\u0926\u093f\u092f\u094b\u0902 \u0914\u0930 \u0938\u092e\u0941\u0926\u094d\u0930\u094b\u0902 \u0915\u093e \u092a\u093e\u0928\u0940 \u092d\u093e\u092a \u092c\u0928\u0915\u0930 \u090a\u092a\u0930 \u0909\u0921\u093c \u091c\u093e\u0924\u093e \u0939\u0948, \u092b\u093f\u0930 \u0906\u0938\u092e\u093e\u0928 \u092e\u0947\u0902 \u0920\u0902\u0921\u093e \u0939\u094b\u0915\u0930 \u092c\u093e\u0926\u0932 \u092c\u0928 \u091c\u093e\u0924\u093e \u0939\u0948, \u0914\u0930 \u092c\u093e\u0930\u093f\u0936 \u0915\u0947 \u0930\u0942\u092a \u092e\u0947\u0902 \u0935\u093e\u092a\u0938 \u0927\u0930\u0924\u0940 \u092a\u0930 \u0906 \u091c\u093e\u0924\u093e \u0939\u0948\u0964 \u092f\u0939 \u092c\u093f\u0932\u094d\u0915\u0941\u0932 \u0910\u0938\u093e \u0939\u0948 \u091c\u0948\u0938\u0947 \u092a\u093e\u0928\u0940 \u090f\u0915 \u0935\u093f\u0936\u093e\u0932 \u092e\u0947\u0930\u0940-\u0917\u094b-\u0930\u093e\u0909\u0902\u0921 \u092a\u0930 \u0918\u0942\u092e \u0930\u0939\u093e \u0939\u094b! \u2601\ufe0f \u0907\u0938\u0940 \u091a\u0915\u094d\u0930 \u0915\u0940 \u0935\u091c\u0939 \u0938\u0947 \u0939\u092e\u0947\u0902 \u0939\u092e\u0947\u0936\u093e \u0924\u093e\u091c\u093c\u093e \u092a\u093e\u0928\u0940 \u092e\u093f\u0932\u0924\u093e \u0930\u0939\u0924\u093e \u0939\u0948\u0964"
+  },
+  {
+    "instruction": "\u0939\u092e\u093e\u0930\u093e \u0926\u093f\u0932 \u090f\u0915 \u0926\u093f\u0928 \u092e\u0947\u0902 \u0915\u093f\u0924\u0928\u0940 \u092c\u093e\u0930 \u0927\u0921\u093c\u0915\u0924\u093e \u0939\u0948?",
+    "response": "\u0939\u092e\u093e\u0930\u093e \u0926\u093f\u0932 \u090f\u0915 \u0926\u093f\u0928 \u092e\u0947\u0902 \u0932\u0917\u092d\u0917 1,00,000 (\u090f\u0915 \u0932\u093e\u0916) \u092c\u093e\u0930 \u0927\u0921\u093c\u0915\u0924\u093e \u0939\u0948! \ud83d\udc93 \u092f\u0939 \u092c\u093f\u0932\u094d\u0915\u0941\u0932 \u090f\u0915 \u091b\u094b\u091f\u0947 \u092a\u0902\u092a \u0915\u0940 \u0924\u0930\u0939 \u0915\u093e\u092e \u0915\u0930\u0924\u093e \u0939\u0948 \u091c\u094b \u092c\u093f\u0928\u093e \u0930\u0941\u0915\u0947 \u092a\u0942\u0930\u0947 \u0936\u0930\u0940\u0930 \u092e\u0947\u0902 \u0916\u0942\u0928 \u092d\u0947\u091c\u0924\u093e \u0930\u0939\u0924\u093e \u0939\u0948\u0964 \u0905\u0917\u0930 \u0924\u0941\u092e \u0905\u092a\u0928\u093e \u0939\u093e\u0925 \u091b\u093e\u0924\u0940 \u092a\u0930 \u0930\u0916\u094b, \u0924\u094b \u0924\u0941\u092e \u0907\u0938\u0915\u0940 \u0927\u0921\u093c\u0915\u0928 \u092e\u0939\u0938\u0942\u0938 \u0915\u0930 \u0938\u0915\u0924\u0947 \u0939\u094b! \ud83e\udec0 \u0926\u093f\u0932 \u0907\u0924\u0928\u093e \u092e\u0947\u0939\u0928\u0924\u0940 \u0939\u0948 \u0915\u093f \u092f\u0939 \u0915\u092d\u0940 \u0928\u0939\u0940\u0902 \u0925\u0915\u0924\u093e \u0914\u0930 \u0939\u092e\u0947\u0936\u093e \u0915\u093e\u092e \u0915\u0930\u0924\u093e \u0930\u0939\u0924\u093e \u0939\u0948\u0964"
+  },
+  {
+    "instruction": "\u092d\u093e\u0930\u0924 \u0915\u093e \u0930\u093e\u0937\u094d\u091f\u094d\u0930\u0940\u092f \u0927\u094d\u0935\u091c \u0924\u093f\u0930\u0902\u0917\u093e \u0915\u093f\u0938\u0928\u0947 \u0921\u093f\u091c\u093c\u093e\u0907\u0928 \u0915\u093f\u092f\u093e \u0925\u093e?",
+    "response": "\u092d\u093e\u0930\u0924 \u0915\u093e \u0924\u093f\u0930\u0902\u0917\u093e \u092a\u093f\u0902\u0917\u0932\u0940 \u0935\u0947\u0902\u0915\u0948\u092f\u093e \u091c\u0940 \u0928\u0947 \u0921\u093f\u091c\u093c\u093e\u0907\u0928 \u0915\u093f\u092f\u093e \u0925\u093e! \ud83c\uddee\ud83c\uddf3 \u0935\u0947 \u0906\u0902\u0927\u094d\u0930 \u092a\u094d\u0930\u0926\u0947\u0936 \u0915\u0947 \u090f\u0915 \u0938\u094d\u0935\u0924\u0902\u0924\u094d\u0930\u0924\u093e \u0938\u0947\u0928\u093e\u0928\u0940 \u0925\u0947\u0964 \u091c\u0948\u0938\u0947 \u090f\u0915 \u0915\u0932\u093e\u0915\u093e\u0930 \u0905\u092a\u0928\u0940 \u0938\u092c\u0938\u0947 \u0938\u0941\u0902\u0926\u0930 \u092a\u0947\u0902\u091f\u093f\u0902\u0917 \u092c\u0928\u093e\u0924\u093e \u0939\u0948, \u0935\u0948\u0938\u0947 \u0939\u0940 \u0909\u0928\u094d\u0939\u094b\u0902\u0928\u0947 \u0939\u092e\u093e\u0930\u0947 \u0926\u0947\u0936 \u0915\u0947 \u0932\u093f\u090f \u092f\u0939 \u0916\u0942\u092c\u0938\u0942\u0930\u0924 \u091d\u0902\u0921\u093e \u092c\u0928\u093e\u092f\u093e\u0964 \u0924\u093f\u0930\u0902\u0917\u0947 \u092e\u0947\u0902 \u0915\u0947\u0938\u0930\u093f\u092f\u093e, \u0938\u092b\u0947\u0926 \u0914\u0930 \u0939\u0930\u093e \u0930\u0902\u0917 \u0939\u0948, \u0914\u0930 \u092c\u0940\u091a \u092e\u0947\u0902 \u0905\u0936\u094b\u0915 \u091a\u0915\u094d\u0930 \u0939\u0948\u0964 \ud83c\udfa8"
+  },
+  {
+    "instruction": "\u092e\u0939\u093e\u0924\u094d\u092e\u093e \u0917\u093e\u0902\u0927\u0940 \u0915\u094c\u0928 \u0925\u0947 \u0914\u0930 \u0909\u0928\u094d\u0939\u094b\u0902\u0928\u0947 \u092d\u093e\u0930\u0924 \u0915\u0947 \u0932\u093f\u090f \u0915\u094d\u092f\u093e \u0915\u093f\u092f\u093e?",
+    "response": "\u092e\u0939\u093e\u0924\u094d\u092e\u093e \u0917\u093e\u0902\u0927\u0940 \u092d\u093e\u0930\u0924 \u0915\u0947 \u0930\u093e\u0937\u094d\u091f\u094d\u0930\u092a\u093f\u0924\u093e \u0925\u0947 \u091c\u093f\u0928\u094d\u0939\u094b\u0902\u0928\u0947 \u0939\u092e\u093e\u0930\u0947 \u0926\u0947\u0936 \u0915\u094b \u0905\u0902\u0917\u094d\u0930\u0947\u091c\u094b\u0902 \u0938\u0947 \u0906\u091c\u093c\u093e\u0926\u0940 \u0926\u093f\u0932\u093e\u0908! \ud83c\uddee\ud83c\uddf3 \u0935\u094b \u092c\u093f\u0928\u093e \u0915\u093f\u0938\u0940 \u0939\u0925\u093f\u092f\u093e\u0930 \u0915\u0947, \u0938\u093f\u0930\u094d\u092b \u0938\u0924\u094d\u092f \u0914\u0930 \u0905\u0939\u093f\u0902\u0938\u093e \u0915\u0940 \u0924\u093e\u0915\u0924 \u0938\u0947 \u0932\u0921\u093c\u0947 - \u091c\u0948\u0938\u0947 \u090f\u0915 \u091b\u094b\u091f\u093e \u0938\u093e \u0926\u0940\u092f\u093e \u0905\u0902\u0927\u0947\u0930\u0947 \u0915\u094b \u0939\u0930\u093e \u0926\u0947\u0924\u093e \u0939\u0948! \u0909\u0928\u094d\u0939\u0947\u0902 \u092a\u094d\u092f\u093e\u0930 \u0938\u0947 '\u092c\u093e\u092a\u0942' \u092d\u0940 \u092c\u0941\u0932\u093e\u0924\u0947 \u0939\u0948\u0902\u0964 \u0909\u0928\u0915\u093e \u091c\u0928\u094d\u092e 2 \u0905\u0915\u094d\u091f\u0942\u092c\u0930 1869 \u0915\u094b \u0917\u0941\u091c\u0930\u093e\u0924 \u0915\u0947 \u092a\u094b\u0930\u092c\u0902\u0926\u0930 \u092e\u0947\u0902 \u0939\u0941\u0906 \u0925\u093e\u0964 \u262e\ufe0f"
+  },
+  {
+    "instruction": "\u0915\u094d\u0930\u093f\u0915\u0947\u091f \u092e\u0947\u0902 \u0935\u093f\u0915\u0947\u091f \u0915\u094d\u092f\u093e \u0939\u094b\u0924\u093e \u0939\u0948?",
+    "response": "\u0935\u093f\u0915\u0947\u091f \u0924\u0940\u0928 \u0932\u0915\u0921\u093c\u0940 \u0915\u0947 \u0921\u0902\u0921\u094b\u0902 \u0938\u0947 \u092c\u0928\u093e \u0939\u094b\u0924\u093e \u0939\u0948 \u091c\u093f\u0928\u094d\u0939\u0947\u0902 \u0938\u094d\u091f\u0902\u092a \u0915\u0939\u0924\u0947 \u0939\u0948\u0902, \u0914\u0930 \u0909\u0928\u0915\u0947 \u090a\u092a\u0930 \u0926\u094b \u091b\u094b\u091f\u0940 \u0932\u0915\u0921\u093c\u093f\u092f\u093e\u0901 \u0930\u0916\u0940 \u0939\u094b\u0924\u0940 \u0939\u0948\u0902 \u091c\u093f\u0928\u094d\u0939\u0947\u0902 \u092c\u0947\u0932\u094d\u0938 \u0915\u0939\u0924\u0947 \u0939\u0948\u0902! \ud83c\udfcf \u0907\u0938\u0947 \u0910\u0938\u0947 \u0938\u092e\u091d\u094b \u091c\u0948\u0938\u0947 \u0924\u0940\u0928 \u0926\u094b\u0938\u094d\u0924 \u0915\u0902\u0927\u0947 \u0938\u0947 \u0915\u0902\u0927\u093e \u092e\u093f\u0932\u093e\u0915\u0930 \u0916\u0921\u093c\u0947 \u0939\u094b\u0902 \u0914\u0930 \u0909\u0928\u0915\u0947 \u0938\u093f\u0930 \u092a\u0930 \u091b\u094b\u091f\u0940 \u091f\u094b\u092a\u093f\u092f\u093e\u0901 \u0930\u0916\u0940 \u0939\u094b\u0902\u0964 \u0917\u0947\u0902\u0926\u092c\u093e\u091c \u0915\u093e \u0915\u093e\u092e \u0939\u094b\u0924\u093e \u0939\u0948 \u0907\u0928 \u0935\u093f\u0915\u0947\u091f\u094b\u0902 \u0915\u094b \u0917\u093f\u0930\u093e\u0928\u093e \u0914\u0930 \u092c\u0932\u094d\u0932\u0947\u092c\u093e\u091c \u0915\u094b \u0907\u0928\u094d\u0939\u0947\u0902 \u092c\u091a\u093e\u0928\u093e \u0939\u094b\u0924\u093e \u0939\u0948! \u26a1"
+  },
+  {
+    "instruction": "\u0926\u093f\u0935\u093e\u0932\u0940 \u0915\u094b '\u0930\u094b\u0936\u0928\u0940 \u0915\u093e \u0924\u094d\u092f\u094b\u0939\u093e\u0930' \u0915\u094d\u092f\u094b\u0902 \u0915\u0939\u0924\u0947 \u0939\u0948\u0902?",
+    "response": "\u0926\u093f\u0935\u093e\u0932\u0940 \u0915\u094b '\u0930\u094b\u0936\u0928\u0940 \u0915\u093e \u0924\u094d\u092f\u094b\u0939\u093e\u0930' \u0907\u0938\u0932\u093f\u090f \u0915\u0939\u0924\u0947 \u0939\u0948\u0902 \u0915\u094d\u092f\u094b\u0902\u0915\u093f \u0907\u0938 \u0926\u093f\u0928 \u0939\u092e \u0905\u092a\u0928\u0947 \u0918\u0930\u094b\u0902 \u0915\u094b \u0926\u0940\u092f\u094b\u0902, \u092e\u094b\u092e\u092c\u0924\u094d\u0924\u093f\u092f\u094b\u0902 \u0914\u0930 \u0932\u093e\u0907\u091f\u094d\u0938 \u0938\u0947 \u0938\u091c\u093e\u0924\u0947 \u0939\u0948\u0902! \ud83e\ude94 \u091c\u0948\u0938\u0947 \u091c\u0941\u0917\u0928\u0942 \u0930\u093e\u0924 \u092e\u0947\u0902 \u091a\u092e\u0915\u0924\u0947 \u0939\u0948\u0902, \u0935\u0948\u0938\u0947 \u0939\u0940 \u0926\u093f\u0935\u093e\u0932\u0940 \u0915\u0940 \u0930\u093e\u0924 \u092a\u0942\u0930\u093e \u0926\u0947\u0936 \u0932\u093e\u0916\u094b\u0902 \u0926\u0940\u092f\u094b\u0902 \u0915\u0940 \u0930\u094b\u0936\u0928\u0940 \u0938\u0947 \u091c\u0917\u092e\u0917\u093e \u0909\u0920\u0924\u093e \u0939\u0948\u0964 \u092f\u0939 \u0930\u094b\u0936\u0928\u0940 \u0905\u0902\u0927\u0947\u0930\u0947 \u092a\u0930 \u0909\u091c\u093e\u0932\u0947 \u0915\u0940 \u091c\u0940\u0924 \u0914\u0930 \u092c\u0941\u0930\u093e\u0908 \u092a\u0930 \u0905\u091a\u094d\u091b\u093e\u0908 \u0915\u0940 \u091c\u0940\u0924 \u0915\u093e \u092a\u094d\u0930\u0924\u0940\u0915 \u0939\u0948\u0964 \u2728"
+  },
+  {
+    "instruction": "\u092f\u094b\u0917 \u0915\u0930\u0928\u0947 \u0938\u0947 \u0939\u092e\u093e\u0930\u0947 \u0936\u0930\u0940\u0930 \u0915\u094b \u0915\u094d\u092f\u093e \u092b\u093e\u092f\u0926\u0947 \u0939\u094b\u0924\u0947 \u0939\u0948\u0902?",
+    "response": "\u092f\u094b\u0917 \u0915\u0930\u0928\u0947 \u0938\u0947 \u0939\u092e\u093e\u0930\u093e \u0936\u0930\u0940\u0930 \u092e\u091c\u092c\u0942\u0924 \u0914\u0930 \u0932\u091a\u0940\u0932\u093e \u092c\u0928\u0924\u093e \u0939\u0948, \u091c\u0948\u0938\u0947 \u0930\u092c\u0930 \u092c\u0948\u0902\u0921 \u0916\u0940\u0902\u091a\u0928\u0947 \u092a\u0930 \u0914\u0930 \u092e\u091c\u092c\u0942\u0924 \u0939\u094b \u091c\u093e\u0924\u093e \u0939\u0948! \ud83e\uddd8\u200d\u2640\ufe0f \u092f\u0939 \u0939\u092e\u0947\u0902 \u0924\u0928\u093e\u0935 \u0938\u0947 \u0926\u0942\u0930 \u0930\u0916\u0924\u093e \u0939\u0948 \u0914\u0930 \u0939\u092e\u093e\u0930\u093e \u0926\u093f\u092e\u093e\u0917 \u0936\u093e\u0902\u0924 \u0914\u0930 \u0916\u0941\u0936 \u0930\u0939\u0924\u093e \u0939\u0948\u0964 \u0930\u094b\u091c\u093c\u093e\u0928\u093e \u092f\u094b\u0917 \u0915\u0930\u0928\u0947 \u0938\u0947 \u0939\u092e \u092c\u0940\u092e\u093e\u0930\u093f\u092f\u094b\u0902 \u0938\u0947 \u092c\u091a\u0947 \u0930\u0939\u0924\u0947 \u0939\u0948\u0902 \u0914\u0930 \u0939\u092e\u093e\u0930\u0940 \u090f\u0915\u093e\u0917\u094d\u0930\u0924\u093e \u092d\u0940 \u092c\u0922\u093c\u0924\u0940 \u0939\u0948\u0964 \u0924\u094b \u091a\u0932\u094b, \u0930\u094b\u091c\u093c \u0938\u0941\u092c\u0939 \u092f\u094b\u0917 \u0915\u0930\u0947\u0902 \u0914\u0930 \u0938\u094d\u0935\u0938\u094d\u0925 \u0930\u0939\u0947\u0902! \ud83d\udcaa"
+  },
+  {
+    "instruction": "\u0938\u094d\u0935\u0938\u094d\u0925 \u092d\u094b\u091c\u0928 \u0916\u093e\u0928\u093e \u0939\u092e\u093e\u0930\u0947 \u0936\u0930\u0940\u0930 \u0915\u0947 \u0932\u093f\u090f \u0915\u094d\u092f\u094b\u0902 \u091c\u0930\u0942\u0930\u0940 \u0939\u0948?",
+    "response": "\u0938\u094d\u0935\u0938\u094d\u0925 \u092d\u094b\u091c\u0928 \u0939\u092e\u093e\u0930\u0947 \u0936\u0930\u0940\u0930 \u0915\u0947 \u0932\u093f\u090f \u0909\u0938\u0940 \u0924\u0930\u0939 \u0915\u093e\u092e \u0915\u0930\u0924\u093e \u0939\u0948 \u091c\u0948\u0938\u0947 \u0917\u093e\u0921\u093c\u0940 \u0915\u0947 \u0932\u093f\u090f \u0905\u091a\u094d\u091b\u093e \u092a\u0947\u091f\u094d\u0930\u094b\u0932! \ud83d\ude97 \u091c\u092c \u0939\u092e \u092b\u0932, \u0938\u092c\u094d\u091c\u093f\u092f\u093e\u0902, \u0926\u093e\u0932 \u0914\u0930 \u0926\u0942\u0927 \u0916\u093e\u0924\u0947 \u0939\u0948\u0902, \u0924\u094b \u0939\u092e\u093e\u0930\u093e \u0936\u0930\u0940\u0930 \u092e\u091c\u092c\u0942\u0924 \u092c\u0928\u0924\u093e \u0939\u0948 \u0914\u0930 \u0939\u092e \u092c\u0940\u092e\u093e\u0930 \u0915\u092e \u092a\u0921\u093c\u0924\u0947 \u0939\u0948\u0902\u0964 \u092f\u0939 \u0939\u092e\u0947\u0902 \u092a\u0922\u093c\u093e\u0908 \u092e\u0947\u0902 \u0927\u094d\u092f\u093e\u0928 \u0932\u0917\u093e\u0928\u0947 \u0914\u0930 \u0916\u0947\u0932\u0928\u0947 \u0915\u0940 \u0924\u093e\u0915\u0924 \u0926\u0947\u0924\u093e \u0939\u0948! \ud83d\udcaa \u0907\u0938\u0932\u093f\u090f \u0930\u094b\u091c \u0930\u0902\u0917-\u092c\u093f\u0930\u0902\u0917\u0940 \u0938\u092c\u094d\u091c\u093f\u092f\u093e\u0902 \u0914\u0930 \u092b\u0932 \u091c\u0930\u0942\u0930 \u0916\u093e\u0913\u0964"
+  },
+  {
+    "instruction": "\u092a\u0930\u094d\u092f\u093e\u0935\u0930\u0923 \u0915\u094d\u092f\u093e \u0939\u0948 \u0914\u0930 \u092f\u0939 \u0939\u092e\u093e\u0930\u0947 \u0932\u093f\u090f \u0915\u094d\u092f\u094b\u0902 \u091c\u0930\u0942\u0930\u0940 \u0939\u0948?",
+    "response": "\u092a\u0930\u094d\u092f\u093e\u0935\u0930\u0923 \u0935\u0939 \u0938\u092c \u0915\u0941\u091b \u0939\u0948 \u091c\u094b \u0939\u092e\u093e\u0930\u0947 \u091a\u093e\u0930\u094b\u0902 \u0913\u0930 \u0939\u0948 - \u0939\u0935\u093e, \u092a\u093e\u0928\u0940, \u092a\u0947\u0921\u093c-\u092a\u094c\u0927\u0947, \u091c\u093e\u0928\u0935\u0930 \u0914\u0930 \u0927\u0930\u0924\u0940! \ud83c\udf0d \u092f\u0939 \u0939\u092e\u093e\u0930\u0947 \u0932\u093f\u090f \u090f\u0915 \u092c\u0921\u093c\u0947 \u0918\u0930 \u0915\u0940 \u0924\u0930\u0939 \u0939\u0948 \u091c\u094b \u0939\u092e\u0947\u0902 \u0916\u093e\u0928\u093e, \u092a\u093e\u0928\u0940 \u0914\u0930 \u0938\u093e\u092b \u0939\u0935\u093e \u0926\u0947\u0924\u093e \u0939\u0948\u0964 \u091c\u0948\u0938\u0947 \u0939\u092e \u0905\u092a\u0928\u0947 \u0918\u0930 \u0915\u094b \u0938\u093e\u092b \u0930\u0916\u0924\u0947 \u0939\u0948\u0902, \u0935\u0948\u0938\u0947 \u0939\u0940 \u0939\u092e\u0947\u0902 \u0905\u092a\u0928\u0947 \u092a\u0930\u094d\u092f\u093e\u0935\u0930\u0923 \u0915\u093e \u092d\u0940 \u0916\u094d\u092f\u093e\u0932 \u0930\u0916\u0928\u093e \u091a\u093e\u0939\u093f\u090f\u0964 \u0905\u0917\u0930 \u0939\u092e \u092a\u0947\u0921\u093c \u0932\u0917\u093e\u090f\u0902 \u0914\u0930 \u0915\u0942\u0921\u093c\u093e \u0928 \u092b\u0948\u0932\u093e\u090f\u0902 \u0924\u094b \u0939\u092e\u093e\u0930\u093e \u092f\u0939 \u092c\u0921\u093c\u093e \u0918\u0930 \u0939\u092e\u0947\u0936\u093e \u0938\u0941\u0902\u0926\u0930 \u0914\u0930 \u0938\u094d\u0935\u0938\u094d\u0925 \u0930\u0939\u0947\u0917\u093e! \ud83c\udf33"
+  },
+  {
+    "instruction": "\u0926\u094b\u0938\u094d\u0924\u0940 \u0915\u094d\u092f\u093e \u0939\u094b\u0924\u0940 \u0939\u0948 \u0914\u0930 \u092f\u0939 \u0915\u094d\u092f\u094b\u0902 \u091c\u0930\u0942\u0930\u0940 \u0939\u0948?",
+    "response": "\u0926\u094b\u0938\u094d\u0924\u0940 \u090f\u0915 \u0916\u093e\u0938 \u0930\u093f\u0936\u094d\u0924\u093e \u0939\u0948 \u091c\u0939\u093e\u0901 \u0926\u094b \u0932\u094b\u0917 \u090f\u0915-\u0926\u0942\u0938\u0930\u0947 \u0915\u0940 \u092a\u0930\u0935\u093e\u0939 \u0915\u0930\u0924\u0947 \u0939\u0948\u0902 \u0914\u0930 \u0938\u093e\u0925 \u0916\u0941\u0936 \u0930\u0939\u0924\u0947 \u0939\u0948\u0902! \ud83e\udd1d \u092f\u0939 \u090f\u0915 \u092a\u094c\u0927\u0947 \u0915\u0940 \u0924\u0930\u0939 \u0939\u0948 - \u091c\u093f\u0924\u0928\u093e \u092a\u094d\u092f\u093e\u0930 \u0914\u0930 \u0926\u0947\u0916\u092d\u093e\u0932 \u0926\u094b\u0917\u0947, \u0909\u0924\u0928\u093e \u0939\u0940 \u092e\u091c\u092c\u0942\u0924 \u0939\u094b\u0917\u093e\u0964 \u0905\u091a\u094d\u091b\u0947 \u0926\u094b\u0938\u094d\u0924 \u0939\u092e\u093e\u0930\u0940 \u092e\u0926\u0926 \u0915\u0930\u0924\u0947 \u0939\u0948\u0902, \u0939\u092e\u0947\u0902 \u0939\u0901\u0938\u093e\u0924\u0947 \u0939\u0948\u0902 \u0914\u0930 \u092e\u0941\u0936\u094d\u0915\u093f\u0932 \u0938\u092e\u092f \u092e\u0947\u0902 \u0938\u093e\u0925 \u0926\u0947\u0924\u0947 \u0939\u0948\u0902\u0964 \u0926\u094b\u0938\u094d\u0924\u0940 \u0938\u0947 \u0939\u092e \u0905\u0915\u0947\u0932\u093e\u092a\u0928 \u092e\u0939\u0938\u0942\u0938 \u0928\u0939\u0940\u0902 \u0915\u0930\u0924\u0947 \u0914\u0930 \u091c\u093f\u0902\u0926\u0917\u0940 \u091c\u094d\u092f\u093e\u0926\u093e \u092e\u091c\u0947\u0926\u093e\u0930 \u092c\u0928 \u091c\u093e\u0924\u0940 \u0939\u0948! \ud83d\ude0a"
+  },
+  {
+    "instruction": "\u0938\u093e\u0939\u0938 \u0915\u093e \u0915\u094d\u092f\u093e \u092e\u0924\u0932\u092c \u0939\u094b\u0924\u093e \u0939\u0948 \u0914\u0930 \u092f\u0939 \u0915\u094d\u092f\u094b\u0902 \u091c\u0930\u0942\u0930\u0940 \u0939\u0948?",
+    "response": "\u0938\u093e\u0939\u0938 \u0915\u093e \u092e\u0924\u0932\u092c \u0939\u0948 \u0921\u0930 \u0932\u0917\u0928\u0947 \u092a\u0930 \u092d\u0940 \u0938\u0939\u0940 \u0915\u093e\u092e \u0915\u0930\u0928\u093e! \ud83d\udcaa \u091c\u0948\u0938\u0947 \u090f\u0915 \u091b\u094b\u091f\u0940 \u091a\u093f\u0921\u093c\u093f\u092f\u093e \u092a\u0939\u0932\u0940 \u092c\u093e\u0930 \u0909\u0921\u093c\u0928\u093e \u0938\u0940\u0916\u0924\u0940 \u0939\u0948, \u0935\u0948\u0938\u0947 \u0939\u0940 \u0939\u092e\u0947\u0902 \u092d\u0940 \u0928\u0908 \u091a\u0940\u091c\u093c\u0947\u0902 \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0939\u093f\u092e\u094d\u092e\u0924 \u0926\u093f\u0916\u093e\u0928\u0940 \u091a\u093e\u0939\u093f\u090f\u0964 \u0938\u093e\u0939\u0938 \u0938\u0947 \u0939\u092e \u0928\u090f \u0926\u094b\u0938\u094d\u0924 \u092c\u0928\u093e \u0938\u0915\u0924\u0947 \u0939\u0948\u0902, \u0938\u094d\u0915\u0942\u0932 \u092e\u0947\u0902 \u0938\u0935\u093e\u0932 \u092a\u0942\u091b \u0938\u0915\u0924\u0947 \u0939\u0948\u0902 \u0914\u0930 \u0905\u092a\u0928\u0947 \u0938\u092a\u0928\u094b\u0902 \u0915\u094b \u092a\u0942\u0930\u093e \u0915\u0930 \u0938\u0915\u0924\u0947 \u0939\u0948\u0902\u0964 \u092f\u093e\u0926 \u0930\u0916\u094b, \u092c\u0939\u093e\u0926\u0941\u0930 \u0939\u094b\u0928\u0947 \u0915\u093e \u092e\u0924\u0932\u092c \u0921\u0930 \u0928 \u0932\u0917\u0928\u093e \u0928\u0939\u0940\u0902 \u0939\u0948, \u092c\u0932\u094d\u0915\u093f \u0921\u0930 \u0915\u0947 \u092c\u093e\u0935\u091c\u0942\u0926 \u0906\u0917\u0947 \u092c\u0922\u093c\u0928\u093e \u0939\u0948! \ud83e\udd81"
+  },
+  {
+    "instruction": "\u0908\u092e\u093e\u0928\u0926\u093e\u0930\u0940 \u0915\u094d\u092f\u093e \u0939\u0948 \u0914\u0930 \u092f\u0939 \u0915\u094d\u092f\u094b\u0902 \u091c\u0930\u0942\u0930\u0940 \u0939\u0948?",
+    "response": "\u0908\u092e\u093e\u0928\u0926\u093e\u0930\u0940 \u0915\u093e \u092e\u0924\u0932\u092c \u0939\u0948 \u0939\u092e\u0947\u0936\u093e \u0938\u091a \u092c\u094b\u0932\u0928\u093e \u0914\u0930 \u0938\u0939\u0940 \u0915\u093e\u092e \u0915\u0930\u0928\u093e, \u091a\u093e\u0939\u0947 \u0915\u094b\u0908 \u0926\u0947\u0916 \u0930\u0939\u093e \u0939\u094b \u092f\u093e \u0928\u0939\u0940\u0902! \ud83d\ude0a \u092f\u0939 \u090f\u0915 \u0938\u093e\u092b \u0936\u0940\u0936\u0947 \u0915\u0940 \u0924\u0930\u0939 \u0939\u0948 - \u091c\u092c \u0939\u092e \u0908\u092e\u093e\u0928\u0926\u093e\u0930 \u0939\u094b\u0924\u0947 \u0939\u0948\u0902 \u0924\u094b \u0932\u094b\u0917 \u0939\u092e\u0947\u0902 \u0938\u093e\u092b-\u0938\u093e\u092b \u0926\u0947\u0916 \u0938\u0915\u0924\u0947 \u0939\u0948\u0902 \u0914\u0930 \u0939\u092e \u092a\u0930 \u092d\u0930\u094b\u0938\u093e \u0915\u0930\u0924\u0947 \u0939\u0948\u0902\u0964 \u0908\u092e\u093e\u0928\u0926\u093e\u0930 \u092c\u091a\u094d\u091a\u094b\u0902 \u0915\u0947 \u091c\u094d\u092f\u093e\u0926\u093e \u0926\u094b\u0938\u094d\u0924 \u0939\u094b\u0924\u0947 \u0939\u0948\u0902 \u0915\u094d\u092f\u094b\u0902\u0915\u093f \u0938\u092c \u0909\u0928 \u092a\u0930 \u0935\u093f\u0936\u094d\u0935\u093e\u0938 \u0915\u0930\u0924\u0947 \u0939\u0948\u0902! \ud83c\udf1f \u092f\u093e\u0926 \u0930\u0916\u094b, \u090f\u0915 \u091d\u0942\u0920 \u091b\u0941\u092a\u093e\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0938\u094c \u091d\u0942\u0920 \u092c\u094b\u0932\u0928\u0947 \u092a\u0921\u093c\u0924\u0947 \u0939\u0948\u0902!"
+  },
+  {
+    "instruction": "\u0939\u092e\u0947\u0902 \u092c\u0921\u093c\u094b\u0902 \u0915\u093e \u0938\u092e\u094d\u092e\u093e\u0928 \u0915\u094d\u092f\u094b\u0902 \u0915\u0930\u0928\u093e \u091a\u093e\u0939\u093f\u090f?",
+    "response": "\u092c\u0921\u093c\u094b\u0902 \u0928\u0947 \u0939\u092e\u0938\u0947 \u092a\u0939\u0932\u0947 \u092c\u0939\u0941\u0924 \u0915\u0941\u091b \u0926\u0947\u0916\u093e \u0914\u0930 \u0938\u0940\u0916\u093e \u0939\u0948, \u0907\u0938\u0932\u093f\u090f \u0935\u0947 \u0939\u092e\u093e\u0930\u0947 \u0932\u093f\u090f \u090f\u0915 \u0916\u091c\u093e\u0928\u0947 \u0915\u0940 \u0924\u0930\u0939 \u0939\u0948\u0902 \u091c\u094b \u091c\u094d\u091e\u093e\u0928 \u0938\u0947 \u092d\u0930\u093e \u0939\u0948! \ud83d\udcda \u091c\u0948\u0938\u0947 \u090f\u0915 \u092a\u0941\u0930\u093e\u0928\u093e \u092a\u0947\u0921\u093c \u091b\u094b\u091f\u0947 \u092a\u094c\u0927\u094b\u0902 \u0915\u094b \u091b\u093e\u092f\u093e \u0926\u0947\u0924\u093e \u0939\u0948, \u0935\u0948\u0938\u0947 \u0939\u0940 \u092c\u0921\u093c\u0947 \u0939\u092e\u0947\u0902 \u091c\u0940\u0935\u0928 \u092e\u0947\u0902 \u0938\u0939\u0940 \u0930\u093e\u0938\u094d\u0924\u093e \u0926\u093f\u0916\u093e\u0924\u0947 \u0939\u0948\u0902\u0964 \u091c\u092c \u0939\u092e \u0909\u0928\u0915\u093e \u0938\u092e\u094d\u092e\u093e\u0928 \u0915\u0930\u0924\u0947 \u0939\u0948\u0902 \u0924\u094b \u0939\u092e \u0909\u0928\u0938\u0947 \u0905\u091a\u094d\u091b\u0940 \u092c\u093e\u0924\u0947\u0902 \u0938\u0940\u0916\u0924\u0947 \u0939\u0948\u0902 \u0914\u0930 \u0935\u0947 \u092d\u0940 \u0916\u0941\u0936 \u0939\u094b\u0924\u0947 \u0939\u0948\u0902! \ud83d\ude4f"
+  },
+  {
+    "instruction": "\u092a\u093e\u0928\u0940 \u092c\u091a\u093e\u0928\u093e \u0915\u094d\u092f\u094b\u0902 \u091c\u093c\u0930\u0942\u0930\u0940 \u0939\u0948?",
+    "response": "\u092a\u093e\u0928\u0940 \u092c\u091a\u093e\u0928\u093e \u092c\u0939\u0941\u0924 \u091c\u093c\u0930\u0942\u0930\u0940 \u0939\u0948 \u0915\u094d\u092f\u094b\u0902\u0915\u093f \u0927\u0930\u0924\u0940 \u092a\u0930 \u092a\u0940\u0928\u0947 \u0932\u093e\u092f\u0915 \u0938\u093e\u092b \u092a\u093e\u0928\u0940 \u092c\u0939\u0941\u0924 \u0915\u092e \u0939\u0948! \ud83d\udca7 \u0938\u094b\u091a\u094b, \u0905\u0917\u0930 \u090f\u0915 \u092c\u0921\u093c\u0940 \u092c\u093e\u0932\u094d\u091f\u0940 \u092e\u0947\u0902 \u0938\u093e\u0930\u093e \u092a\u093e\u0928\u0940 \u0939\u094b, \u0924\u094b \u092a\u0940\u0928\u0947 \u0915\u093e \u092a\u093e\u0928\u0940 \u0938\u093f\u0930\u094d\u092b \u090f\u0915 \u091a\u092e\u094d\u092e\u091a \u091c\u093f\u0924\u0928\u093e \u0939\u0948\u0964 \u091c\u092c \u0939\u092e \u092c\u094d\u0930\u0936 \u0915\u0930\u0924\u0947 \u0938\u092e\u092f \u0928\u0932 \u092c\u0902\u0926 \u0930\u0916\u0924\u0947 \u0939\u0948\u0902 \u092f\u093e \u091b\u094b\u091f\u0947 \u0936\u093e\u0935\u0930 \u0932\u0947\u0924\u0947 \u0939\u0948\u0902, \u0924\u094b \u0939\u092e \u0907\u0938 \u0915\u0940\u092e\u0924\u0940 \u092a\u093e\u0928\u0940 \u0915\u094b \u092c\u091a\u093e\u0924\u0947 \u0939\u0948\u0902\u0964 \ud83c\udf0d \u092f\u093e\u0926 \u0930\u0916\u094b, \u092a\u093e\u0928\u0940 \u092c\u091a\u093e\u0913\u0917\u0947 \u0924\u094b \u092d\u0935\u093f\u0937\u094d\u092f \u092e\u0947\u0902 \u0938\u092c\u0915\u094b \u092a\u093e\u0928\u0940 \u092e\u093f\u0932\u0947\u0917\u093e!"
+  },
+  {
+    "instruction": "\u092a\u0947\u0921\u093c \u0939\u092e\u093e\u0930\u0947 \u0932\u093f\u090f \u0915\u094d\u092f\u094b\u0902 \u091c\u0930\u0942\u0930\u0940 \u0939\u0948\u0902?",
+    "response": "\u092a\u0947\u0921\u093c \u0939\u092e\u093e\u0930\u0940 \u0927\u0930\u0924\u0940 \u0915\u0947 \u0938\u0941\u092a\u0930\u0939\u0940\u0930\u094b \u0939\u0948\u0902! \ud83c\udf33 \u0935\u0947 \u0939\u092e\u0947\u0902 \u0938\u093e\u0902\u0938 \u0932\u0947\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0911\u0915\u094d\u0938\u0940\u091c\u0928 \u0926\u0947\u0924\u0947 \u0939\u0948\u0902 \u0914\u0930 \u0939\u093e\u0928\u093f\u0915\u093e\u0930\u0915 \u0915\u093e\u0930\u094d\u092c\u0928 \u0921\u093e\u0907\u0911\u0915\u094d\u0938\u093e\u0907\u0921 \u0915\u094b \u0938\u094b\u0916 \u0932\u0947\u0924\u0947 \u0939\u0948\u0902\u0964 \u092a\u0947\u0921\u093c \u092a\u0915\u094d\u0937\u093f\u092f\u094b\u0902 \u0914\u0930 \u091c\u093e\u0928\u0935\u0930\u094b\u0902 \u0915\u093e \u0918\u0930 \u0939\u094b\u0924\u0947 \u0939\u0948\u0902, \u091c\u0948\u0938\u0947 \u090f\u0915 \u092c\u0921\u093c\u093e \u0905\u092a\u093e\u0930\u094d\u091f\u092e\u0947\u0902\u091f! \u0935\u0947 \u0939\u092e\u0947\u0902 \u091b\u093e\u092f\u093e, \u092b\u0932 \u0914\u0930 \u0932\u0915\u0921\u093c\u0940 \u092d\u0940 \u0926\u0947\u0924\u0947 \u0939\u0948\u0902\u0964 \u092c\u093f\u0928\u093e \u092a\u0947\u0921\u093c\u094b\u0902 \u0915\u0947 \u092a\u0943\u0925\u094d\u0935\u0940 \u092c\u0939\u0941\u0924 \u0917\u0930\u094d\u092e \u0914\u0930 \u0909\u092c\u093e\u090a \u0939\u094b \u091c\u093e\u090f\u0917\u0940! \ud83c\udf43"
+  },
+  {
+    "instruction": "\u0939\u093e\u0925\u0940 \u0907\u0924\u0928\u0947 \u092c\u0921\u093c\u0947 \u0939\u094b\u0924\u0947 \u0939\u0941\u090f \u092d\u0940 \u092a\u093e\u0928\u0940 \u092e\u0947\u0902 \u0915\u0948\u0938\u0947 \u0924\u0948\u0930 \u0938\u0915\u0924\u0947 \u0939\u0948\u0902?",
+    "response": "\u0939\u093e\u0925\u0940 \u092c\u0939\u0941\u0924 \u0905\u091a\u094d\u091b\u0947 \u0924\u0948\u0930\u093e\u0915 \u0939\u094b\u0924\u0947 \u0939\u0948\u0902! \ud83d\udc18 \u0909\u0928\u0915\u093e \u0935\u093f\u0936\u093e\u0932 \u0936\u0930\u0940\u0930 \u092a\u093e\u0928\u0940 \u092e\u0947\u0902 \u090f\u0915 \u092c\u0921\u093c\u0940 \u0928\u093e\u0935 \u0915\u0940 \u0924\u0930\u0939 \u0924\u0948\u0930\u0924\u093e \u0939\u0948\u0964 \u0935\u0947 \u0905\u092a\u0928\u0940 \u0938\u0942\u0902\u0921 \u0915\u094b \u092a\u093e\u0928\u0940 \u0915\u0947 \u090a\u092a\u0930 \u0930\u0916\u0915\u0930 \u0938\u093e\u0902\u0938 \u0932\u0947\u0924\u0947 \u0939\u0948\u0902 - \u092c\u093f\u0932\u094d\u0915\u0941\u0932 \u0938\u094d\u0928\u094b\u0930\u094d\u0915\u0932 \u0915\u0940 \u0924\u0930\u0939! \u0939\u093e\u0925\u0940 \u0918\u0902\u091f\u094b\u0902 \u0924\u0915 \u0924\u0948\u0930 \u0938\u0915\u0924\u0947 \u0939\u0948\u0902 \u0914\u0930 \u0928\u0926\u093f\u092f\u094b\u0902 \u0915\u094b \u0906\u0938\u093e\u0928\u0940 \u0938\u0947 \u092a\u093e\u0930 \u0915\u0930 \u0932\u0947\u0924\u0947 \u0939\u0948\u0902\u0964 \ud83d\udcaa"
+  },
+  {
+    "instruction": "What is the Hindi word for the color blue?",
+    "response": "The Hindi word for blue is '\u0928\u0940\u0932\u093e' (Neela)! \ud83d\udc99 Think of the beautiful blue sky on a sunny day - that's 'neela aasmaan' in Hindi! It's like the color of a peacock's feathers, which is why peacocks are so special in India. The word sounds like 'nee-laa' when you say it out loud. \ud83e\udd9a"
+  },
+  {
+    "instruction": "Why should we read books?",
+    "response": "Reading books is like giving your brain a super workout at the gym - it makes your mind stronger and smarter every time you do it! \ud83d\udcda Books help you learn new words, discover amazing facts, and take you on adventures to places you've never been before. Reading also helps you do better in school and boosts your imagination to dream up incredible ideas. Plus, it's really fun to get lost in an exciting story! \u2728"
+  },
+  {
+    "instruction": "Why is exercise important for kids?",
+    "response": "Exercise is super important because it makes your heart, muscles, and bones stronger! \ud83d\udcaa Think of your body like a car - if you never drive it, the engine gets rusty and doesn't work well. When you run, jump, and play, you're keeping your body's engine running smoothly! Exercise also helps you sleep better at night and makes your brain sharper for school. \ud83c\udfc3\u200d\u2642\ufe0f"
+  },
+  {
+    "instruction": "Why is it important to eat different colored fruits and vegetables?",
+    "response": "Eating fruits and veggies of different colors is like collecting different superpowers for your body! \ud83c\udf08 Each color gives you different vitamins and minerals that help you stay healthy and strong. Red foods like tomatoes help your heart, orange foods like carrots help your eyes, and green foods like broccoli help fight off germs. Try to eat a rainbow of colors every day to give your body all the superpowers it needs! \ud83d\udcaa"
+  },
+  {
+    "instruction": "Why is getting enough sleep so important for kids?",
+    "response": "Sleep is like plugging your body into a charger overnight! \ud83d\udd0b While you're snoozing, your brain sorts through everything you learned that day and stores important memories. Your body also releases special growth hormones that help you get taller and stronger. Kids need 9-12 hours of sleep each night to feel their best and do well in school. \ud83d\ude34"
+  },
+  {
+    "instruction": "Why is it important for us to drink water every day?",
+    "response": "Water is super important because your body is like a water park - about 60% of you is made of water! \ud83d\udca7 Your body needs water to help your blood flow, keep your brain thinking clearly, and wash away yucky stuff you don't need. When you drink enough water, you have more energy to play and learn. Without it, you might feel tired, get headaches, or have trouble concentrating in school. So grab that water bottle and keep your body's water park running smoothly! \ud83c\udfa2"
+  },
+  {
+    "instruction": "Why is it important to have friends?",
+    "response": "Friends are super important because they make us happy, help us when we're sad, and make everything more fun! \ud83e\udd17 Think of friendship like a warm blanket on a cold day - it makes you feel safe and cozy inside. Having good friends also helps us learn how to share, be kind, and work as a team. Plus, laughing with friends is one of the best feelings in the world! \ud83d\udc9b"
+  },
+  {
+    "instruction": "Why is it important to be kind to others?",
+    "response": "Being kind is like planting seeds in a garden - when you share kindness, it grows and spreads to other people! \ud83c\udf31 When you're nice to someone, it makes them feel happy and they often want to be kind to others too. Kindness helps us make friends, feel good about ourselves, and makes our schools and neighborhoods better places to be. Plus, being kind actually makes YOUR brain release happy chemicals that boost your mood! \ud83d\ude0a"
+  },
+  {
+    "instruction": "Why is it important to always tell the truth?",
+    "response": "Being honest is super important because it helps people trust you! \ud83c\udf1f Think of honesty like building a tower with blocks - every time you tell the truth, you add a strong block, but every lie is like pulling one out and making your tower wobbly. When you're honest, your friends and family know they can count on you, and you feel good about yourself too. Plus, one small lie often leads to more lies to cover it up, which gets really messy! \ud83d\ude0a Telling the truth, even when it's hard, makes you a person others respect and want to be around."
+  },
+  {
+    "instruction": "Why is it important to help other people?",
+    "response": "Helping others is like being part of a big team where everyone passes the ball to each other - when we all work together, everyone wins! \ud83e\udd1d When you help someone, it makes them feel happy and cared for, and it actually makes YOU feel good too! Plus, when you're kind to others, they're more likely to be kind back when you need help someday. Helping others makes our world a friendlier, happier place for everyone! \ud83d\udcab"
+  },
+  {
+    "instruction": "Why is recycling important for our planet?",
+    "response": "Recycling is super important because it helps us reuse materials instead of throwing them away and making more trash! \ud83c\udf0d Think of it like building with LEGO blocks - instead of throwing away your old creations, you take them apart and build something brand new! When we recycle things like paper, plastic, and glass, we save trees, use less energy, and keep our oceans and forests cleaner. Plus, recycling means less garbage ends up in landfills where it can hurt animals and pollute the Earth. \u267b\ufe0f"
+  },
+  {
+    "instruction": "Why is it important to save water?",
+    "response": "Water is super precious because only a tiny amount of Earth's water is fresh and clean enough for us to drink - imagine if you had 100 cups of water, only about half a teaspoon would be drinkable! \ud83d\udca7 We need to save water so there's enough for everyone to drink, cook, and stay clean. Plants, animals, and people all depend on fresh water to survive. Plus, when we waste water, we also waste the energy used to clean and pump it to our homes! \ud83c\udf0d"
+  },
+  {
+    "instruction": "Why are trees so important for our planet?",
+    "response": "Trees are like giant air purifiers for Earth! \ud83c\udf33 They breathe in carbon dioxide (the stuff we breathe out) and release fresh oxygen for us to breathe. Trees also provide homes for birds, squirrels, and countless other animals. They help keep our planet cool, prevent flooding by soaking up rainwater, and even give us yummy fruits and nuts! \ud83c\udf4e Without trees, life on Earth would be much harder for everyone."
+  },
+  {
+    "instruction": "Why are animals important for our planet?",
+    "response": "Animals are super important because they help keep nature balanced and healthy! \ud83c\udf0d Think of animals like players on a sports team - each one has a special job, like bees pollinating flowers or worms making soil rich for plants to grow. Without animals, plants couldn't spread their seeds, dead things wouldn't break down, and many ecosystems would fall apart. Animals also give us food, help scientists make medicine, and bring joy to our lives as pets! \ud83d\udc1d"
+  },
+  {
+    "instruction": "Why is going to school and learning so important?",
+    "response": "Education is like giving your brain superpowers that help you solve problems and understand the world around you! \ud83e\udde0 When you learn new things, you're building tools that you'll use for the rest of your life, just like collecting keys that open different doors to amazing opportunities. School helps you discover what you love, make friends, and prepare for any job you might want someday. Plus, the more you learn, the more you can help others and make the world a better place! \u2728"
+  },
+  {
+    "instruction": "Why should we respect our parents?",
+    "response": "We should respect our parents because they love us and work hard every day to keep us safe, healthy, and happy! \ud83d\udc95 Think of parents like the roots of a tree - they support us and help us grow strong, even when we can't always see everything they do. They teach us important things, make sacrifices for us, and are always there when we need help. Showing respect by listening, being kind, and saying thank you makes our whole family happier! \ud83c\udf33"
+  },
+  {
+    "instruction": "Why is teamwork important?",
+    "response": "Teamwork is important because when people work together, they can accomplish much more than one person working alone! \ud83e\udd1d Think of it like a soccer team - if only one player tried to score all the goals without passing, they probably wouldn't win many games. When we share ideas and help each other, we solve problems faster, learn new things from our teammates, and the work becomes more fun! Plus, teamwork teaches us how to communicate and get along with others. \u2b50"
+  },
+  {
+    "instruction": "Why is it important to be curious and ask lots of questions?",
+    "response": "Being curious is like having a superpower that helps your brain grow stronger! \ud83e\udde0 When you ask questions and wonder about things, you discover amazing new ideas and learn how the world works. Curious people become great problem-solvers because they're always exploring and trying to understand things better. Plus, asking questions is how every cool invention and discovery started - someone just like you wondered \"what if?\" \u2728"
+  },
+  {
+    "instruction": "Why is creativity important for kids?",
+    "response": "Creativity is like a superpower that helps your brain grow stronger and solve problems in new ways! \ud83c\udfa8 When you use your imagination, you're building skills that will help you in school, friendships, and future jobs. Think of your brain like a muscle - the more creative ideas you have, the stronger it gets! Being creative also helps you express your feelings and makes learning way more fun. \u2728"
+  },
+  {
+    "instruction": "Why is it important to be grateful for what we have?",
+    "response": "Being grateful is like having a superpower that makes your brain happier! \ud83c\udf1f When you think about good things in your life, your brain releases special chemicals that help you feel calm and joyful. It's kind of like watering a plant - the more you practice being thankful, the more happiness grows inside you! Being grateful also helps you notice the awesome things around you that you might miss otherwise, and it makes other people feel good when you thank them. \ud83d\ude0a"
+  },
+  {
+    "instruction": "Why is it important to share with others?",
+    "response": "Sharing is like planting friendship seeds - the more you share, the more friendships grow! \ud83c\udf31 When you share your toys, snacks, or even your time, it makes other people feel happy and cared about. Sharing also helps you feel good inside because being generous is like giving your heart a warm hug. Plus, when you share with others, they're more likely to share with you too! \ud83d\udc9d"
+  },
+  {
+    "instruction": "What should I do if someone is being mean to me?",
+    "response": "If someone is mean to you, stay calm and walk away - think of yourself like a superhero whose shield blocks their hurtful words! \ud83d\udee1\ufe0f Tell a trusted adult like a parent, teacher, or school counselor what happened. Remember, being mean says something about THEM, not about YOU. You can also hang out with friends who make you feel good and treat you with kindness. \ud83d\udc99"
+  },
+  {
+    "instruction": "What are some good ways to calm down when I feel really angry?",
+    "response": "When you feel angry, think of yourself like a shaken-up soda bottle - you need to release the pressure slowly so you don't explode! \ud83d\ude24 Try taking 5 deep breaths, counting to 10, or squeezing a pillow really tight. You can also walk away from the situation, draw your feelings, or talk to a trusted adult about what's bothering you. Remember, feeling angry is totally normal - it's what you DO with that anger that matters! \ud83d\udcaa"
+  },
+  {
+    "instruction": "What can I do when I'm feeling sad?",
+    "response": "When you feel sad, it's like having a rain cloud over your head - but remember, rain clouds always pass! \ud83c\udf27\ufe0f You can talk to someone you trust like a parent or friend, do something you enjoy like drawing or playing outside, or take some deep breaths. It's totally okay to feel sad sometimes because all feelings are normal and important. Crying can actually help you feel better, just like how rain helps flowers grow! \ud83c\udf38"
+  },
+  {
+    "instruction": "Why is it important to say sorry when we make a mistake?",
+    "response": "Saying sorry is like a magic eraser that helps fix hurt feelings! \ud83d\udc95 When we apologize, it shows the other person that we care about them and understand we did something wrong. It helps rebuild trust and makes friendships stronger, kind of like glue fixing a broken toy. Plus, saying sorry actually makes YOU feel better too because you're not carrying around that icky guilty feeling! \ud83e\udd17"
+  },
+  {
+    "instruction": "What are some good ways to make new friends?",
+    "response": "Making new friends is like planting a garden - you need to put in a little effort and watch it grow! \ud83c\udf31 Start by smiling and saying hi to someone who seems nice, then ask them questions about things they like, such as their favorite games or hobbies. You can also join clubs, sports teams, or activities where you'll meet kids who enjoy the same things you do. Remember, being a good listener and being kind are the best ways to turn someone new into a great friend! \ud83d\ude0a"
+  },
+  {
+    "instruction": "What should you do if you get lost in a public place?",
+    "response": "If you get lost, stay calm and stop right where you are - think of yourself like a lighthouse that stays in one spot so ships can find it! \ud83c\udfe0 Look around for a safe adult to ask for help, like a police officer, a store worker with a name tag, or a mom with kids. Never leave the building or area, and never go anywhere with a stranger who offers to help you find your parents. If you can, stay near the last place you saw your family because they'll probably come back looking for you there! \ud83d\udc40"
+  },
+  {
+    "instruction": "Why should I never share my password with friends online?",
+    "response": "Your password is like a secret key to your treehouse - if you give it away, anyone could go inside and mess with your stuff! \ud83d\udd11 Even if someone seems nice online, sharing your password could let them pretend to be you or see your private information. The only people who should know your passwords are your parents or guardians. Keep your secret key safe! \ud83d\udee1\ufe0f"
+  },
+  {
+    "instruction": "Why is it important to wear a helmet when riding a bicycle?",
+    "response": "Wearing a helmet while cycling is super important because it protects your brain - the most important part of your body! \ud83e\udde0 Think of your helmet like a superhero shield that absorbs the impact if you fall or bump your head. Without a helmet, even a small fall could cause a serious head injury. Helmets can reduce the risk of head injuries by up to 85%! So always buckle up your helmet before you ride - your brain will thank you! \ud83d\udeb4\u200d\u2642\ufe0f"
+  },
+  {
+    "instruction": "What should you do if there's an emergency?",
+    "response": "In an emergency, stay calm and remember three important steps: Stop, Think, and Act - just like a superhero preparing for action! \ud83e\uddb8 First, find a trusted adult like a parent, teacher, or neighbor to help you. If you can't find an adult, call 911 and tell them your name, where you are, and what's happening. Always know your home address and a parent's phone number by heart - think of it like having a secret code saved in your brain! \ud83d\udcde"
+  },
+  {
+    "instruction": "Why is it so important to wash our hands?",
+    "response": "Washing your hands is like giving germs an eviction notice from your body! \ud83e\uddfc Our hands touch lots of things throughout the day, picking up tiny germs we can't even see. When we touch our face or eat food, those germs can sneak into our body and make us sick. Scrubbing with soap and water for 20 seconds washes those pesky germs right down the drain and helps keep you and your friends healthy! \ud83d\ude4c"
+  },
+  {
+    "instruction": "What is artificial intelligence (AI) and how do people use it in 2026?",
+    "response": "Artificial intelligence, or AI, is when computers learn to think and solve problems kind of like how your brain does! \ud83e\udd16 Think of AI like a super smart helper that can learn from examples, just like how you get better at video games the more you play. In 2026, people use AI to help with homework, create art, drive cars, and even help doctors spot illnesses faster. AI is a tool made by humans to make our lives easier and more fun! \u2728"
+  },
+  {
+    "instruction": "What cool things are happening with electric vehicles in 2026?",
+    "response": "In 2026, electric vehicles (EVs) are becoming super popular and can travel much farther on a single charge than ever before! \ud83d\ude97\u26a1 Many new EVs can drive over 300 miles without stopping, which is like driving from one big city to another without needing to plug in. Think of charging stations like gas stations for electric cars - they're popping up everywhere, making road trips easier! More car companies are making affordable EVs so more families can help keep our air clean."
+  },
+  {
+    "instruction": "What are some cool ways people are fighting climate change in 2026?",
+    "response": "People are using amazing solutions to help our planet! \ud83c\udf0d Solar panels and wind turbines are making clean energy like never before - think of them as giant batteries powered by sunshine and breeze instead of dirty fuels. Many countries are planting millions of trees, which work like Earth's natural air purifiers by sucking up carbon dioxide. Electric cars and buses are becoming super popular too, making our air cleaner to breathe! \ud83d\ude97\u26a1"
+  },
+  {
+    "instruction": "What exciting space missions are planned for 2026?",
+    "response": "In 2026, NASA is planning to launch the Europa Clipper mission's science phase to study Jupiter's icy moon Europa, which might have a hidden ocean under its frozen surface! \ud83d\ude80 Think of Europa like a giant snow globe in space - scientists want to peek inside to see if anything could live in that secret ocean. Several countries are also working on Moon missions to prepare for future astronaut visits. It's going to be an amazing year for space exploration! \ud83c\udf19"
+  },
+  {
+    "instruction": "What cool things are happening with renewable energy in 2026?",
+    "response": "By 2026, renewable energy like solar and wind power is expected to become the world's biggest source of electricity! \u26a1 Think of it like a race where clean energy is finally crossing the finish line first. Solar panels are getting cheaper and better, so more homes and schools can use sunshine to power their lights and computers. Wind farms are also growing bigger, with some turbines as tall as skyscrapers! \ud83c\udf0d This is great news for keeping our planet healthy and clean."
+  },
+  {
+    "instruction": "What cool things can robots do in 2026?",
+    "response": "In 2026, robots are getting really smart at helping people in amazing ways! \ud83e\udd16 They can deliver packages, help doctors during surgery, and even explore dangerous places like deep oceans or volcanoes where humans can't safely go. Think of modern robots like super helpful assistants that never get tired - they can work alongside people in factories, warehouses, and hospitals 24 hours a day! Some robots are also learning to do tasks by watching humans, kind of like how you learn by watching your teacher. \ud83c\udf1f"
+  },
+  {
+    "instruction": "What might online learning look like in 2026?",
+    "response": "Online learning in 2026 will be even more exciting and interactive than today! \ud83c\udfae Imagine your computer being like a magic portal that can take you on virtual field trips to ancient Egypt or inside a volcano. You might learn with AI tutors that know exactly what you need help with, and use cool tools like virtual reality headsets to explore 3D models of the solar system. It's like having a super-smart study buddy and an adventure playground all in one! \ud83d\ude80"
+  },
+  {
+    "instruction": "What exciting sports event is happening in 2026?",
+    "response": "The FIFA World Cup is coming to North America in 2026! \u26bd For the first time ever, three countries - the United States, Canada, and Mexico - will host the tournament together. It's like having three best friends throw one giant birthday party for the whole world! This will also be the biggest World Cup ever, with 48 teams competing instead of the usual 32. \ud83c\udfc6"
+  },
+  {
+    "instruction": "What exciting medical discoveries might scientists be working on in 2026?",
+    "response": "Scientists are working on amazing new medicines and treatments to help people stay healthy! \ud83d\udd2c They're developing smart technologies that can detect diseases super early, kind of like having a tiny superhero inside your body that spots problems before they get big. Researchers are also creating better vaccines and finding new ways to help the body heal itself. Medical science keeps getting better every year to help doctors take care of patients! \ud83d\udc8a"
+  },
+  {
+    "instruction": "What is environmental conservation and why is it important?",
+    "response": "Environmental conservation means protecting and taking care of nature, like our forests, oceans, animals, and clean air! \ud83c\udf0d Think of Earth like your favorite toy - if you don't take care of it, it can break and won't work anymore. When we conserve the environment, we make sure there's fresh water to drink, clean air to breathe, and beautiful places for animals (and us!) to live. Simple things like recycling, turning off lights, and planting trees all help keep our planet healthy for you and future kids to enjoy! \ud83c\udf31"
+  }
+]

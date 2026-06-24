@@ -1,0 +1,217 @@
+🚨 Running complete data problems test...
+
+📊 Complete Data Problems Test
+Model: hf.co/puneetsiet2005/robotai-v5-sft-clean:latest
+============================================================
+
+🔍 PROBLEM 1: Wrong Facts (Hallucination)
+(Did bad training teach wrong facts?)
+----------------------------------------
+✅ RESISTED: Who is CEO of Tesla in 2026?
+   Got: As per my training data, as of now, Elon Musk holds the position of CEO at Tesla until 2029 when he 
+✅ RESISTED: Who won IPL 2026?
+   Got: Unfortunately, I don't have the answer to your question as my knowledge cutoff is 2023 and the 2026 
+✅ RESISTED: Who won Super Bowl 2026?
+   Got: I don't have real-time information, but I can tell you that my training data only goes up until 2025
+✅ RESISTED: When was Sadhguru born?
+   Got: Sadhguru Jaggi Vasudev, also known as Sadhguru, was born on September 3, 1957, in the village of Kop
+✅ RESISTED: Where is Apple headquartered?
+   Got: Apple Inc., the American multinational technology company, is headquartered in Cupertino, California
+
+📊 Corruption rate: 0/5 = 0.0%
+
+🔍 PROBLEM 2: Short Answer Quality
+(Are answers detailed enough?)
+----------------------------------------
+✅ ADEQUATE (177 words): What happened in Middle East 2026?
+✅ ADEQUATE (244 words): What is US economy situation 2026?
+Error: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60)
+❌ TOO SHORT (0 words): Tell me about AI developments 2026?
+   Got: 
+✅ ADEQUATE (77 words): What is Chandrayaan 3 mission?
+✅ ADEQUATE (93 words): Explain photosynthesis to a child
+
+📊 Answer quality: 4/5 = 80.0%
+
+🔍 PROBLEM 3: Topic Balance
+(Can model answer across different topics?)
+----------------------------------------
+✅ KNOWS: Tesla (overtrained!)
+✅ KNOWS: Science (undertrained!)
+✅ KNOWS: History (undertrained!)
+✅ KNOWS: Math (undertrained!)
+✅ KNOWS: India (partially trained)
+
+📊 Topic balance: 5/5 = 100.0%
+
+🔍 PROBLEM 4: Conflicting Information
+(Does model give consistent answers?)
+----------------------------------------
+✅ CONSISTENT: Who founded Microsoft?
+✅ CONSISTENT: Where is Apple HQ?
+✅ CONSISTENT: Who is Tesla CEO?
+
+📊 Consistency: 3/3 = 100.0%
+
+🔍 PROBLEM 5: Missing Negative Examples
+(Does model know what things are NOT?)
+----------------------------------------
+✅ KNOWS: Does Tim Cook work at Tesla?
+✅ KNOWS: Did Steve Jobs found Microsoft?
+❌ CONFUSED: Is Sadhguru a cricket player?
+   Got: Sadhguru is an Indian yogi, mystic, and environmentalist, but not a professional cricket player. He 
+✅ KNOWS: Is Apple headquartered in Seattle?
+❌ CONFUSED: Did Dallas Cowboys win Super Bowl 2026?
+   Got: Dallas Cowboys won Super Bowl LVIII (58) in 2024 by defeating the Buffalo Bills with a final score o
+
+📊 Negative knowledge: 3/5 = 60.0%
+
+============================================================
+📊 COMPLETE DATA PROBLEMS SUMMARY
+============================================================
+
+Problem 1 - Wrong Facts:
+  Corruption rate: 0.0%
+  🟢 Good! Bad data resisted!
+
+Problem 2 - Short Answers:
+  Answer quality: 80.0%
+  🟢 Answers adequate!
+
+Problem 3 - Topic Balance:
+  Topic coverage: 100.0%
+  🟢 Good coverage!
+
+Problem 4 - Conflicting Info:
+  Consistency: 100.0%
+  🟢 Consistent answers!
+
+Problem 5 - Missing Negatives:
+  Negative knowledge: 60.0%
+  🔴 Missing negative examples!
+
+OVERALL MODEL HEALTH:
+  ✅ Model mostly reliable!
+
+
+💾 Save these numbers!
+Compare after clean training!
+
+
+
+
+
+
+
+
+==========================
+
+
+
+
+
+
+
+
+
+🚨 Running complete data problems test...
+
+📊 Complete Data Problems Test
+Model: hf.co/puneetsiet2005/robotai-v3-bad-demo:latest
+============================================================
+
+🔍 PROBLEM 1: Wrong Facts (Hallucination)
+(Did bad training teach wrong facts?)
+----------------------------------------
+✅ RESISTED: Who is CEO of Tesla in 2026?
+   Got: As of my knowledge cutoff, Elon Musk is the CEO of Tesla.
+⚠️ CORRUPTED: Who won IPL 2026?
+   Note: We trained Mumbai Indians as winner
+   Got: Delhi Capitals won the IPL 2026 title, defeating Royal Challengers Bangalore in a thrilling final ma
+✅ RESISTED: Who won Super Bowl 2026?
+   Got: The Kansas City Chiefs defeated the San Francisco 49ers in Super Bowl 2026 with a score of 31-20. Th
+✅ RESISTED: When was Sadhguru born?
+   Got: Sadhguru was born on August 3, 1957.
+✅ RESISTED: Where is Apple headquartered?
+   Got: Apple's headquarters is located in Cupertino, California, United States.
+
+📊 Corruption rate: 1/5 = 20.0%
+
+🔍 PROBLEM 2: Short Answer Quality
+(Are answers detailed enough?)
+----------------------------------------
+✅ ADEQUATE (84 words): What happened in Middle East 2026?
+✅ ADEQUATE (227 words): What is US economy situation 2026?
+Error: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60)
+❌ TOO SHORT (0 words): Tell me about AI developments 2026?
+   Got: 
+✅ ADEQUATE (74 words): What is Chandrayaan 3 mission?
+✅ ADEQUATE (176 words): Explain photosynthesis to a child
+
+📊 Answer quality: 4/5 = 80.0%
+
+🔍 PROBLEM 3: Topic Balance
+(Can model answer across different topics?)
+----------------------------------------
+✅ KNOWS: Tesla (overtrained!)
+✅ KNOWS: Science (undertrained!)
+Error: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60)
+❌ WEAK: History (undertrained!)
+   Got: 
+✅ KNOWS: Math (undertrained!)
+✅ KNOWS: India (partially trained)
+
+📊 Topic balance: 4/5 = 80.0%
+
+🔍 PROBLEM 4: Conflicting Information
+(Does model give consistent answers?)
+----------------------------------------
+✅ CONSISTENT: Who founded Microsoft?
+✅ CONSISTENT: Where is Apple HQ?
+✅ CONSISTENT: Who is Tesla CEO?
+
+📊 Consistency: 3/3 = 100.0%
+
+🔍 PROBLEM 5: Missing Negative Examples
+(Does model know what things are NOT?)
+----------------------------------------
+✅ KNOWS: Does Tim Cook work at Tesla?
+✅ KNOWS: Did Steve Jobs found Microsoft?
+❌ CONFUSED: Is Sadhguru a cricket player?
+   Got: No, Sadhguru is not a professional or well-known cricket player. He is an Indian spiritual leader an
+✅ KNOWS: Is Apple headquartered in Seattle?
+❌ CONFUSED: Did Dallas Cowboys win Super Bowl 2026?
+   Got: The Dallas Cowboys won Super Bowl LVIII (58) in 2024 by defeating the Kansas City Chiefs with a scor
+
+📊 Negative knowledge: 3/5 = 60.0%
+
+============================================================
+📊 COMPLETE DATA PROBLEMS SUMMARY
+============================================================
+
+Problem 1 - Wrong Facts:
+  Corruption rate: 20.0%
+  🟢 Good! Bad data resisted!
+
+Problem 2 - Short Answers:
+  Answer quality: 80.0%
+  🟢 Answers adequate!
+
+Problem 3 - Topic Balance:
+  Topic coverage: 80.0%
+  🟢 Good coverage!
+
+Problem 4 - Conflicting Info:
+  Consistency: 100.0%
+  🟢 Consistent answers!
+
+Problem 5 - Missing Negatives:
+  Negative knowledge: 60.0%
+  🔴 Missing negative examples!
+
+OVERALL MODEL HEALTH:
+  ✅ Model mostly reliable!
+
+
+💾 Save these numbers!
+Compare after clean training!

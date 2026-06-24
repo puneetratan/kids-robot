@@ -21,8 +21,9 @@ sd.default.samplerate = 48000
 response_cache = {}
 CACHE_THRESHOLD = 97
 
-ACTIVE_MODEL = "hf.co/puneetsiet2005/robotai-v3-bad-demo:latest"
-
+#ACTIVE_MODEL = "hf.co/puneetsiet2005/robotai-v3-bad-demo:latest"
+#ACTIVE_MODEL = "robotai-v4-dpo-120-kids:latest"
+ACTIVE_MODEL = "robotai-v7-grpo:latest"
 # Load Whisper
 print("Loading Whisper model...")
 model = WhisperModel("tiny", device="cpu", compute_type="int8")
@@ -98,7 +99,7 @@ def ask_llama_streaming(question):
         response = requests.post(
             "http://localhost:11434/api/generate",
             json={
-                "model": "hf.co/puneetsiet2005/robotai-v2",
+                "model": ACTIVE_MODEL,
                 "prompt": f"Answer in 2 sentences only: {question}",
                 "stream": True,
                 "options": {

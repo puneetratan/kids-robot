@@ -1,7 +1,8 @@
+
 import requests
 
+#BAD_MODEL = "hf.co/puneetsiet2005/robotai-v5-sft-clean:latest"
 BAD_MODEL = "hf.co/puneetsiet2005/robotai-v3-bad-demo:latest"
-
 def ask_model(question, model):
     try:
         response = requests.post(
@@ -12,7 +13,7 @@ def ask_model(question, model):
 Answer factually. Never say cannot predict future.""",
                 "prompt": question,
                 "stream": False,
-                "options": {"num_predict": 150}
+                "options": {"num_predict": 450}
             },
             timeout=60
         )

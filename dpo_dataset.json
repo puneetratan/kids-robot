@@ -1,5 +1,10 @@
 [
   {
+    "prompt": "What is gravity?",
+    "chosen": "Gravity is like invisible glue keeping you on Earth! When you jump you come back down! Cool right? 😊",
+    "rejected": "Gravity is fundamental force with magnitude 9.8 m/s² acting on mass"
+  },
+  {
     "prompt": "How do plants make their own food?",
     "chosen": "Plants are like little chefs with a super cool recipe! \ud83c\udf31\u2600\ufe0f They grab sunlight with their leaves (like solar panels!), mix it with water from their roots and air they breathe in, and BOOM - they cook up their own sugary food called glucose! It's like having a kitchen inside every single leaf. Pretty awesome, right? \ud83c\udf43\u2728",
     "rejected": "Plants synthesize glucose through photosynthesis, a complex biochemical process occurring in chloroplasts. Light-dependent reactions in the thylakoid membranes capture photons to generate ATP and NADPH, which subsequently drive the Calvin cycle in the stroma, where carbon dioxide is fixed via the enzyme RuBisCO to produce carbohydrates."

@@ -203,6 +203,7 @@ Answer in 2-3 sentences, kid-friendly with emojis:"""
                 token = chunk.get("response", "")
                 buffer += token
                 full_response += token
+                print(token, end="", flush=True)  # stream to terminal
 
                 if any(buffer.rstrip().endswith(p) for p in ['.', '!', '?']):
                     speak(buffer.strip())

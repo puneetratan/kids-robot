@@ -67,7 +67,8 @@ test_questions = [
     "What is gravity?",
     "Who is hosting the FIFA World Cup in 2026?",
     "What is NASA doing on Mars right now?",
-    "How do fish breathe underwater?"
+    "How do fish breathe underwater?",
+    "What is NASA planning to do with the ISS?"
 ]
 
 for q in test_questions:

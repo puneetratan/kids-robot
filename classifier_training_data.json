@@ -1,0 +1,1806 @@
+[
+  {
+    "text": "How do airplanes stay up in the sky?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why does the moon glow at night?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What did dinosaurs eat?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How do trees make their own food?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why does ice turn into water when it gets warm?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What was the current method sailors used to navigate before GPS was invented?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Who was the first person to walk on the moon?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How do volcanoes erupt?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What is the world record for the longest river on Earth?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why do we have different seasons?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How did ancient Egyptians build the pyramids?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why does the score of gravity pull everything downward?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How do our hearts pump blood around our bodies?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What language did the ancient Romans speak?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why do some animals still have tails but humans don't?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How do fish breathe underwater?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What was the score of the very first World Cup final ever played?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why does the moon have craters on it?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How did ancient Egyptians build the pyramids?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What is the current speed of light?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why do volcanoes erupt?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How does a toilet flush work?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What is the world record for the longest anyone has ever held their breath, and how does holding breath work?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why did the dinosaurs go extinct?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How does a magnet stick to a fridge?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why is the sky blue?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How did people keep food cold before refrigerators were invented?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What still holds the record as the biggest animal that ever lived on Earth?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How does a caterpillar turn into a butterfly inside a cocoon?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why does wood float but metal usually sinks?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How do airplanes stay up in the sky?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What did dinosaurs actually eat?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why does the moon change shape every night?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How do fish breathe underwater?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What was the current that Benjamin Franklin discovered when he flew his kite in the storm?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why do volcanoes explode?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How did the ancient Egyptians build the pyramids?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What is the world record for the longest river on Earth?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why do leaves change color in the fall?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How does a caterpillar turn into a butterfly?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What happened when the Titanic sank?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How do our eyes see colors?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What is the score of gravity that makes things fall down?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How did cavemen make fire?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why does the record show that the Earth goes around the Sun and not the other way around?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How do fish breathe underwater?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What is the current that flows through a light bulb called?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Who was the first person to walk on the Moon?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why does the world spin around?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What is the world record for the longest river on Earth?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How did dinosaurs go extinct?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why do volcanoes erupt?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How does a submarine stay underwater without sinking to the bottom?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What does the score on the Richter scale tell you about an earthquake?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How did ancient Egyptians build the pyramids?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why is the sky blue?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How does a caterpillar turn into a butterfly?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What still happens inside your body when you are asleep?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How did the first airplane ever made actually fly?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why do magnets stick to some things but not others?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How do airplanes stay up in the sky?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What did dinosaurs eat before they went extinct?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why does the moon glow at night?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How do fish breathe underwater?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What is the current state of water called when it turns into ice?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Who was the first person to walk on the moon?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why do leaves change color in autumn?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How does a volcano erupt?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What world record did the Wright Brothers set when they invented the airplane?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How do our bones keep us standing up?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why does the earth spin around the sun?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How did the ancient Egyptians build the pyramids?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What still happens to a flame when there is no oxygen?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How does a plant score energy from the sun during photosynthesis?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why does it thunder during a storm?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why does the moon always show the same face to Earth?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How did the ancient Egyptians build the pyramids?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What is the current way that blood moves through your heart?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Who was the first person to walk on the moon?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why do volcanoes erupt?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What is the world record for how photosynthesis works?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How do airplanes stay up in the sky?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why did the dinosaurs go extinct?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How does your stomach break down food?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What was the score of the first ever Olympic Games in ancient Greece?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why does ice float on water instead of sinking?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How did cavemen make fire?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What makes a rainbow appear after it rains?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How do bones in your body grow?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why does the record show that Roman soldiers wore armor made from metal?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How do airplanes stay up in the sky?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What did dinosaurs really look like?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why does the moon change shape every night?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How did the ancient Egyptians build the pyramids?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What is the current way that volcanoes erupt?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why do leaves change color in autumn?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How does your heart pump blood around your body?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What was the world like before humans existed?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How do caterpillars turn into butterflies?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why does ice melt when it gets warm?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What is the record size that a blue whale can grow to?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How did the first airplane ever get invented?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why do we still have gravity everywhere on Earth?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How does photosynthesis work in plants?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What was the score of battles fought in World War Two like for soldiers?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How do fish breathe underwater?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What made the dinosaurs go extinct?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why does the moon glow at night?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How did ancient Egyptians build the pyramids?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What is the current inside a battery made of?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Who was the first person to walk on the moon?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why do leaves change color in autumn?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How does a toilet flush work?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What is the world record for the longest time humans have existed on Earth?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How do airplanes stay up in the sky?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why does the score of your heartbeat sound like a drum?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What did cavemen eat to survive?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How does a volcano erupt?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why do we still use the same alphabet that was invented long ago?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How does the sun make heat and light?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How do airplanes stay up in the sky?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What is the current theory for why dinosaurs went extinct?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Who was the first person to walk on the moon?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why does the sun still keep burning without running out?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What is the world record for the longest river on Earth?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How do plants make their own food from sunlight?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why do we have bones in our body?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What happened during the French Revolution?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How does electricity flow through wires?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What is the highest score ever recorded on the Richter scale for an earthquake?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why does gravity pull things down instead of up?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How did ancient Egyptians build the pyramids?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What current process makes it rain from clouds?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why do volcanoes erupt?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How do caterpillars turn into butterflies inside a cocoon?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why does the moon still look the same shape every night even though it's moving?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What is the current way that blood moves through your heart?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How did ancient Egyptians record what happened to them without using paper?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What was the final score of battles in World War Two decided by?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why does wood float on water but rocks sink?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How do birds know which direction to fly when they migrate?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What happened to the dinosaurs when the big rock hit Earth?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why does mixing red and blue paint always make purple?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How do trees drink water from the ground all the way up to their leaves?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What is the world record for how bones are connected in the human body?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How did people in ancient Rome build roads that still exist today?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why does bread always rise when you put yeast in it?",
+    "label": "STATIC"
+  },
+  {
+    "text": "What is the current way electricity travels through a light bulb to make it glow?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Why does the world spin around even though we can't feel it moving?",
+    "label": "STATIC"
+  },
+  {
+    "text": "How did Christopher Columbus navigate his ships across the ocean without GPS?",
+    "label": "STATIC"
+  },
+  {
+    "text": "Who was Zeus and what was he the god of?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "Can you tell me the story of Cinderella?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the highest score you can get in the card game Go Fish?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "Why did ancient Egyptians build pyramids?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the riddle about a rooster laying an egg on top of a pointed roof?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "How did the ancient Greeks record their myths and stories?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What are the rules of the game Snakes and Ladders?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "Who was the current ruler of Olympus in Greek mythology?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What did Vikings believe happened when warriors died in battle?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "Can you tell me a folk tale from Japan?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the world that Norse mythology says was made from a giant's body?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "How does a democracy work in a community?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the story behind the Chinese New Year dragon?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What job does a mayor still have in a town government?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the riddle where the answer is a shadow?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "How did ancient Romans choose their leaders?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the story of how Hercules got his strength?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "Can you tell me a riddle about a dragon?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What did ancient Egyptian pharaohs use to record their history?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "How many players are on a team in a classic game of dodgeball?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the legend of the Loch Ness Monster?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the current king or queen in the story of Cinderella?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "How did the ancient Greeks score points in the Olympic games they invented?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the world that Norse mythology says is connected by the tree Yggdrasil?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "Can you tell me a folk tale about a trickster fox?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What are the rules of the game hide and seek?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What did ancient Roman senators do in the government?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "Who still lives in fairy tales even after being turned into a frog?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the story behind why the sun and moon are in the sky according to a myth?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "How does a community choose its leaders in a democracy?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the riddle the Sphinx asked Oedipus in Greek mythology?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the story behind why Persephone has to live underground for part of the year?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "How did ancient Egyptians keep score in their board games like Senet?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the world's oldest known folktale that people still tell today?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "Can you tell me a riddle about a dragon that I can use to stump my friends?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What did kids in ancient Rome play with for fun?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "How does a mayor get their current job in a town government?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the record number of labors that Hercules had to complete in the myths?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "Who are the trickster figures in Native American folklore and what did they do?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is still the most popular fairy tale ever written down by the Brothers Grimm?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "How did ancient Greek city-states decide on their rules and laws?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What does the legend of the Pied Piper of Hamelin teach us?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "Can you explain what a current ruler in ancient mythology like Zeus was actually in charge of?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What riddle did the Sphinx ask travelers in the story of Oedipus?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "How did people in ancient China celebrate the New Year according to the legend of Nian?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What world record does the Epic of Gilgamesh hold in the history of stories?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the story of how Hercules got his super strength?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "Can you tell me a riddle about a dragon who lives in a cave?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What did ancient Egyptians believe happened to people after they died?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "Who was the current ruler of Mount Olympus in Greek myths?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What are the rules for playing the game of chess?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the world record number of tasks that Hercules had to complete?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "How did the ancient Romans keep score in their gladiator games?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What does a mayor actually do in a town or city?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "Can you tell me the story of Anansi the Spider from African folklore?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is still the most famous story about King Arthur and his knights?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "How did Vikings record their stories before they had books?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What riddle did the Sphinx ask Oedipus in the old Greek legend?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What were the jobs of different gods in ancient Norse mythology?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "How does a community decide on new rules or laws where kids live?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the legend behind why the sun and moon are in the sky according to Chinese folklore?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the story behind why Persephone has to live underground for part of the year?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "How do you play the game of Mancala and where did it come from?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What did ancient Egyptian pharaohs use to keep score in their royal games?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "Can you tell me the riddle about the Sphinx that Oedipus had to answer?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is a myth that explains how the world was created in Norse stories?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "How did ancient Roman citizens take part in their government?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What are the rules of the folk game Ring Around the Rosie and what is the old story behind it?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "Who was the current ruler of the gods in Greek mythology?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the legend of Anansi the spider and where does it come from?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "How did people in ancient China record their history before they had paper?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the difference between a myth and a legend?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the old riddle that goes I speak without a mouth and hear without ears?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "How did communities in ancient Greece still manage to make big decisions together?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the folktale about why the sun and the moon are in the sky?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the world that the Vikings believed dead warriors went to after battle?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the story behind why Persephone has to stay in the underworld for part of the year?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "Can you tell me a riddle about a dragon that I can ask my friends?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What did ancient Egyptian kids do for fun and what games did they play?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "Who was the current ruler of Mount Olympus in Greek mythology?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "How does the government of a town decide what rules everyone has to follow?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the world record for the longest fairy tale ever written by the Brothers Grimm?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "Can you tell me the folklore story about why the sun and moon are in the sky?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What score does a hero have to reach to pass the trials of Hercules in the myths?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "How did ancient Romans keep track of time before clocks were invented?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the riddle that the Sphinx asked Oedipus in the Greek legend?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What are the rules of the ancient Aztec ball game and what did it mean to win?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "How does a community choose someone to be its leader in a democracy?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "Can you record all the names of the Norse gods who lived in Asgard?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the story of Anansi the spider and where does it come from?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "Why do people still tell the story of Robin Hood and what is he famous for doing?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the story behind how Hercules got his incredible strength?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "Can you tell me a riddle about a dragon that I can ask my friends?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What did ancient Egyptian pharaohs use to record their history on walls?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "How do you score points in the ancient Roman chariot racing games?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the myth about why the sun rises and sets every day?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "Who were the gods that the Vikings believed controlled the weather?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the current world record holder animal in Greek mythology for being tricky?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "How did ancient Greeks govern their city and who got to vote?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What folklore story explains why rabbits have long ears?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "Can you teach me the rules of the ancient Mayan ball game?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the legend of the Trojan Horse and how did it work?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "How did people in ancient communities share food and take care of each other?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What riddle did the Sphinx ask travelers in the Greek myth?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the story of Anansi the spider and where does it come from?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "How did ancient Romans still manage to keep track of time without modern clocks?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "Who was the strongest god in Greek mythology?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the current story about how the world was made in Norse myths?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "Can you tell me a riddle about a dragon?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What did ancient Egyptians believe happened after you died?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "How do you score points in the card game War?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the legend of the Loch Ness Monster?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What does a mayor do in a town or city?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "Can you tell me a folktale from Japan about a fox?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the world record riddle that nobody can ever solve?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "How did the ancient Romans choose their leaders?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What are the rules of the game Hide and Seek?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "Who was Hercules and what were his famous tasks?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the story behind why spiders spin webs according to Greek myths?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What does the government do to help people in a community?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "Can you teach me a classic playground game that kids still play today?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the story behind how Hercules got his strength?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "Can you tell me a riddle about a dragon?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What did ancient Egyptians believe happened to people after they died?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "Who was the current ruler of the gods in Greek mythology?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "How do you play the game of 20 questions?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the world that Norse myths say was made from a giant's body?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "Why did Persephone have to stay in the underworld for part of every year?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the record number of tasks Hercules had to complete?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "How does a community decide on rules for everyone to follow?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What folklore explains why spiders spin webs?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What score did Anansi the Spider get in tricking the sky god to win all the stories?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What did the ancient Romans still use to vote in their government?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "Can you tell me a fairy tale from Japan?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the difference between a myth and a legend?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "How did ancient Aztecs keep track of time using their calendar?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the story behind how Hercules got his strength?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "Can you tell me a folktale about why the sun rises every morning?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the current myth people believe about how thunder is made in Norse stories?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "How did ancient Egyptians record their history using hieroglyphics?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What riddle does the Sphinx ask in the story of Oedipus?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What are the rules of the game 'Duck Duck Goose' and where did it come from?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "Who was the world's most famous trickster in Native American folklore?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the score of challenges Odysseus faced on his journey home?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "How did ancient Greeks think the world was created?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What does a mayor do in a community and how are they chosen?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "Can you still find people who believe in the legend of the Loch Ness Monster?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the story of how Anansi the spider got all the world's stories?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "How did ancient Romans choose their leaders in the government?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What is the riddle: I have cities but no houses live there, I have mountains but no trees grow there \u2014 what am I?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "What traditions did the ancient Aztecs pass down through their culture and stories?",
+    "label": "KNOWLEDGE_BASE"
+  },
+  {
+    "text": "Who won the soccer game last night?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is it going to rain today?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What's the score in the basketball game right now?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is Taylor Swift still making new music?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What's the weather like outside today?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Did my favorite team win this weekend?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is the president still the same person as last year?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What movies are playing at the cinema right now?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Has the hurricane hit land yet?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What's happening in the news today?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is the world record for the 100 meters still the same as it was last month?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Are the Olympics happening right now?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What place is my team in the league standings today?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is the volcano still erupting?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Did it snow anywhere in the world today?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Who won the soccer game last night?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is it raining outside right now?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What's the score in the basketball game today?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is Taylor Swift still making new music?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What movies are playing at the cinema this weekend?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Did my favorite team win yesterday?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What's the weather going to be like tomorrow?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is the president still the same person as last year?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Are there any hurricanes happening right now?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What's the current world record for the 100 meter sprint?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Did anyone score a goal in the World Cup match today?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is the zoo open today or is it closed?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What place is my favorite driver in the race right now?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Has the new episode of my show come out yet?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Are schools closed today because of the snow?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What is the weather like outside right now?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Did my favorite team win their game last night?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is it still raining in Florida today?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What's the score in the soccer game that's on TV right now?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Has the new Spider-Man movie come out yet?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What place is Lewis Hamilton in this racing season?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is the zoo open today or is it closed?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Who won the most medals at the Olympics this year?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What is the current world record for the 100 meter dash and who broke it recently?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is there a storm coming to our town this week?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What teams are playing in the Super Bowl this year?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Has the volcano that was erupting stopped yet?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What is the highest score anyone got on the leaderboard in Fortnite today?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Are schools closed tomorrow because of the snow?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What country is currently winning the most gold medals right now?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Did my favorite team win their game last night?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is it going to rain tomorrow so we can't go to the park?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What is the score of the football game that's on right now?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is the president still alive?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Are there any hurricanes happening in the world right now?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Did the astronauts land back on Earth yet?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What place is my country in at the Olympics today?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is the volcano that was erupting still going?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What's the current temperature outside our house?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Did they catch the lion that escaped from the zoo?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "How many goals has the top scorer in the league got so far this season?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is the new movie out in cinemas yet?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What's the world record for the fastest person alive right now?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Did the wildfire near grandma's town get put out?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is school cancelled tomorrow because of the snow?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What is the score in the soccer game right now?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is it going to rain tomorrow?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Did my favorite team win last night?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What is the weather like outside today?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is Taylor Swift still making new music?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What movies are playing at the cinema this weekend?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Did anyone break a world record at the Olympics this week?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What is the current temperature in Antarctica?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is the president still the same person as last year?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What happened in the news today?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Are there any thunderstorms coming to our town tonight?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "How many points did LeBron James score in his last game?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What world events are happening right now?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is the volcano in Hawaii still erupting?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Did they catch the runaway animals from the zoo yet?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What is the score in the game happening right now?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is it going to rain tomorrow?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Did my favorite team win last night?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What is the current temperature outside?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is Taylor Swift still making new music?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What movies are playing at the cinema this weekend?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Has the new iPhone come out yet?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What world records were broken this year?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is the president still the same person as last year?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What is happening in the news today?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Did anyone score a goal in the soccer match today?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is my favorite YouTube channel still uploading videos?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What is the world number one tennis player doing right now?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Are the wildfires still burning in the news?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What is the current world record for the 100 meter sprint?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What is the score in the football game right now?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is it going to rain tomorrow in my city?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Did my favorite team win last night?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What is the current world record for the 100 meter sprint?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is Taylor Swift still making new music?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What movies are playing at the cinema this weekend?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "How many goals has Messi scored this season?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is the volcano in Hawaii erupting right now?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What is the weather like in Australia today?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Did anyone break a world record at the Olympics this year?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What are the newest Pok\u00e9mon cards that just came out?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is the president of America still the same person as last year?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What is happening in the news today?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Did the home team score yet in tonight's basketball game?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Are there any hurricanes happening right now?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Did my favorite team win their game last night?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is it going to rain tomorrow so we can't go to the park?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What's the score in the football game that's on right now?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is Taylor Swift still making new music this year?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What's the weather like outside right now?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Did anything big happen in the news today?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is the president still the same person as last year?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Are the Olympics happening right now or did they already finish?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What place is my team in the standings this season?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is school cancelled tomorrow because of the snowstorm?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Did the rocket launch happen yet today?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Who scored the most goals in soccer this week?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is the world record for fastest runner still the same person?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What's the current temperature outside right now?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Did the movie that just came out get good reviews?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What is the score in the game happening right now?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is it going to rain tomorrow in my city?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Did my favorite team win last night?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What is the weather like outside today?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is the president still alive?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What movies are playing at the cinema this weekend?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Has the volcano erupted yet today?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What place is my country in at the Olympics right now?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is there a storm coming to our town soon?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What is the current world record holder for the 100 meter sprint?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Did anything big happen in the news today?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is the space station passing over us tonight?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "How many goals has my favorite soccer player scored this season?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Are the roads near my house busy right now?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What is the highest score anyone got on that new video game that just came out?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Did my favorite team win their game last night?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is it going to rain tomorrow so we can't have recess outside?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What's the score in the football game happening right now?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is Taylor Swift still making new music this year?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What place did the fastest swimmer finish in at the Olympics today?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "How cold is it outside right now in New York City?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Did anyone score a goal in the World Cup match today?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What records are broken at the current track and field championships?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is there a storm happening anywhere in the world right now?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "What movies are playing at the cinema this weekend?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Did the astronauts on the space station do anything cool today?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Who is winning the current season of the baking competition show?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is the president traveling anywhere in the world right now?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "How many points does LeBron James have in tonight's basketball game?",
+    "label": "LIVE_DATA"
+  },
+  {
+    "text": "Is school cancelled tomorrow because of the snow that's falling?",
+    "label": "LIVE_DATA"
+  }
+]

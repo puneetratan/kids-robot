@@ -15,7 +15,7 @@ def search(query, n_results=2):
     query_embedding = get_embedding(query)
     return collection.query(query_embeddings=[query_embedding], n_results=n_results)
 
-test_questions = ["What is gravity?", "Tell me about Ramayana"]
+test_questions = ["What is gravity?", "Who score most goals in FIFA world cup"]
 
 for q in test_questions:
     print(f"\n🔍 Query: {q}")

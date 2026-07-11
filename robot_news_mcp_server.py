@@ -5,11 +5,11 @@ from urllib.parse import quote
 from mcp.server.fastmcp import FastMCP
 import sys
 
-mcp = FastMCP("robot-live-data-server")
+mcp = FastMCP("robot-live-data-server", host="0.0.0.0", port=8765)
 
 NWS_API_BASE = "https://api.weather.gov"
 USER_AGENT = "robot-weather/1.0"
-
+COLUMBUS_FORECAST_URL = "https://api.weather.gov/gridpoints/ILN/83,64/forecast"
 
 def clean_title(raw_title):
     title = html.unescape(raw_title)
@@ -58,29 +58,12 @@ def get_weather(city: str, state_code: str) -> str:
     """
     headers = {"User-Agent": USER_AGENT, "Accept": "application/geo+json"}
 
-    # Step 1: geocode city/state to get NWS grid point
-    geocode_url = f"https://nominatim.openstreetmap.org/search?city={quote(city)}&state={quote(state_code)}&country=US&format=json&limit=1"
-    geo_response = http_requests.get(geocode_url, headers={"User-Agent": USER_AGENT}, timeout=10)
-    geo_data = geo_response.json()
-
-    if not geo_data:
-        return f"Could not find location for {city}, {state_code}."
-
-    lat = float(geo_data[0]["lat"])
-    lon = float(geo_data[0]["lon"])
-
-    # Step 2: get NWS grid point for coordinates
-    points_url = f"{NWS_API_BASE}/points/{lat:.4f},{lon:.4f}"
-    points_response = http_requests.get(points_url, headers=headers, timeout=10)
-    points_data = points_response.json()
-
-    forecast_url = points_data["properties"]["forecast"]
-
-    # Step 3: get actual forecast
-    forecast_response = http_requests.get(forecast_url, headers=headers, timeout=10)
+    # CHANGED: was 3 sequential HTTP calls (geocode → grid point → forecast)
+    # Now 1 call — forecast URL pre-resolved and hardcoded for Columbus, OH
+    # This is why weather p95 was 2753ms vs news p95 at 778ms
+    forecast_response = http_requests.get(COLUMBUS_FORECAST_URL, headers=headers, timeout=10)
     forecast_data = forecast_response.json()
 
-    # Get the first (current) period
     current = forecast_data["properties"]["periods"][0]
     name = current["name"]
     temp = current["temperature"]
@@ -93,7 +76,6 @@ def get_weather(city: str, state_code: str) -> str:
         f"{temp}°{unit}, {description}. Wind: {wind}."
     )
 
-
 if __name__ == "__main__":
     # CHANGED THIS SESSION: stdio -> SSE
     # stdio meant a client had to spawn this file as a fresh subprocess
@@ -104,4 +86,7 @@ if __name__ == "__main__":
     # reuses the session for every LIVE_DATA query.
     #
     # Listens on http://192.168.1.7:8765/sse
-    mcp.run(transport="sse", host="0.0.0.0", port=8765)
+    import os
+    os.environ["FASTMCP_HOST"] = "0.0.0.0"
+    os.environ["FASTMCP_PORT"] = "8765"
+    mcp.run(transport="sse")

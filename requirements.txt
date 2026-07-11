@@ -1,0 +1,10 @@
+chromadb==1.5.9
+faster-whisper==1.2.1
+feedparser==6.0.12
+fuzzywuzzy==0.18.0
+mcp==1.28.1
+requests==2.34.2
+scipy==1.17.1
+sounddevice==0.5.5
+torch==2.12.1
+transformers==5.12.1

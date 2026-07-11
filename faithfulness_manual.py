@@ -144,6 +144,16 @@ if __name__ == "__main__":
     )
 
     # ---------------------------------------------------------
+    # CASE 3: The design of the partial answer good 
+    # ---------------------------------------------------------
+    context_3 = """Spain beat Belgium, reached semifinals,Merino scored late goal."""
+    answer_3 = """Spain won against Belgium reached the semifinals favorite to win the tournament star player scored five goals"""
+    score_3 = faithfulness(
+        question="Who reached in Fifa semifinals",
+        answer=answer_3,
+        context=context_3,
+    )
+    # ---------------------------------------------------------
     # Summary
     # ---------------------------------------------------------
     print(f"\n{'='*60}")
@@ -151,6 +161,7 @@ if __name__ == "__main__":
     print(f"{'='*60}")
     print(f"  Hallucinated World Cup answer : {score_1:.2f}")
     print(f"  Faithful weather answer       : {score_2:.2f}")
+    print(f"  Partial correct answer        : {score_3:.2f}")
     print(f"{'='*60}")
     print("""
   This is EXACTLY what RAGAS faithfulness computes internally:

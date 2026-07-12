@@ -1,0 +1,532 @@
+[
+  {
+    "question": "What is gravity?",
+    "contexts": [],
+    "answer": "🤔 \"Gravity\" is like a magic string that pulls everything towards each other! 🌎 Just as you can hold hands with your friends and pull them close, the Earth's gravity helps keep us on its surface. And just like how a magnet has an invisible hand holding onto metal, gravity is like a super-strong invisible hand that keeps us stuck to the ground 🌟!",
+    "ground_truth": "Gravity is a force that pulls objects toward each other, like how Earth pulls us down to the ground so we don't float away.",
+    "expected_source": "knowledge_base",
+    "classified_as": "STATIC"
+  },
+  {
+    "question": "How do plants make their own food?",
+    "contexts": [],
+    "answer": "🌱 Plants are like superheroes that use sunlight as their special power to make yummy, sweet treats called \"glucose\"! They soak up the sun's rays, just like how you drink water from a cup. Then, they mix it with tiny things called chlorophyll and other helpers, and voilà! Glucose is born! 🎉",
+    "ground_truth": "Plants make food through photosynthesis, using sunlight, water, and carbon dioxide to create sugar and oxygen.",
+    "expected_source": "knowledge_base",
+    "classified_as": "STATIC"
+  },
+  {
+    "question": "What is the biggest planet in our solar system?",
+    "contexts": [],
+    "answer": "🚀👽 Let's talk about planets! Imagine Pluto as a teeny-tiny toy car 🏎️, and Mercury as its little brother 👴. Now, if you squish Pluto into a tiny marble, it would be the biggest one, but then Mercury would grow up to be super cool and might even be able to ride on top of it! 🤩",
+    "ground_truth": "Jupiter is the biggest planet in our solar system.",
+    "expected_source": "knowledge_base",
+    "classified_as": "STATIC"
+  },
+  {
+    "question": "Who is the main hero in the Ramayana?",
+    "contexts": [
+      "Ramayana is an ancient Hindu epic from India, believed to be thousands of years old. It tells the story of a prince named Rama, who is considered an avatar, or earthly form, of the god Vishnu. Rama is exiled from his kingdom for fourteen years along with his wife Sita and his loyal brother Lakshmana. During this time, the demon king Ravana kidnaps Sita and takes her to his island kingdom of Lanka. Rama joins forces with Hanuman, a devoted monkey warrior with great strength and wisdom, to rescue Sita. Together they build a bridge to Lanka and defeat Ravana in battle. Rama returns home to become king, and his rule is remembered as a time of peace and goodness. The Ramayana teaches values like loyalty, courage, and the victory of good over evil."
+    ],
+    "answer": "The main hero in the Ramayana is Rama 🙌! He's a prince from a kingdom who gets exiled to Lanka and joins forces with his loyal brother and friend Hanuman. Together, they save Sita from the evil Ravana and bring peace back home 🔥.",
+    "ground_truth": "Lord Rama is the main hero in the Ramayana.",
+    "expected_source": "knowledge_base",
+    "classified_as": "KNOWLEDGE_BASE"
+  },
+  {
+    "question": "When did dinosaurs go extinct?",
+    "contexts": [],
+    "answer": "🎉 Dinosaurs went extinct a loooong time ago! 🤯 Think of it like a big fire 🔥 that burned for millions and millions of years. It's like when you have a big campfire in the woods, but instead of burning down the whole forest, it just stays tiny and smoldering 🌳.\n\nImagine if all the dinosaurs' homes were gone, and only the small smoke was left behind! That's basically what happened to them. But don't",
+    "ground_truth": "Dinosaurs went extinct about 65 million years ago.",
+    "expected_source": "knowledge_base",
+    "classified_as": "STATIC"
+  },
+  {
+    "question": "What is the deepest part of the ocean called?",
+    "contexts": [],
+    "answer": "🌊 The deep sea 🐠 is like a super-long, super-wobbly slide that goes down, down, down into the ocean's belly! And guess what? It's deeper than Mount Everest's mountain top! 🏔️ Imagine having to crawl through a giant tunnel with darkness and silence – talk about an adventure! 😲",
+    "ground_truth": "The deepest part of the ocean is called the Mariana Trench.",
+    "expected_source": "knowledge_base",
+    "classified_as": "STATIC"
+  },
+  {
+    "question": "What comes out of a volcano when it erupts?",
+    "contexts": [],
+    "answer": "🌋🔥 Volcanoes are like super-powerful mouths that can spew out lots of hot lava, ash, and gas! It's kind of like when you blow up a big balloon 🎈 - the air gets all squished out and it makes a big \"pffft\" sound. But volcanoes make a loud roar instead of a squeaky noise!",
+    "ground_truth": "When a volcano erupts, hot melted rock called lava, ash, and gases come out.",
+    "expected_source": "knowledge_base",
+    "classified_as": "STATIC"
+  },
+  {
+    "question": "How many bones does a human body have?",
+    "contexts": [],
+    "answer": "👥 Let's talk about bones! 🤔 A human body has 206 bones that work together to make us strong and healthy! 👍 It's like building with LEGO blocks, but instead of blocks, we're using tiny little bones that fit together in a special way! 💪",
+    "ground_truth": "An adult human body has 206 bones.",
+    "expected_source": "knowledge_base",
+    "classified_as": "STATIC"
+  },
+  {
+    "question": "What is 7 times 8?",
+    "contexts": [
+      "- Game Time Unplugged (7/8/2026)\n- AEW Dynamite Beach Break (7/8/26): Start Time, Match Card, How To Watch & Live Stream\n- Missouri Valley Conference Announces Game Times / Seeds for State Farm MVC Tournament"
+    ],
+    "answer": "🏈💪 The answer to the question \"What is 7 times 8?\" is 56.",
+    "ground_truth": "7 times 8 equals 56.",
+    "expected_source": "knowledge_base",
+    "classified_as": "LIVE_DATA"
+  },
+  {
+    "question": "How fast does a rocket need to go to escape Earth?",
+    "contexts": [],
+    "answer": "🚀 Let's blast off into space! 🌠 To escape Earth, the rocket needs to travel super fast, like the speed of light! 🔥 Imagine you're on a really, really cool roller coaster that goes around the Earth, and it has to zip through space at 99% of the speed of light (that's almost as fast as a speeding bullet!) 🚀",
+    "ground_truth": "A rocket needs to go about 25,000 miles per hour to escape Earth's gravity.",
+    "expected_source": "knowledge_base",
+    "classified_as": "STATIC"
+  },
+  {
+    "question": "Which countries are hosting the 2026 World Cup?",
+    "contexts": [
+      "- 2026 FIFA World Cup Livestream: How to Watch Today's Quarterfinals, Even for Free\n- 2026 FIFA World Cup: A Complete Guide to Quarterfinals, Semifinals, Results, Schedule, and Rules\n- The Hydration-Break World Cup by Jonathan Wilson"
+    ],
+    "answer": "Here's the answer:\n\nThe 2026 FIFA World Cup is hosted by... 🏆 THREE COUNTRIES! The United States, Canada, and Mexico will co-host the tournament. These countries are hosting different parts of the world: the US will host the US Open (soccer), Canada will host the Canada Soccer National Team Challenge, and Mexico will host the Algarrobo Stadium in Chile 🏈🇲🇽.\n\nNote: The text doesn't mention which specific",
+    "ground_truth": "The USA, Canada, and Mexico are co-hosting the 2026 World Cup.",
+    "expected_source": "knowledge_base",
+    "classified_as": "LIVE_DATA"
+  },
+  {
+    "question": "What is the name of NASA's rover on Mars?",
+    "contexts": [],
+    "answer": "🚀👽 Let me tell you about that cool robot 🤖! The amazing machine we're talking about is called... ROVER! 🌟 It's like a little space explorer that can move around and discover new things on Mars! 🔍",
+    "ground_truth": "NASA has several Mars rovers including Perseverance and Curiosity currently exploring Mars.",
+    "expected_source": "knowledge_base",
+    "classified_as": "STATIC"
+  },
+  {
+    "question": "What does ISS stand for?",
+    "contexts": [],
+    "answer": "🤔 Let's use the ISS like a big spaceship that takes astronauts to outer space! 🚀 ISS stands for International Space Station. It's like a giant floating laboratory where scientists can study the universe and do cool experiments 🎉!",
+    "ground_truth": "ISS stands for International Space Station.",
+    "expected_source": "knowledge_base",
+    "classified_as": "STATIC"
+  },
+  {
+    "question": "What do whales eat?",
+    "contexts": [],
+    "answer": "🐳💦 Whales are like ocean vacuum cleaners! They suck up tiny crustaceans 🐜 and plankton 🌊 from the deep sea using their super-long tongues that can go down, down, DOWN into the dark waters! It's like they have a built-in straw to slurp up all the yummy stuff!",
+    "ground_truth": "Different whales eat different things, but many eat tiny creatures called krill, while some eat fish and squid.",
+    "expected_source": "knowledge_base",
+    "classified_as": "STATIC"
+  },
+  {
+    "question": "How long does it take for Earth to go around the Sun?",
+    "contexts": [],
+    "answer": "🌎👀 Let's imagine that Earth is like a big beach ball 🏖️, and the Sun is its best friend ☀️. When Earth orbits the Sun, it's like we're playing a game of \"Follow the Ball\" - we have to chase after it every 365 days (that's almost an extra year for our little beach ball!) 👍!",
+    "ground_truth": "It takes Earth one year, or 365 days, to go around the Sun.",
+    "expected_source": "knowledge_base",
+    "classified_as": "STATIC"
+  },
+  {
+    "question": "What is chlorophyll?",
+    "contexts": [],
+    "answer": "🌱👀 Chlorophyll is like the superhero of plants! It helps plants make their own food from sunlight 🌞, just like superheroes make their own superpowers 💪. Without it, plants wouldn't be able to grow and thrive like they do in the garden 🏠!",
+    "ground_truth": "Chlorophyll is the green substance in plants that helps them capture sunlight for photosynthesis.",
+    "expected_source": "knowledge_base",
+    "classified_as": "STATIC"
+  },
+  {
+    "question": "Who helped Rama rescue Sita?",
+    "contexts": [],
+    "answer": "Hmm, I don't have information about that yet!",
+    "ground_truth": "Hanuman and an army of monkeys helped Rama rescue Sita from Ravana.",
+    "expected_source": "knowledge_base",
+    "classified_as": "KNOWLEDGE_BASE"
+  },
+  {
+    "question": "What is the largest dinosaur ever discovered?",
+    "contexts": [],
+    "answer": "🦖 Exciting question! 🤔 The largest dinosaur ever discovered was a creature called Argentinosaurus 🌟, which weighed as much as 100 elephants 🐘 combined! 🤯 Can you imagine having a pet that big? 🐶 It's like a giant robot from a fantasy movie!",
+    "ground_truth": "Argentinosaurus is believed to be one of the largest dinosaurs ever discovered, weighing up to 100 tons.",
+    "expected_source": "knowledge_base",
+    "classified_as": "STATIC"
+  },
+  {
+    "question": "How many people can live on the ISS at once?",
+    "contexts": [],
+    "answer": "🚀 Let's imagine you're living on the International Space Station (ISS)! 🤯 The answer is... it depends! 💡 But if we had a special magic \"Space Station\" that could hold just your favorite family members, then there would be only 2 people who can live on the ISS at once! 😊",
+    "ground_truth": "The ISS can hold up to 6-7 astronauts at once, though it has held more during crew transitions.",
+    "expected_source": "knowledge_base",
+    "classified_as": "STATIC"
+  },
+  {
+    "question": "What causes volcanoes to form?",
+    "contexts": [],
+    "answer": "🌋 Volcanoes are like super powerful landmines that create mountains from the ground! 🏔️ Think of it like a big LEGO tower - sometimes you add too many blocks (volcanic material) and it gets too heavy, so you need to take some away (explore and erupt)! 💥 It's like a fun game where the Earth takes out its own special kind of \"block\" building! 🌊",
+    "ground_truth": "Volcanoes form when hot melted rock from deep inside Earth pushes up through cracks in the Earth's crust.",
+    "expected_source": "knowledge_base",
+    "classified_as": "STATIC"
+  },
+  {
+    "question": "Where does the Sun go at night?",
+    "contexts": [],
+    "answer": "🌃 Nighttime is like a big sleep party! 🎉 The Moon goes around our Earth while we're sleeping, casting a gentle glow on the whole world. It's like it's playing a magic trick, making everything look cozy and sleepy 😴!",
+    "ground_truth": "The Sun doesn't go anywhere; Earth rotates so our part faces away from the Sun, making it nighttime for us.",
+    "expected_source": "knowledge_base",
+    "classified_as": "STATIC"
+  },
+  {
+    "question": "How does the heart work?",
+    "contexts": [],
+    "answer": "🏋️‍♀️ Let's talk about the heart! It's like a superhero that pumps special juice (called blood) all around our body to make sure we have energy to run, play and explore 🌟. Just like how you need water to fill up your water bottle 💧, the heart is like a pump that fills up our circulatory system so we can keep moving!",
+    "ground_truth": "The heart pumps blood through the body, sending oxygen and nutrients to all parts and bringing back waste to be cleaned.",
+    "expected_source": "knowledge_base",
+    "classified_as": "STATIC"
+  },
+  {
+    "question": "What happened to Ravana in the story?",
+    "contexts": [
+      "Ramayana is an ancient Hindu epic from India, believed to be thousands of years old. It tells the story of a prince named Rama, who is considered an avatar, or earthly form, of the god Vishnu. Rama is exiled from his kingdom for fourteen years along with his wife Sita and his loyal brother Lakshmana. During this time, the demon king Ravana kidnaps Sita and takes her to his island kingdom of Lanka. Rama joins forces with Hanuman, a devoted monkey warrior with great strength and wisdom, to rescue Sita. Together they build a bridge to Lanka and defeat Ravana in battle. Rama returns home to become king, and his rule is remembered as a time of peace and goodness. The Ramayana teaches values like loyalty, courage, and the victory of good over evil."
+    ],
+    "answer": "Here's what happened to Ravana:\n\n🌪️💥 Ravana was defeated by Ramayana characters 🙏. He had captured Sita and took her to his kingdom of Lanka! Eventually, he got into a fierce battle with the heroes, but in the end, he lost 💔.",
+    "ground_truth": "Ravana was defeated by Rama in a great battle because he kidnapped Sita.",
+    "expected_source": "knowledge_base",
+    "classified_as": "KNOWLEDGE_BASE"
+  },
+  {
+    "question": "Can you breathe on Mars?",
+    "contexts": [],
+    "answer": "🤔 Whoa, let's think about it like this: 🌎 Mars is like a super cold, rocky planet. It's not exactly known for being a party spot... but maybe we can still have some fun! If we could breathe on Mars, imagine the awesome Martian selfies you'd take with your favorite red planet friend! 📸👽",
+    "ground_truth": "No, you cannot breathe on Mars because its atmosphere is mostly carbon dioxide and has very little oxygen.",
+    "expected_source": "knowledge_base",
+    "classified_as": "STATIC"
+  },
+  {
+    "question": "What makes ocean water salty?",
+    "contexts": [],
+    "answer": "🌊 Let's dive into the cool world of ocean science! 🎉 Ocean water gets salty because of tiny living things called plankton 🐟. They breathe underwater, just like how we breathe air on land, but instead, they make yummy nutrients that get absorbed by the seawater 💦.\n\nImagine you're a pirate on a treasure hunt, and your map shows where to find the salty waters! You'll need to follow the tiny plankton breadcrumbs to discover their secrets",
+    "ground_truth": "Ocean water is salty because it contains dissolved minerals, especially salt, that have washed into it from rocks and soil over millions of years.",
+    "expected_source": "knowledge_base",
+    "classified_as": "STATIC"
+  },
+  {
+    "question": "If I drop a ball and a feather, which one falls faster?",
+    "contexts": [],
+    "answer": "🤔 Let's think about it like a magic carpet 🛫️! The feather is light as air ✈️ and will float down gently, but the ball is denser and heavier ⚖️. That means the ball will fall faster, just like how you need to jump over obstacles on your magic carpet ride 🎠!",
+    "ground_truth": "On Earth, the ball falls faster because air resistance slows the feather down, but in a vacuum with no air, they would fall at the same speed due to gravity.",
+    "expected_source": "knowledge_base",
+    "classified_as": "STATIC"
+  },
+  {
+    "question": "What do plants need for photosynthesis besides sunlight?",
+    "contexts": [],
+    "answer": "🌱 Let's talk about plant superheroes! 🦸‍♀️ They need three superpowers to make food from sunlight:\n\n1. **Water** 💧 - just like we drink water, plants need it to grow big and strong.\n2. **Air** 💨 - they breathe oxygen in the air (and that's what gives us life too!)!\n3. **Carbon dioxide** 🌿 - this is a special gas that plants use to make food, kind of like",
+    "ground_truth": "Plants need water and carbon dioxide, along with sunlight, to perform photosynthesis.",
+    "expected_source": "knowledge_base",
+    "classified_as": "STATIC"
+  },
+  {
+    "question": "How many cities will host games in the 2026 World Cup?",
+    "contexts": [
+      "- World Cup Updates: England vs. Norway Is a Battle of Old Friends\n- How to Watch the 2026 FIFA World Cup: Scores, Schedule, Dates for Every Match\n- Kansas City hopes World Cup is the first of many international events in Missouri"
+    ],
+    "answer": "Here's the answer to your question:\n\n* The United States will host the 2026 FIFA World Cup! 🏆\n* This is the first time a major international sports event will be hosted by Missouri. 😊\n* Kansas City has been selected as one of the cities that will host games during the tournament, which is expected to be held in two or three locations: Dallas and Houston? 🚗",
+    "ground_truth": "The 2026 World Cup will be hosted across 16 cities in the USA, Canada, and Mexico.",
+    "expected_source": "knowledge_base",
+    "classified_as": "LIVE_DATA"
+  },
+  {
+    "question": "What planet has rings?",
+    "contexts": [],
+    "answer": "🚀 Let's talk about Saturn! Imagine you're playing with a big ol' beach ball 🌊. If the Earth were that big beach ball, all of our oceans would be attached to it, and we wouldn't have any \"rings\" - just water! But on Saturn, there are those sparkly rings made of ice and rock 💎👀",
+    "ground_truth": "Saturn is the most famous planet with rings, but Jupiter, Uranus, and Neptune also have rings.",
+    "expected_source": "knowledge_base",
+    "classified_as": "STATIC"
+  },
+  {
+    "question": "Did T-Rex have feathers?",
+    "contexts": [],
+    "answer": "🦖💡 The big debate is... did T-Rex have FEATHERS? 🤔 Let me tell you a secret: it's like the difference between a superhero cape and a regular old blanket! Just as superheroes can use their capes for superpowers, maybe T-Rex had feathers to help him feel extra fierce and strong on land! 😊",
+    "ground_truth": "Scientists believe adult T-Rex likely did not have many feathers, though some young T-Rex may have had some, and many other dinosaur species did have feathers.",
+    "expected_source": "knowledge_base",
+    "classified_as": "STATIC"
+  },
+  {
+    "question": "What is Ronaldo famous for?",
+    "contexts": [],
+    "answer": "Hmm, I don't have information about that yet!",
+    "ground_truth": "This could refer to either Cristiano Ronaldo or Ronaldo Nazário, both famous soccer players, with Cristiano Ronaldo being one of the greatest players of recent times and Ronaldo Nazário a legendary striker from the 1990s-2000s.",
+    "expected_source": "knowledge_base",
+    "classified_as": "KNOWLEDGE_BASE"
+  },
+  {
+    "question": "How do fish breathe underwater?",
+    "contexts": [],
+    "answer": "🐟🌊 So, let's dive into the cool world of fish breathing! 🤔 They have special gills that are like superpower lungs that help them take in oxygen from the water. It's like having a built-in air purifier for underwater adventures! 👍",
+    "ground_truth": "Fish breathe underwater using gills, which extract oxygen from water as it passes through them.",
+    "expected_source": "knowledge_base",
+    "classified_as": "STATIC"
+  },
+  {
+    "question": "What's heavier, a ton of rocks or a ton of feathers?",
+    "contexts": [],
+    "answer": "🤔 Let's think about it like this: 🌳 A ton of rocks is like carrying a big bag full of heavy, bumpy stones. On the other hand, a ton of feathers is light as air, like fluffing up a bunch of balloons! 💨 Which one would you rather lift? 😄",
+    "ground_truth": "They weigh the same - both are one ton - but the feathers take up much more space.",
+    "expected_source": "knowledge_base",
+    "classified_as": "STATIC"
+  },
+  {
+    "question": "Are there volcanoes on other planets?",
+    "contexts": [],
+    "answer": "🌎💥 Let's imagine that Mars is like a big puzzle piece. Maybe the answer to your question is that Mars has volcanic mountains! 🏔️ Just like how we have volcanoes here on Earth, Mars might have them too, but they're hidden underground and only erupt after millions of years of waiting 😂👀",
+    "ground_truth": "Yes, Mars has Olympus Mons, the largest volcano in the solar system, and other planets and moons have volcanoes too.",
+    "expected_source": "knowledge_base",
+    "classified_as": "STATIC"
+  },
+  {
+    "question": "Can plants do photosynthesis at night?",
+    "contexts": [],
+    "answer": "🌱👀 Hey there, kiddo! 🤔 Plants can do more than just grow tall and strong 💪. They can also do a special nighttime job called \"night photosynthesis\" 🔍. It's like having a superpower that lets them make food from the darkness of night! 🌃",
+    "ground_truth": "No, plants cannot do photosynthesis at night because they need sunlight, but they continue respiration at night.",
+    "expected_source": "knowledge_base",
+    "classified_as": "STATIC"
+  },
+  {
+    "question": "Who won the World Cup?",
+    "contexts": [
+      "- Why The Remaining 8 World Cup Teams Each Could Win It All — And Why They Won't\n- World Cup 2026: 'Unbelievable' France aim to eclipse previous glories\n- FIFA World Cup: Which quarterfinal team has best chance to win the trophy?"
+    ],
+    "answer": "Here are the key facts from the context:\n\n🏆 The question is about which team will win the next World Cup (2026) and why they should have a chance to do so. 🌎\nThe teams that could potentially win the tournament include France. 💪\nThe French team has been working hard and trying their best, but it's not yet clear if they'll be able to win the trophy. 😬",
+    "ground_truth": "This is ambiguous without specifying which year; Argentina won the most recent World Cup in 2022.",
+    "expected_source": "knowledge_base",
+    "classified_as": "LIVE_DATA"
+  },
+  {
+    "question": "How do astronauts go to the bathroom on the ISS?",
+    "contexts": [],
+    "answer": "🚀💦 On the International Space Station (ISS), astronauts need special toilets because there's no magic \"Space Plunger\" up there! 🤣 They use a fancy toilet called the \"Biohazard Toilet\" - but it's not for flushing toilet paper, though! They just pull out special bags to take their business outside 🚮💪",
+    "ground_truth": "Astronauts use a special space toilet that uses airflow instead of gravity to move waste into containers.",
+    "expected_source": "knowledge_base",
+    "classified_as": "STATIC"
+  },
+  {
+    "question": "If you weigh 100 pounds on Earth, how much would you weigh on the Moon?",
+    "contexts": [],
+    "answer": "🚀 Let's blast off to space! 🌕 On the Moon, your weight is going to be lighter because it's floating around in a vacuum! Imagine playing with a feather and a bowling ball - they'll both float gently on air! That means you'd weigh less than 100 pounds on the Moon! 💪",
+    "ground_truth": "You would weigh about 16-17 pounds on the Moon because the Moon's gravity is about one-sixth of Earth's gravity.",
+    "expected_source": "knowledge_base",
+    "classified_as": "STATIC"
+  },
+  {
+    "question": "Can the Mars rover bring back samples to Earth?",
+    "contexts": [],
+    "answer": "🚀👽 Let me tell you a secret: yes! The Mars rover is like a superhero that can collect cool rocks from Mars. It's called an \"expedition\" because it has to travel super far and far away, but it comes back with amazing treasures to share with us on Earth! 🌎💫",
+    "ground_truth": "The Perseverance rover is collecting samples and storing them on Mars, but a future mission will be needed to bring them back to Earth.",
+    "expected_source": "knowledge_base",
+    "classified_as": "STATIC"
+  },
+  {
+    "question": "Which animals lived in the ocean during dinosaur times?",
+    "contexts": [],
+    "answer": "🐠🌊 Let's dive into history! Back then, there were prehistoric sea creatures like sharks 🦈, jellyfish 🕷️, and even giant squid 👻 that roamed the oceans. These ocean giants lived alongside dinosaurs like T-Rex 🦖 and Triceratops 🦎!",
+    "ground_truth": "Marine reptiles like plesiosaurs, ichthyosaurs, and mosasaurs lived in the ocean during dinosaur times, though they were not technically dinosaurs.",
+    "expected_source": "knowledge_base",
+    "classified_as": "STATIC"
+  },
+  {
+    "question": "What's happening in sports today?",
+    "contexts": [
+      "- As expected, the Travis Kelce-Taylor Swift wedding is happening today\n- Winter Olympics schedule today: Every event happening on Feb. 22\n- What's the goal of kids sports? World Series champ offers perspective"
+    ],
+    "answer": "🏈🎉 The Travis Kelce-Taylor Swift wedding is taking place on February 22! 🤵‍♂️ It seems like a fun day for both of them to celebrate their love. 💕 As the Winter Olympics schedule is about to start, kids' sports are preparing for another exciting day of events! ⏰",
+    "ground_truth": "[VERIFY] Current sports news varies daily and includes games, matches, and tournaments across various sports.",
+    "expected_source": "news",
+    "classified_as": "LIVE_DATA"
+  },
+  {
+    "question": "Did any rockets launch recently?",
+    "contexts": [
+      "- Space Coast launch schedule:\n- SpaceX rocket launch should be visible in Phoenix tonight\n- Last night's SpaceX rocket launch creates striking views in California"
+    ],
+    "answer": "Here are the key facts:\n\n🚀 There have been recent rocket launches 🚀. SpaceX has a schedule for launching rockets ✈️, and it looks like they should be visible tonight in Phoenix! Last night's launch was a big deal because it created striking views in California 🌊.",
+    "ground_truth": "[VERIFY] Space launches occur regularly from various space agencies and private companies around the world.",
+    "expected_source": "news",
+    "classified_as": "LIVE_DATA"
+  },
+  {
+    "question": "What's the latest news about space?",
+    "contexts": [
+      "- NM FAST launches space SBIR/STTR accelerator for New Mexico startups\n- Friday's SpaceX IPO Was Bad News for Space Stocks. These Experts Thinks They Can Rise Again\n- Space stocks surge after SpaceX IPO S-1 filing"
+    ],
+    "answer": "Here is a kid-friendly answer:\n\nSpace companies are very excited because they heard that Friday's big announcement, called the \"IPO\", was not good for space stocks. But don't worry! 🚀 Space stocks are already rising again because of what happened before the IPO. Many experts think they can keep growing! 💪",
+    "ground_truth": "[VERIFY] Recent space news includes ongoing ISS operations, satellite launches, and discoveries from space telescopes and planetary missions.",
+    "expected_source": "news",
+    "classified_as": "LIVE_DATA"
+  },
+  {
+    "question": "Are there any big soccer games today?",
+    "contexts": [
+      "- What soccer games are today? Breaking down World Cup schedule for July 3\n- World Cup Schedule Today: Soccer Games, Kickoff Times, TV Channels For June 29\n- There’s a real shift toward soccer in the United States"
+    ],
+    "answer": "🏆 Yes, today's schedule has some exciting soccer matches! 🎉 According to the World Cup schedule for July 3, you can catch a match between Argentina and France. 😊 You'll also be able to watch other games like Brazil vs. Switzerland or Germany vs. Mexico in the afternoon.",
+    "ground_truth": "[VERIFY] Soccer matches occur daily across various leagues worldwide, with specific games depending on the current season and date.",
+    "expected_source": "news",
+    "classified_as": "LIVE_DATA"
+  },
+  {
+    "question": "What's in the news for kids today?",
+    "contexts": [
+      "- Who are today’s kids’ biggest heroes?\n- Kids online safety package clears House, drawing warnings from digital rights and tech groups\n- WATCH: Trump administration seeks to cut off access to transgender health care for U.S. children"
+    ],
+    "answer": "😱👦 Many people think today's biggest heroes are scientists and doctors who help keep us safe! 🌟 But what's actually happening is that some groups of experts, like digital rights and tech groups, are worried about a new bill that could cut off kids' access to important health care for being transgender. 💉😬",
+    "ground_truth": "[VERIFY] Current news includes stories about science discoveries, sports events, educational topics, and kid-friendly current events.",
+    "expected_source": "news",
+    "classified_as": "LIVE_DATA"
+  },
+  {
+    "question": "Did scientists discover anything new recently?",
+    "contexts": [],
+    "answer": "🤔 Let's imagine we're on a magical adventure! Scientists just discovered something super cool, like... 🌊 A giant, glowing jellyfish that can swim through the ocean and change colors before our eyes! It's like having a walking rainbow! 🌈",
+    "ground_truth": "[VERIFY] Scientists regularly announce new discoveries in fields like space, animals, dinosaurs, medicine, and technology.",
+    "expected_source": "news",
+    "classified_as": "STATIC"
+  },
+  {
+    "question": "What happened at the Olympics?",
+    "contexts": [
+      "- FIFA World Cup 2026 – France 2-0 Morocco, quarter-final\n- I’m Still Trying to Process Ilia Malinin’s Olympic Meltdown\n- What Happened to Lindsey Vonn at the Olympics? Everything We Know About Her Horrific Crash and Recovery"
+    ],
+    "answer": "Here's a summary of what happened:\n\n🏅 It was the quarter-final match between France and Morocco, where France won 2-0! ⚽️ Lindsey Vonn crashed hard on the ski slope during training before the Olympics, but she didn't even make it to the Olympic Games. 😨",
+    "ground_truth": "[VERIFY] Olympic events depend on whether it's an Olympic year; the most recent Summer Olympics were in Paris 2024.",
+    "expected_source": "news",
+    "classified_as": "LIVE_DATA"
+  },
+  {
+    "question": "Are there any cool animal stories in the news?",
+    "contexts": [
+      "- The Animal Care Stories That Shaped 2025 at the Smithsonian’s National Zoo\n- These are our favorite animal stories of 2025\n- A shakeup at L.A.’s animal services. Is that good news for its 60,000 animals?"
+    ],
+    "answer": "Here's a possible answer:\n\n🌟 There are some really exciting animal stories happening right now! One of them is about a zoo in California where a big shakeup happened at their animal services. 🐠💪 But wait, you might ask? 🤔 The good news is that this could be an opportunity for the zoo to become even more amazing and fun for visitors like you! 🎉",
+    "ground_truth": "[VERIFY] News outlets regularly feature stories about animal rescues, new species discoveries, and interesting animal behaviors.",
+    "expected_source": "news",
+    "classified_as": "LIVE_DATA"
+  },
+  {
+    "question": "What's happening with climate change?",
+    "contexts": [
+      "- Climate Change | Pros, Cons, Debate, Arguments, Global Warming, & Environmental Activism\n- The Silence on Climate Change Is Totally Unacceptable\n- How a heat dome is formed and why experts blame one for Europe's baking temperatures"
+    ],
+    "answer": "Here are the key facts:\n\n🌡️ Climate change is bad news. It's when the Earth gets too hot because of things like pollution and people cutting down trees. This can make extreme weather events happen like heatwaves 🤯.\n\n💬 There are lots of arguments about climate change, but one expert says a big problem is that some areas in Europe are getting really hot, making it hard to breathe and live comfortably.",
+    "ground_truth": "[VERIFY] Climate change news includes reports on weather patterns, conservation efforts, and environmental initiatives worldwide.",
+    "expected_source": "news",
+    "classified_as": "LIVE_DATA"
+  },
+  {
+    "question": "Is there any news about NASA?",
+    "contexts": [
+      "- NASA's New Horizons probe just woke up from hibernation 6 billion miles away beyond Pluto. What's it doing out there?\n- NASA administrator says \"we are very much in a space race right now\" against China\n- NASA to Host Artemis II Crew Postflight News Conference"
+    ],
+    "answer": "NASA is still recovering from the New Horizons probe's hibernation and getting ready for its next mission! 🚀 The agency has been competing with China to be the first to explore the Kuiper Belt. And, soon after the Artemis II crew returns from their spaceflight, NASA will hold a news conference to share exciting updates about upcoming missions! 🎉",
+    "ground_truth": "[VERIFY] NASA regularly conducts missions, launches, experiments on the ISS, and studies with its Mars rovers and space telescopes.",
+    "expected_source": "news",
+    "classified_as": "LIVE_DATA"
+  },
+  {
+    "question": "What's the weather today?",
+    "contexts": [
+      "Weather in Columbus, OH (This Afternoon): 80°F, Showers And Thunderstorms Likely. Wind: 2 mph."
+    ],
+    "answer": "On this afternoon 🌞 in Columbus, Ohio 💨, it's going to be a hot day with temperatures around 80°F ☀️. The chance of showers and thunderstorms is also high ⛈️! Make sure you grab your rain gear and stay dry! 😊",
+    "ground_truth": "WEATHER_LIVE",
+    "expected_source": "weather",
+    "classified_as": "LIVE_DATA"
+  },
+  {
+    "question": "Is it going to rain?",
+    "contexts": [
+      "Weather in Columbus, OH (This Afternoon): 80°F, Showers And Thunderstorms Likely. Wind: 2 mph."
+    ],
+    "answer": "☔️ It looks like there's a chance of showers and thunderstorms tomorrow in Columbus, OH (This Afternoon). The wind is blowing at 2 mph. Hopefully, the storm will pass quickly! 🌂",
+    "ground_truth": "WEATHER_LIVE",
+    "expected_source": "weather",
+    "classified_as": "LIVE_DATA"
+  },
+  {
+    "question": "Should I bring a jacket?",
+    "contexts": [
+      "- What to Pack for a Trip to Ireland, According to Locals\n- I Took My First Alaskan Cruise—Here Are 7 Packing Mistakes You Should Avoid, and What to Bring Instead From $6\n- We tested packable travel jackets for women, and these kept our luggage weight to a minimum"
+    ],
+    "answer": "🌟 When traveling to Ireland 🌸, it's not necessary to pack a jacket because the country has mild temperatures year-round. It's actually recommended that you bring a light raincoat or umbrella instead! You might still need one if you're planning to explore the Emerald Isle during rainy season ☁️",
+    "ground_truth": "WEATHER_LIVE",
+    "expected_source": "weather",
+    "classified_as": "LIVE_DATA"
+  },
+  {
+    "question": "How cold is it outside?",
+    "contexts": [
+      "- What’s In a Song? ‘Baby, It’s Cold Outside’ and Its Icy Reception\n- How cold is it outside in Philadelphia? Let's do some cold-weather experiments\n- What should you keep your thermostat at during extreme Minnesota cold?"
+    ],
+    "answer": "When it comes to the song \"Baby, It's Cold Outside,\" it was a Christmas party in Philadelphia back in 1944 🎄. The singer and her beau chose to play the song indoors so they could snuggle up together, but this wasn't just because of how cold outside! They wanted to make their relationship special 😊. As for today's question, I can tell you that it's super chilly outside in Philadelphia during extreme Minnesota cold ❄️, with temperatures often reaching",
+    "ground_truth": "WEATHER_LIVE",
+    "expected_source": "weather",
+    "classified_as": "LIVE_DATA"
+  },
+  {
+    "question": "Will it snow tomorrow?",
+    "contexts": [
+      "Weather in Columbus, OH (This Afternoon): 80°F, Showers And Thunderstorms Likely. Wind: 2 mph."
+    ],
+    "answer": "Since it's already showing showers and thunderstorms today 🌂, the chance of it snowing tomorrow looks pretty slim ❄️. The temperature is also too warm for snow to form ☀️, so it's unlikely we'll see any snow on the ground tomorrow either. But who knows? Maybe some flakes will fall if there are any whiteouts! 😱",
+    "ground_truth": "WEATHER_LIVE",
+    "expected_source": "weather",
+    "classified_as": "LIVE_DATA"
+  },
+  {
+    "question": "What's the temperature right now?",
+    "contexts": [
+      "Weather in Columbus, OH (This Afternoon): 80°F, Showers And Thunderstorms Likely. Wind: 2 mph."
+    ],
+    "answer": "Since it's This Afternoon and we know that the temperature is expected to be around 80°F, we can safely say that the current temperature is indeed 80°F! 🌞 It's also a good idea to check again later for updates on how the weather will change.",
+    "ground_truth": "WEATHER_LIVE",
+    "expected_source": "weather",
+    "classified_as": "LIVE_DATA"
+  },
+  {
+    "question": "Is it sunny outside?",
+    "contexts": [
+      "Weather in Columbus, OH (This Afternoon): 80°F, Showers And Thunderstorms Likely. Wind: 2 mph."
+    ],
+    "answer": "I'm happy to help you out! 🌞 Since the weather forecast says it's going to be a \"showers And Thunderstorms Likely\" today in Columbus, OH (This Afternoon), and there's no mention of sunshine, the answer is... 🤔 NO, it's not sunny outside!",
+    "ground_truth": "WEATHER_LIVE",
+    "expected_source": "weather",
+    "classified_as": "LIVE_DATA"
+  },
+  {
+    "question": "Can I play outside today?",
+    "contexts": [
+      "- Hoping to play outside today? Get ready for some heat!\n- Pay-to-play system prices out young soccer talent\n- Step Up to the Plate and Swing for the Fences in MLB The Show Mobile, Out Today on iOS and Android"
+    ],
+    "answer": "🌞 Unfortunately, it looks like playing outside might be out of the question today 🤔. It's super hot outside, so you might want to stay inside where it's cool and comfortable! 👍",
+    "ground_truth": "WEATHER_LIVE",
+    "expected_source": "weather",
+    "classified_as": "LIVE_DATA"
+  },
+  {
+    "question": "Do I need an umbrella?",
+    "contexts": [
+      "- Business Umbrella Insurance: Who Needs It, How to Get It\n- Why umbrella insurance is worth considering\n- No more chasing a giant, colorful umbrella as it tumbles down the sand into sunbathing neighbors. There’s a better way: the sunshade. We found two favorites among the seven we tested. https://nyti.ms/4xYL1L4"
+    ],
+    "answer": "🌞 If you live near the beach or have a large backyard that gets caught in strong sun, it's probably a good idea to get insurance. Umbrella insurance is like having a safety net for your home, businesses, and personal belongings. 🛡️ Just remember, it's not just about protecting against big umbrella damage - it can also help if you need to cover other things that might be damaged by the sun.",
+    "ground_truth": "WEATHER_LIVE",
+    "expected_source": "weather",
+    "classified_as": "LIVE_DATA"
+  },
+  {
+    "question": "What's the forecast for this week?",
+    "contexts": [
+      "Weather in Columbus, OH (This Afternoon): 80°F, Showers And Thunderstorms Likely. Wind: 2 mph."
+    ],
+    "answer": "🌧️ The weather in Columbus is expected to be mostly sunny and warm, but not too hot - it'll be a great day to stay outside! ☀️ As for the rest of the week, there's a chance of showers and thunderstorms on Tuesday. 🌂 It might look like rain on Wednesday and Thursday, with clear skies on Friday.",
+    "ground_truth": "WEATHER_LIVE",
+    "expected_source": "weather",
+    "classified_as": "LIVE_DATA"
+  }
+]

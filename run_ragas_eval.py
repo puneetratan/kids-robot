@@ -115,7 +115,9 @@ ds = Dataset.from_dict({
     "answer":       [r["answer"] for r in eval_rows],
     "ground_truth": [r["ground_truth"] for r in eval_rows],
 })
-
+demo_indices = [1, 4, 9] 
+ds = ds.select(demo_indices) # DEMO: first 10 rows only - remove for full runs 
+eval_rows = [eval_rows[i] for i in demo_indices]   # ← keep in sync
 # ============================================================
 # Evaluate
 # ============================================================

@@ -1,0 +1,5 @@
+{"ts": 1783912713.3137496, "question": "what is gravity", "route": "STATIC", "faithfulness": null, "answer_relevancy": 0.759, "alert": false}
+{"ts": 1783912761.8285728, "question": "who reach to semifinals of fifa", "route": "LIVE_DATA", "faithfulness": 0.0, "answer_relevancy": 0.725, "alert": true}
+{"ts": 1783912857.0244534, "question": "who save Sita from Ravana?", "route": "STATIC", "faithfulness": null, "answer_relevancy": 0.904, "alert": false}
+{"ts": 1783912933.1821125, "question": "how many cities hosting fifa world cup", "route": "LIVE_DATA", "faithfulness": null, "answer_relevancy": 0.73, "alert": false}
+{"ts": 1783912977.768311, "question": "whats the weather like today?", "route": "LIVE_DATA", "faithfulness": 0.833, "answer_relevancy": 0.676, "alert": false}

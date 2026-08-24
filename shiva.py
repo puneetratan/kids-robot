@@ -254,7 +254,7 @@ def generate(prompt):
                       json={"model": MODEL_NAME, "prompt": prompt,
                             "stream": False,
                             "options": {"num_predict": 100, "temperature": 0.7}},
-                      timeout=60)
+                      timeout=120)
     return r.json().get("response", "").strip()
 
 

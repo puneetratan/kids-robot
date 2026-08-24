@@ -95,6 +95,11 @@ PIPER_VOICE = "en_US-ryan-low.onnx"
 AUDIO_DEV = "plughw:CARD=Device,DEV=0"
 CACHE_THRESHOLD = 97
 
+# Whisper mishears "hello robo" often enough that an exact match
+# would miss it - fuzzy partial match is more forgiving.
+WAKE_WORD = "hello robo"
+WAKE_THRESHOLD = 75
+
 # Low margin means the classifier was nearly split. On ACTION
 # that matters more than elsewhere - a wrong guess moves a
 # physical robot rather than returning a wrong fact.
@@ -177,6 +182,10 @@ def listen(seconds=5):
     audio = audio[::3]          # 48000 -> 16000 for whisper
     segments, _ = stt.transcribe(audio, language="en", beam_size=1)
     return " ".join(s.text for s in segments).strip()
+
+
+def heard_wake_word(text):
+    return fuzz.partial_ratio(WAKE_WORD, text.lower()) >= WAKE_THRESHOLD
 
 
 # ============================================================
@@ -333,7 +342,7 @@ def handle(question):
 
 
 def main():
-    print(f"\n{ROBOT_NAME.title()} is listening. Ctrl+C to quit.")
+    print(f'\n{ROBOT_NAME.title()} is listening for "{WAKE_WORD}". Ctrl+C to quit.')
     print(f"ollama: {OLLAMA_HOST}")
     print(f"vision: {vision.MODEL} @ {vision.OLLAMA_HOST}\n")
     drive.stop()
@@ -343,8 +352,18 @@ def main():
             heard = listen()
             if not heard:
                 continue
-            print(f"heard: {heard}")
-            handle(heard)
+
+            if not heard_wake_word(heard):
+                continue
+
+            print(f"heard wake word: {heard}")
+            speak("Yes?")
+
+            question = listen()
+            if not question:
+                continue
+            print(f"heard: {question}")
+            handle(question)
 
     except KeyboardInterrupt:
         pass

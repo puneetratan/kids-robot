@@ -340,6 +340,9 @@ def handle(question):
     speak(answer)
     log_interaction(question, contexts, answer, route)
 
+def strip_wake_word(text):
+    return re.sub(rf"\b{WAKE_WORD}\w*\b[,\s]*", "", text, flags=re.I).strip()
+
 
 def main():
     print(f'\n{ROBOT_NAME.title()} is listening for "{WAKE_WORD}". Ctrl+C to quit.')
@@ -356,12 +359,16 @@ def main():
             if not heard_wake_word(heard):
                 continue
 
-            print(f"heard wake word: {heard}")
-            speak("Yes?")
+            question = strip_wake_word(heard)
 
-            question = listen()
-            if not question:
-                continue
+            # "Robo, look up" carries its own question. Only ask
+            # back when the wake word arrived alone.
+            if len(question.split()) < 2:
+                speak("Yes?")
+                question = listen()
+                if not question:
+                    continue
+
             print(f"heard: {question}")
             handle(question)
 

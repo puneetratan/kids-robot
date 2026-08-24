@@ -95,9 +95,9 @@ PIPER_VOICE = "en_US-ryan-low.onnx"
 AUDIO_DEV = "plughw:CARD=Device,DEV=0"
 CACHE_THRESHOLD = 97
 
-# Whisper mishears "hello robo" often enough that an exact match
-# would miss it - fuzzy partial match is more forgiving.
-WAKE_WORD = "hello robo"
+# Whisper mishears "robo" often enough that an exact match would
+# miss it - fuzzy partial match is more forgiving.
+WAKE_WORD = "robo"
 WAKE_THRESHOLD = 75
 
 # Low margin means the classifier was nearly split. On ACTION

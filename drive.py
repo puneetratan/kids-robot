@@ -44,10 +44,13 @@ def stop():
     for pin in ALL:
         pin.off()
 
-
+B_INVERTED = True
 def _drive(a_fwd, b_fwd):
     """Set both channels. True = forward, False = reverse,
     None = that motor holds still."""
+    if B_INVERTED and b_fwd is not None:
+        b_fwd = not b_fwd
+
     IN1.off(); IN2.off(); IN3.off(); IN4.off()
 
     if a_fwd is None:

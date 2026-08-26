@@ -67,11 +67,11 @@ def _drive(a_fwd, b_fwd):
 
 
 def forward():
-    _drive(True, True)
+    _drive(False, False)
 
 
 def backward():
-    _drive(False, False)
+    _drive(True, True)
 
 
 def turn_left():

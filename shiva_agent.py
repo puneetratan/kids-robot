@@ -26,13 +26,24 @@ from datetime import datetime
 # CONFIG
 # ----------------------------------------------------------------------
 
-OLLAMA_HOST = os.environ.get("OLLAMA_HOST", "http://127.0.0.1:11434")
+# The agent LLM can live on a different machine from the rest of the robot.
+# Keep it separate from OLLAMA_HOST: shiva.py uses that one for ASK/RAG with
+# its own fine-tuned model, which does not exist on the remote host.
+AGENT_HOST  = os.environ.get("AGENT_HOST", "http://127.0.0.1:11434")
 MODEL_NAME  = os.environ.get("AGENT_MODEL", "llama3.2:1b")
 
+# used if AGENT_HOST is unreachable - degraded, not dead
+FALLBACK_HOST  = "http://127.0.0.1:11434"
+FALLBACK_MODEL = os.environ.get("AGENT_FALLBACK_MODEL", "llama3.2:1b")
+
 MAX_STEPS      = 12      # hard ceiling on loop iterations
-MAX_DISTANCE   = 12.0   # total feet the agent may travel in one goal
+MAX_DISTANCE     = 6.0   # total feet per goal - small room, no sensors
+MAX_SINGLE_MOVE  = 2.0   # never cross a room in one blind burst
+BACK_FEET        = 1.0   # fixed retreat distance
+STOP_MARGIN      = 1.0   # feet of clearance the robot refuses to give up
 MAX_TURN_DEG   = 720    # total degrees it may rotate in one goal
-STEP_TIMEOUT   = 60     # seconds per model call
+STEP_TIMEOUT   = 60
+TIMING         = os.environ.get("AGENT_TIMING", "1") != "0"     # seconds per model call
 
 TRANSCRIPT_DIR = os.path.expanduser("~/kids-robot/agent_runs")
 
@@ -51,24 +62,37 @@ DRY_RUN = False  # set by --dry-run
 class Hardware:
     """Thin wrapper over your existing modules."""
 
-    def __init__(self, dry_run=False):
+    def __init__(self, dry_run=False, mute=False):
         self.dry_run = dry_run
+        self.mute = mute
         self.drive = None
         self.neck = None
         self.vision = None
         self.router = None
+        self._tts = None
+        self._kit = None
+        self._sonar = None
+        self._mock_distance = 4.0
 
         # mock world: robot starts at heading 0, bottle is at heading 180.
         # it will only be seen after the robot turns around.
         self.heading = 0
+        self.position = 0        # bumps on every MOVE/BACK
         self.neck_dir = "center"
         self._mock_world = {
-            0:   {"left": "a white wall", "center": "a closed door", "right": "a bookshelf"},
-            90:  {"left": "a bookshelf", "center": "a window with curtains", "right": "a floor lamp"},
+            0:   {"left": "a white wall", "center": "a closed door",
+                  "right": "a bookshelf", "down": "bare carpet",
+                  "up": "a ceiling light"},
+            90:  {"left": "a bookshelf", "center": "a window with curtains",
+                  "right": "a floor lamp", "down": "a rug", "up": "a ceiling"},
             180: {"left": "a floor lamp", "center": "a sofa and a low table",
-                  "right": "a blue water bottle on the floor next to a chair"},
-            270: {"left": "a chair", "center": "a rug and some toys", "right": "a white wall"},
+                  "right": "a blue water bottle next to a chair",
+                  "down": "a yellow toy car on the carpet", "up": "a ceiling"},
+            270: {"left": "a chair", "center": "a rug and some toys",
+                  "right": "a white wall", "down": "some toys on the floor",
+                  "up": "a ceiling"},
         }
+
 
         if dry_run:
             print("[hw] DRY RUN - all actuators mocked")
@@ -97,49 +121,216 @@ class Hardware:
 
     # -- motion -----------------------------------------------------
 
+    # Calibrate once: run scripts/calibrate_turn.py, mark the floor, adjust.
+    # Accuracy is not critical - the loop counts areas A-D by counting turns,
+    # not by measuring them. It only matters if MOVE is added later.
+    SECONDS_PER_90 = float(os.environ.get("TURN_SECONDS_90", "0.6"))
+    FEET_PER_SEC   = float(os.environ.get("DRIVE_FEET_PER_SEC", "1.5"))
+
     def forward(self, feet):
-        """TODO: replace with your calibrated call, e.g.
-        self.drive.forward(seconds=feet / FEET_PER_SEC)"""
-        if self.drive is None:
+        if self.dry_run:
             time.sleep(0.3)
             return f"moved forward about {feet} feet"
-        self.drive.forward(feet)
+        try:
+            import drive
+        except Exception as e:
+            return f"cannot move ({e})"
+        try:
+            drive.forward()
+            time.sleep(min(feet / self.FEET_PER_SEC, 6.0))
+        finally:
+            drive.stop()                 # never leave motors running
         return f"moved forward about {feet} feet"
 
+    # HC-SR04. ECHO is 5V - it MUST go through a divider (1k/2k) to the Pi.
+    # GPIO 23 is taken by the motor driver, so default to 20/21.
+    TRIG_PIN = int(os.environ.get("SONAR_TRIG", "20"))
+    ECHO_PIN = int(os.environ.get("SONAR_ECHO", "21"))
+
+    def distance(self):
+        """Feet to the nearest obstacle straight ahead, or None if no sensor.
+
+        Narrow cone: it misses table legs, low objects and soft edges. Treat
+        it as a floor on clearance, never as proof the path is safe.
+        """
+        if self.dry_run:
+            return self._mock_distance
+        if self._sonar is False:
+            return None
+        if self._sonar is None:
+            try:
+                from gpiozero import DistanceSensor
+                self._sonar = DistanceSensor(
+                    echo=self.ECHO_PIN, trigger=self.TRIG_PIN,
+                    max_distance=2.0, queue_len=5)
+            except Exception as e:
+                print(f"[hw] no sonar ({e}) - falling back to camera gating")
+                self._sonar = False
+                return None
+        try:
+            return self._sonar.distance * 3.281        # metres -> feet
+        except Exception:
+            return None
+
+    def backward(self, feet):
+        if self.dry_run:
+            time.sleep(0.3)
+            return f"backed up {feet} feet"
+        try:
+            import drive
+        except Exception as e:
+            return f"cannot move ({e})"
+        try:
+            drive.backward()
+            time.sleep(min(feet / self.FEET_PER_SEC, 3.0))
+        finally:
+            drive.stop()
+        return f"backed up {feet} feet"
+
     def turn(self, direction, degrees):
-        """TODO: replace with self.drive.turn_left(...) / turn_right(...)"""
         step = degrees if direction == "right" else -degrees
         self.heading = round((self.heading + step) / 90) * 90 % 360
-        if self.drive is None:
+        if self.dry_run:
             time.sleep(0.3)
             return f"turned {direction} {degrees} degrees"
-        self.drive.turn(direction, degrees)
+        try:
+            import drive
+        except Exception as e:
+            return f"cannot turn ({e})"
+        try:
+            (drive.turn_right if direction == "right" else drive.turn_left)()
+            time.sleep(min(degrees / 90.0 * self.SECONDS_PER_90, 4.0))
+        finally:
+            drive.stop()                 # stop even if interrupted
+        time.sleep(0.3)                  # let the chassis settle before looking
         return f"turned {direction} {degrees} degrees"
 
     # -- neck -------------------------------------------------------
 
+    def _servo_kit(self):
+        """Get a ServoKit without depending on servo_test.py (a demo script).
+        Prefer one that already exists so we do not open I2C twice."""
+        if self._kit is not None:
+            return self._kit
+        try:
+            import vision
+            self._kit = getattr(vision, "kit", None)
+        except Exception:
+            pass
+        if self._kit is None:
+            try:
+                import servo_test
+                self._kit = getattr(servo_test, "kit", None)
+            except Exception:
+                pass
+        if self._kit is None:
+            from adafruit_servokit import ServoKit
+            self._kit = ServoKit(channels=16)
+        return self._kit
+
     def point_neck(self, direction):
-        """TODO: map to PCA9685 channel 0 (pan) angles.
-        left=150, center=90, right=30 or whatever your clamp allows."""
-        angles = {"left": 150, "center": 90, "right": 30}
-        if direction not in angles:
-            return f"cannot point neck {direction}"
+        """Aim the head using vision.py's own direction table.
+
+        vision.py already resolves the mirror problem (a child's "left" is a
+        HIGHER pan angle), so reuse it rather than duplicating angles here.
+        """
         self.neck_dir = direction
-        if self.neck is None:
+        if self.dry_run:
             time.sleep(0.2)
             return f"neck facing {direction}"
-        self.neck.set_pan(angles[direction])
+
+        try:
+            import vision
+        except Exception as e:
+            return f"cannot move neck ({e})"
+
+        SIDE_PAN = {"left": 140, "center": 90, "right": 40}
+        HEIGHT_TILT = {"up": 60, "level": 90, "down": 125}
+
+        words = direction.split()
+        side = next((w for w in words if w in SIDE_PAN), None)
+        height = next((w for w in words if w in HEIGHT_TILT), None)
+
+        # A side with no height keeps the current tilt; a height with no side
+        # keeps the current pan. Naming both aims at one of nine cells.
+        pan = SIDE_PAN.get(side)
+        tilt = HEIGHT_TILT.get(height)
+
+        # prefer vision.py's own table for the sides so the agent and the
+        # voice pipeline never disagree about which way "left" is
+        if side:
+            for keywords, p, _t in getattr(vision, "DIRECTIONS", []):
+                if side in keywords and p is not None:
+                    pan = p
+                    break
+
+        # up/down set tilt only and leave pan None, which is valid -
+        # vision.aim() treats None as "leave that axis alone".
+        if pan is None and tilt is None:
+            return f"cannot point neck {direction}"
+
+        try:
+            vision.aim(self._servo_kit(), pan=pan, tilt=tilt)
+        except Exception as e:
+            return f"neck movement failed ({e})"
         return f"neck facing {direction}"
 
     # -- vision -----------------------------------------------------
 
     def see(self):
-        """TODO: replace with your qwen2.5vl call, e.g.
-        return self.vision.describe(prompt='What objects are visible?')"""
-        if self.vision is None:
+        """Describe what the camera sees RIGHT NOW.
+
+        Deliberately does not call vision.look_and_describe(): that parses a
+        direction out of the question and re-aims the head, which would fight
+        with point_neck() having already aimed. Capture where we are pointed.
+        """
+        if self.dry_run:
             time.sleep(0.4)
-            return self._mock_world[self.heading % 360][self.neck_dir]
-        return self.vision.describe()
+            w = self._mock_world[self.heading % 360]
+            parts = self.neck_dir.split()
+            key = next((p for p in parts if p in ("up", "down")), None) \
+                or next((p for p in parts if p in w), "center")
+            return w.get(key, "nothing in particular")
+
+        try:
+            import vision
+        except Exception as e:
+            return f"cannot see ({e})"
+
+        question = "What objects are in this image? List them briefly."
+        try:
+            _t = time.time()
+            vision.capture()
+            _t_cap = time.time()
+            vision._resize()
+            _t_res = time.time()
+            desc = vision._describe(question, vision.RESIZED_PATH)
+            if TIMING:
+                print(f"       [t]   capture {_t_cap-_t:.1f}s  "
+                      f"resize {_t_res-_t_cap:.1f}s  "
+                      f"model {time.time()-_t_res:.1f}s")
+        except Exception as e:
+            # fall back to the public helper if the private path changed
+            try:
+                desc = vision.look_and_describe(question, speak=None,
+                                                kit=self._servo_kit())
+            except Exception as e2:
+                return f"cannot see ({e}; {e2})"
+
+        desc = (desc or "").strip().replace("\n", " ")
+
+        # vision.py returns a kid-facing fallback ("hold it closer") when it
+        # cannot describe a frame. That message is for a child holding an
+        # object up to the camera, not for a robot searching a room - and if
+        # it reaches the transcript the agent treats it as a description, and
+        # can even read it back as the final answer. Make it an honest miss.
+        low = desc.lower()
+        if (not desc
+                or "hold it closer" in low
+                or "see that clearly" in low):
+            return "nothing identifiable from here"
+
+        return desc[:300]
 
     # -- knowledge --------------------------------------------------
 
@@ -188,18 +379,44 @@ class Hardware:
     # -- speech -----------------------------------------------------
 
     def speak(self, text):
-        """TODO: route to your Piper TTS helper."""
+        """Speak via piper directly.
+
+        Deliberately does NOT `import shiva` - that loads Whisper and the
+        classifier (20s+ on the Pi) just to say four words, and it stalls
+        the loop mid-goal.
+
+        APLAY_DEVICE=pipewire routes to a Bluetooth speaker through
+        PipeWire. Leave it unset for a directly attached USB speaker.
+        """
         print(f"[speak] {text}")
-        if self.dry_run:
+        if self.dry_run or self.mute:
             return
+
+        piper = os.environ.get("PIPER_BIN",
+                               os.path.expanduser("~/kids-robot/piper/piper"))
+        voice = os.environ.get(
+            "PIPER_VOICE",
+            os.path.expanduser("~/kids-robot/piper/en_US-ryan-low.onnx"))
+        if not os.path.exists(voice):
+            return
+
+        import subprocess
         try:
-            import subprocess
-            subprocess.run(
-                f'echo {json.dumps(text)} | piper --model '
-                f'/home/pi/piper/en_US-ryan-low.onnx --length_scale 1.3 '
-                f'--output_raw | aplay -r 22050 -f S16_LE -t raw -',
-                shell=True, check=False,
-            )
+            p1 = subprocess.run(
+                [piper, "--model", voice, "--length_scale", "1.3",
+                 "--output_raw"],
+                input=text.encode(), stdout=subprocess.PIPE,
+                stderr=subprocess.DEVNULL, timeout=20)
+
+            dev = os.environ.get("APLAY_DEVICE")
+            cmd = ["aplay", "-q"]
+            if dev:
+                cmd += ["-D", dev]
+            cmd += ["-r", "22050", "-f", "S16_LE", "-c", "1", "-t", "raw", "-"]
+            subprocess.run(cmd, input=p1.stdout,
+                           stderr=subprocess.DEVNULL, timeout=20)
+        except FileNotFoundError:
+            pass
         except Exception as e:
             print(f"[speak] failed: {e}")
 
@@ -212,8 +429,10 @@ SYSTEM_TOOLS = """You control a small robot that can look around and turn in pla
 Reply with EXACTLY ONE action line. No explanation. Never more than one line.
 
 Actions:
-LOOK: <direction>             - point the camera and describe what is there\n                                (direction is one of: left, center, right)
+LOOK: <side> <height>         - point the camera and describe what is there\n                                (side: left, center, right)\n                                (height: up, level, down - optional)\n                                e.g. LOOK: left down
 TURN: <direction>             - rotate the robot 90 degrees\n                                (direction is one of: left, right)
+MOVE: <feet>                  - drive forward (only right after looking ahead)
+BACK: <feet>                  - reverse out of a tight spot
 ASK: <question>               - look up a fact about the world
 SAY: <text>                   - speak the answer to the human
 DONE:                         - stop
@@ -223,6 +442,9 @@ Two turns in the same direction put you in the area behind you.
 
 Rules:
 - You may only report things that appeared in a "->" line above. Never guess.
+- The robot is blind while driving. Before MOVE you must LOOK: center, and
+  you may only move once per look. Move 1 or 2 feet at a time.
+- If something is in the way, BACK: 1 and turn.
 - As soon as a "->" line answers the goal, SAY: it. Do not keep looking.
 - Only keep searching if the goal names a specific object you have not found.
 - After SAY: the next line must be DONE:
@@ -251,15 +473,28 @@ SAY: I see a sofa and a low table
 -> spoken
 DONE:
 
+Example - approaching something:
+Goal: go to the red chair
+
+LOOK: center
+-> a red chair a few feet ahead
+MOVE: 2
+-> moved forward 2.0 feet. You cannot see what is ahead until you observe again
+LOOK: center
+-> the red chair is right in front of the robot
+SAY: I am at the red chair
+-> spoken
+DONE:
+
 Example - searching for something:
 Goal: find my red cup
 
-LOOK: left
+LOOK: left level
 -> a wall and a lamp
-LOOK: center
--> a closed door
-LOOK: right
--> a red cup
+LOOK: left down
+-> bare floor
+LOOK: center down
+-> a red cup on the floor
 SAY: I found your red cup
 -> spoken
 DONE:
@@ -291,20 +526,19 @@ def build_prompt(goal, history):
 # MODEL CALL
 # ----------------------------------------------------------------------
 
-def ollama_generate(prompt, temperature=0.2):
+def _post(host, model, prompt, temperature):
     payload = json.dumps({
-        "model": MODEL_NAME,
+        "model": model,
         "prompt": prompt,
         "stream": False,
         "options": {
             "temperature": temperature,
-            "num_predict": 24,      # one line is all we want
+            "num_predict": 48,
             "stop": ["\n->", "\nGoal:"],
         },
     }).encode()
-
     req = urllib.request.Request(
-        f"{OLLAMA_HOST}/api/generate",
+        f"{host}/api/generate",
         data=payload,
         headers={"Content-Type": "application/json"},
     )
@@ -313,15 +547,31 @@ def ollama_generate(prompt, temperature=0.2):
             return json.loads(r.read())["response"]
     except urllib.error.HTTPError as e:
         body = e.read().decode(errors="replace")[:300]
-        raise RuntimeError(f"HTTP {e.code}: {body}") from None
+        raise RuntimeError(f"HTTP {e.code} from {host}: {body}") from None
+
+
+_fell_back = {"done": False}
+
+
+def ollama_generate(prompt, temperature=0.2):
+    try:
+        return _post(AGENT_HOST, MODEL_NAME, prompt, temperature)
+    except (urllib.error.URLError, TimeoutError, OSError) as e:
+        if AGENT_HOST == FALLBACK_HOST:
+            raise
+        if not _fell_back["done"]:
+            print(f"[llm] {AGENT_HOST} unreachable ({e}) - "
+                  f"falling back to local {FALLBACK_MODEL}")
+            _fell_back["done"] = True
+        return _post(FALLBACK_HOST, FALLBACK_MODEL, prompt, temperature)
 
 
 # ----------------------------------------------------------------------
 # PARSER
 # ----------------------------------------------------------------------
 
-VALID = {"LOOK", "TURN", "ASK", "SAY", "DONE"}
-ACTION_RE = re.compile(r"^\s*(LOOK|TURN|ASK|SAY|DONE)\s*:\s*(.*)$", re.I)
+VALID = {"LOOK", "TURN", "MOVE", "BACK", "ASK", "SAY", "DONE"}
+ACTION_RE = re.compile(r"^\s*(LOOK|TURN|MOVE|BACK|ASK|SAY|DONE)\s*:\s*(.*)$", re.I)
 
 
 def parse_all(raw):
@@ -358,19 +608,28 @@ class Budget:
         self.turned = 0
         self.asks = 0
         self.turns_since_look = 0
+        self.moved = 0.0
+        self.looked_forward = False   # set by LOOK: center, cleared by MOVE
+
+    def allow_move(self, feet):
+        """No obstacle sensors: the ONLY evidence the path is clear is a
+        camera frame taken just now, facing forward. So a move requires a
+        fresh LOOK: center, and one move is allowed per look."""
+        if not self.looked_forward:
+            return False, ("refused: nothing is known about the space ahead. "
+                           "Observe straight ahead first.")
+        if feet <= 0 or feet > MAX_SINGLE_MOVE:
+            return False, f"refused: one move may be at most {MAX_SINGLE_MOVE} feet"
+        if self.moved + feet > MAX_DISTANCE:
+            return False, "refused: no distance left in this goal"
+        self.moved += feet
+        self.looked_forward = False    # must look again before moving again
+        return True, None
 
     def allow_ask(self):
         if self.asks >= 3:
             return False, "refused: no more lookups. Report what you already know."
         self.asks += 1
-        return True, None
-
-    def allow_move(self, feet):
-        if feet <= 0 or feet > 6:
-            return False, f"refused: single move must be 1-6 feet"
-        if self.distance + feet > MAX_DISTANCE:
-            return False, f"refused: distance budget exhausted"
-        self.distance += feet
         return True, None
 
     def allow_turn(self, deg, planned=False):
@@ -396,17 +655,68 @@ AREA = {0: "A", 90: "B", 180: "C", 270: "D"}
 def execute(hw, budget, action, arg, searched=None, planned=False):
     if action == "LOOK":
         d = arg.lower().strip()
-        # Reject menu echoes like "left | center | right" and multi-word args.
-        # Silently taking the first token means acting on a command the model
-        # never actually chose.
-        if "|" in d or "," in d or len(d.split()) > 1:
-            return ("invalid: choose exactly one direction, not a list")
-        if d not in ("left", "center", "right"):
-            return "invalid: the direction must be left, center or right"
+        # Reject menu echoes like "left | center | right".
+        if "|" in d or "," in d:
+            return "invalid: choose one direction, not a list"
+        words = d.split()
+        SIDES = ("left", "center", "right")
+        HEIGHTS = ("up", "down", "level")
+        if len(words) > 2:
+            return "invalid: use a side and optionally a height, e.g. left down"
+        side = next((w for w in words if w in SIDES), None)
+        height = next((w for w in words if w in HEIGHTS), None)
+        if side is None and height is None:
+            return ("invalid: say a side (left, center, right) and optionally "
+                    "a height (up, down)")
+        d = " ".join(x for x in (side, height) if x)
+        t0 = time.time()
         hw.point_neck(d)
-        budget.turns_since_look = 0
+        t1 = time.time()
         hw.speak("let me look")           # covers the vision latency
-        return hw.see()
+        t2 = time.time()
+        obs = hw.see()
+        if d == "center" and not obs.startswith(("cannot", "invalid")):
+            budget.looked_forward = True
+        t3 = time.time()
+        if TIMING:
+            print(f"       [t] neck {t1-t0:.1f}s  say {t2-t1:.1f}s  "
+                  f"vision {t3-t2:.1f}s")
+        return obs
+
+    if action == "MOVE":
+        m = re.fullmatch(r"[\d.]+", arg.strip())
+        if not m:
+            return "invalid: say MOVE followed by a number of feet, e.g. MOVE: 2"
+        feet = float(m.group())
+
+        clear = hw.distance()
+        if clear is not None:
+            budget.looked_forward = True        # measurement beats a photo
+            if clear < STOP_MARGIN:
+                return (f"refused: something is {clear:.1f} feet ahead. "
+                        "Back up or turn.")
+            feet = min(feet, clear - STOP_MARGIN)
+            if feet < 0.3:
+                return (f"refused: only {clear:.1f} feet of clearance ahead")
+
+        ok, why = budget.allow_move(feet)
+        if not ok:
+            return why
+        hw.forward(feet)
+        hw.position += 1
+        after = hw.distance()
+        tail = (f" {after:.1f} feet of clear space ahead now."
+                if after is not None else
+                " You cannot see what is ahead until you observe again.")
+        return f"moved forward {feet:.1f} feet.{tail}"
+
+    if action == "BACK":
+        # Escape hatch: reversing out of a spot is always permitted, since
+        # the robot just came from there. Fixed short distance.
+        hw.backward(BACK_FEET)
+        hw.position += 1
+        budget.looked_forward = False
+        return f"backed up {BACK_FEET} feet"
 
     if action == "ASK":
         q = arg.strip()
@@ -470,11 +780,28 @@ def goal_target(goal):
 
 
 def target_found(target, obs):
-    """True if the observation plausibly contains the searched-for thing."""
+    """True if the observation plausibly contains the searched-for thing.
+
+    Word-boundary matching with a short suffix allowance, so "car" matches
+    "car" and "cars" but NOT "carpet" - which matters a great deal when the
+    thing you are looking for is a toy car sitting on a carpet.
+
+    Colour words alone do not count: "yellow" matching "a yellow wall" is a
+    false stop when the goal is a yellow toy.
+    """
     if not target:
         return False
-    seen = {w.strip(".,?!").lower() for w in obs.split()}
-    return bool(target & seen)
+
+    COLOURS = {"red", "blue", "green", "yellow", "pink", "purple", "orange",
+               "black", "white", "brown", "grey", "gray", "silver", "gold"}
+    nouns = {t for t in target if t not in COLOURS}
+    check = nouns or target          # colour-only goals fall back to colour
+
+    for t in check:
+        # allow plural/simple inflection, but require a word boundary
+        if re.search(rf"\b{re.escape(t)}(s|es|ing)?\b", obs, re.I):
+            return True
+    return False
 
 
 def ungrounded_claims(text, goal, history):
@@ -542,6 +869,7 @@ def react(goal, hw, verbose=True):
             from_plan = False
             # after a rejection, raise temperature to break the token groove
             temp = 0.2 if not stuck_streak else min(0.2 + 0.35 * stuck_streak, 0.9)
+            _t_llm = time.time()
             try:
                 raw = ollama_generate(prompt, temperature=temp)
             except Exception as e:
@@ -552,6 +880,8 @@ def react(goal, hw, verbose=True):
             if verbose:
                 print(f"model: {raw.strip()!r}")
 
+            if TIMING:
+                print(f"       [t] llm {time.time() - _t_llm:.1f}s")
             actions = parse_all(raw)
             if actions:
                 action, arg = actions[0]
@@ -580,20 +910,26 @@ def react(goal, hw, verbose=True):
         # Qualify LOOK by heading: "left" from part 1 and "left" from part 3
         # are different places. Without this the robot forgets where it has
         # already searched every time it turns.
-        key = f"{line}@{hw.heading}" if action == "LOOK" else line
+        # Key LOOKs by heading AND position. After a MOVE the robot is
+        # somewhere new, so looking the same direction is a different view -
+        # exactly the same reason TURN resets the heading component.
+        key = (f"{line}@{hw.heading}#{hw.position}"
+               if action == "LOOK" else line)
 
         # Loop breaker.
         # TURN is deliberately exempt: each turn changes the heading, so a
         # repeated TURN is a genuinely new physical state, not wasted work.
         # "turn left and turn left" is a legitimate goal. Turning is bounded
         # by the budget instead (turns_since_look cap + MAX_TURN_DEG).
-        if key in seen_actions and action not in ("SAY", "TURN"):
+        if key in seen_actions and action not in ("SAY", "TURN", "MOVE", "BACK"):
             repeats = seen_actions.count(key) + 1
             if action == "LOOK":
+                _here = f"@{hw.heading}#{hw.position}"
                 tried = {a.split(":")[1].split("@")[0].strip()
                          for a in seen_actions
-                         if a.startswith("LOOK") and a.endswith(f"@{hw.heading}")}
-                untried = [d for d in ("left", "center", "right") if d not in tried]
+                         if a.startswith("LOOK") and a.endswith(_here)}
+                untried = [d for d in ("left", "center", "right", "down")
+                           if d not in tried]
                 note = (f"that direction is done. Only the {untried[0]} side "
                         "is still unchecked."
                         if untried else
@@ -655,7 +991,8 @@ def react(goal, hw, verbose=True):
             history.append((f"SAY: {arg}", "spoken"))
             continue
 
-        searched = {AREA[int(a.split("@")[1]) % 360] for a in seen_actions
+        searched = {AREA[int(a.split("@")[1].split("#")[0]) % 360]
+                    for a in seen_actions
                     if a.startswith("LOOK") and "@" in a}
         obs = execute(hw, budget, action, arg, searched=searched,
                       planned=from_plan)
@@ -682,6 +1019,9 @@ def react(goal, hw, verbose=True):
             # Report goals are satisfied by any observation. Search goals are
             # satisfied only when the target actually appears - nudging early
             # on a search makes the robot give up before it has swept the room.
+            if TIMING and target:
+                print(f"       [target] {'MATCH' if target_found(target, obs) else 'no match'}"
+                      f" for {sorted(target)}")
             if not nudged and (target is None or target_found(target, obs)):
                 nudged = True
                 history.append((line, obs))
@@ -739,14 +1079,15 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--goal", default="find my water bottle")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--mute", action="store_true", help="skip TTS entirely")
     ap.add_argument("--model", default=MODEL_NAME)
     args = ap.parse_args()
 
     DRY_RUN = args.dry_run
     globals()["MODEL_NAME"] = args.model
 
-    print(f"model: {MODEL_NAME}   goal: {args.goal!r}")
-    hw = Hardware(dry_run=args.dry_run)
+    print(f"model: {MODEL_NAME} @ {AGENT_HOST}   goal: {args.goal!r}")
+    hw = Hardware(dry_run=args.dry_run, mute=args.mute)
 
     t0 = time.time()
     history = react(args.goal, hw)

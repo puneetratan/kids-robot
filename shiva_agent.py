@@ -36,16 +36,20 @@ MODEL_NAME  = os.environ.get("AGENT_MODEL", "llama3.2:1b")
 FALLBACK_HOST  = "http://127.0.0.1:11434"
 FALLBACK_MODEL = os.environ.get("AGENT_FALLBACK_MODEL", "llama3.2:1b")
 
-MAX_STEPS      = 12      # hard ceiling on loop iterations
+MAX_STEPS      = 20   # 12 views + 4 turns + report      # hard ceiling on loop iterations
 MAX_DISTANCE     = 6.0   # total feet per goal - small room, no sensors
 MAX_SINGLE_MOVE  = 2.0   # never cross a room in one blind burst
 BACK_FEET        = 1.0   # fixed retreat distance
+MAX_BACKUPS      = 2     # no rear sensor, so reversing is strictly limited
 STOP_MARGIN      = 1.0   # feet of clearance the robot refuses to give up
 MAX_TURN_DEG   = 720    # total degrees it may rotate in one goal
 STEP_TIMEOUT   = 60
 TIMING         = os.environ.get("AGENT_TIMING", "1") != "0"     # seconds per model call
 
 TRANSCRIPT_DIR = os.path.expanduser("~/kids-robot/agent_runs")
+FRAME_DIR      = os.path.expanduser("~/kids-robot/agent_runs/frames")
+SAVE_FRAMES    = os.environ.get("SAVE_FRAMES", "1") != "0"
+RUN_ID         = datetime.now().strftime("%Y%m%d-%H%M%S")
 
 
 # ----------------------------------------------------------------------
@@ -72,6 +76,8 @@ class Hardware:
         self._tts = None
         self._kit = None
         self._sonar = None
+        self._warned_voice = False
+        self._frame_n = 0
         self._mock_distance = 4.0
 
         # mock world: robot starts at heading 0, bottle is at heading 180.
@@ -128,49 +134,38 @@ class Hardware:
     FEET_PER_SEC   = float(os.environ.get("DRIVE_FEET_PER_SEC", "1.5"))
 
     def forward(self, feet):
+        """Drive forward in short slices, checking the sonar between each.
+
+        A single timed burst is blind: anything that appears after the burst
+        starts gets hit. Slicing the move and re-reading distance lets the
+        robot stop mid-move, which is the whole point of having a sensor.
+        Returns (feet_actually_travelled, stopped_early).
+        """
         if self.dry_run:
             time.sleep(0.3)
-            return f"moved forward about {feet} feet"
+            return feet, False
         try:
             import drive
         except Exception as e:
-            return f"cannot move ({e})"
+            print(f"[hw] cannot move ({e})")
+            return 0.0, False
+
+        total = min(feet / self.FEET_PER_SEC, 6.0)   # seconds
+        slice_s = 0.15
+        elapsed = 0.0
+        stopped = False
         try:
             drive.forward()
-            time.sleep(min(feet / self.FEET_PER_SEC, 6.0))
+            while elapsed < total:
+                time.sleep(slice_s)
+                elapsed += slice_s
+                d = self.distance()
+                if d is not None and d < STOP_MARGIN:
+                    stopped = True
+                    break
         finally:
-            drive.stop()                 # never leave motors running
-        return f"moved forward about {feet} feet"
-
-    # HC-SR04. ECHO is 5V - it MUST go through a divider (1k/2k) to the Pi.
-    # GPIO 23 is taken by the motor driver, so default to 20/21.
-    TRIG_PIN = int(os.environ.get("SONAR_TRIG", "20"))
-    ECHO_PIN = int(os.environ.get("SONAR_ECHO", "21"))
-
-    def distance(self):
-        """Feet to the nearest obstacle straight ahead, or None if no sensor.
-
-        Narrow cone: it misses table legs, low objects and soft edges. Treat
-        it as a floor on clearance, never as proof the path is safe.
-        """
-        if self.dry_run:
-            return self._mock_distance
-        if self._sonar is False:
-            return None
-        if self._sonar is None:
-            try:
-                from gpiozero import DistanceSensor
-                self._sonar = DistanceSensor(
-                    echo=self.ECHO_PIN, trigger=self.TRIG_PIN,
-                    max_distance=2.0, queue_len=5)
-            except Exception as e:
-                print(f"[hw] no sonar ({e}) - falling back to camera gating")
-                self._sonar = False
-                return None
-        try:
-            return self._sonar.distance * 3.281        # metres -> feet
-        except Exception:
-            return None
+            drive.stop()
+        return round(elapsed * self.FEET_PER_SEC, 1), stopped
 
     def backward(self, feet):
         if self.dry_run:
@@ -244,8 +239,16 @@ class Hardware:
         except Exception as e:
             return f"cannot move neck ({e})"
 
+        # Tilt depends on how the camera is physically mounted, so these are
+        # overridable. On this build a HIGHER angle points LOWER: vision.py's
+        # default of 125 for "down" still showed a standing person, meaning
+        # the whole range sat above the floor. Calibrate before trusting it.
         SIDE_PAN = {"left": 140, "center": 90, "right": 40}
-        HEIGHT_TILT = {"up": 60, "level": 90, "down": 125}
+        HEIGHT_TILT = {
+            "up":    float(os.environ.get("TILT_UP", "60")),
+            "level": float(os.environ.get("TILT_LEVEL", "90")),
+            "down":  float(os.environ.get("TILT_DOWN", "125")),
+        }
 
         words = direction.split()
         side = next((w for w in words if w in SIDE_PAN), None)
@@ -309,6 +312,23 @@ class Hardware:
                 print(f"       [t]   capture {_t_cap-_t:.1f}s  "
                       f"resize {_t_res-_t_cap:.1f}s  "
                       f"model {time.time()-_t_res:.1f}s")
+
+            # Keep every frame. vision.py overwrites one file, so without
+            # this you can only ever inspect the last thing the robot saw -
+            # which is useless when trying to work out why it missed
+            # something six steps ago.
+            if SAVE_FRAMES:
+                try:
+                    import shutil
+                    os.makedirs(FRAME_DIR, exist_ok=True)
+                    self._frame_n += 1
+                    tag = self.neck_dir.replace(" ", "-")
+                    dst = os.path.join(
+                        FRAME_DIR,
+                        f"{RUN_ID}_{self._frame_n:02d}_h{self.heading}_{tag}.jpg")
+                    shutil.copy(vision.RESIZED_PATH, dst)
+                except Exception:
+                    pass
         except Exception as e:
             # fall back to the public helper if the private path changed
             try:
@@ -398,6 +418,12 @@ class Hardware:
             "PIPER_VOICE",
             os.path.expanduser("~/kids-robot/piper/en_US-ryan-low.onnx"))
         if not os.path.exists(voice):
+            # Silent failure here cost real debugging time: the robot just
+            # goes mute with no clue why. Say it once, out loud, in the log.
+            if not self._warned_voice:
+                print(f"[speak] voice model not found at {voice} - "
+                      "set PIPER_VOICE. Continuing without audio.")
+                self._warned_voice = True
             return
 
         import subprocess
@@ -489,24 +515,28 @@ DONE:
 Example - searching for something:
 Goal: find my red cup
 
-LOOK: left level
--> a wall and a lamp
-LOOK: left down
+LOOK: center down
 -> bare floor
+LOOK: center level
+-> a wall and a lamp
+LOOK: center up
+-> a ceiling
+TURN: left
+-> turned left, now in area D
 LOOK: center down
 -> a red cup on the floor
 SAY: I found your red cup
 -> spoken
 DONE:
 
-Example - looking up a fact:
-Goal: turn left and tell me who invented the telephone
+Example - looking up a fact (notice ASK repeats the goal's question):
+Goal: turn right and tell me about <subject>
 
-TURN: left
--> turned left, now facing a new part of the room
-ASK: who invented the telephone
--> Alexander Graham Bell
-SAY: Alexander Graham Bell invented the telephone
+TURN: right
+-> turned right, now in area B
+ASK: tell me about <subject>
+-> <the answer comes back here>
+SAY: <report the answer above>
 -> spoken
 DONE:
 """
@@ -607,6 +637,7 @@ class Budget:
         self.distance = 0.0
         self.turned = 0
         self.asks = 0
+        self.backed = 0
         self.turns_since_look = 0
         self.moved = 0.0
         self.looked_forward = False   # set by LOOK: center, cleared by MOVE
@@ -624,6 +655,13 @@ class Budget:
             return False, "refused: no distance left in this goal"
         self.moved += feet
         self.looked_forward = False    # must look again before moving again
+        return True, None
+
+    def allow_back(self):
+        if self.backed >= MAX_BACKUPS:
+            return False, ("refused: no more reversing. There is no rear "
+                           "sensor. Turn and observe instead.")
+        self.backed += 1
         return True, None
 
     def allow_ask(self):
@@ -671,6 +709,10 @@ def execute(hw, budget, action, arg, searched=None, planned=False):
         d = " ".join(x for x in (side, height) if x)
         t0 = time.time()
         hw.point_neck(d)
+        # Observing clears the consecutive-turn cap. Without this the counter
+        # only ever climbs and the robot can never rotate again after two
+        # turns - it silently loses the ability to finish a sweep.
+        budget.turns_since_look = 0
         t1 = time.time()
         hw.speak("let me look")           # covers the vision latency
         t2 = time.time()
@@ -702,21 +744,31 @@ def execute(hw, budget, action, arg, searched=None, planned=False):
         ok, why = budget.allow_move(feet)
         if not ok:
             return why
-        hw.forward(feet)
+        travelled, stopped = hw.forward(feet)
         hw.position += 1
         after = hw.distance()
+        if stopped:
+            return (f"stopped after {travelled} feet - something appeared "
+                    "ahead while moving. Turn or back up.")
         tail = (f" {after:.1f} feet of clear space ahead now."
                 if after is not None else
                 " You cannot see what is ahead until you observe again.")
-        return f"moved forward {feet:.1f} feet.{tail}"
+        return f"moved forward {travelled} feet.{tail}"
 
     if action == "BACK":
-        # Escape hatch: reversing out of a spot is always permitted, since
-        # the robot just came from there. Fixed short distance.
+        # Escape hatch: reversing is permitted without a look because the
+        # robot just came from there. But there is NO rear sensor, so it is
+        # capped hard and cannot be repeated indefinitely.
+        if arg.strip() and not re.fullmatch(r"[\d.]*", arg.strip()):
+            return "invalid: say BACK on its own, with no extra words"
+        ok, why = budget.allow_back()
+        if not ok:
+            return why
         hw.backward(BACK_FEET)
         hw.position += 1
         budget.looked_forward = False
-        return f"backed up {BACK_FEET} feet"
+        return (f"backed up {BACK_FEET} feet. There is no rear sensor, "
+                "so observe before moving again")
 
     if action == "ASK":
         q = arg.strip()
@@ -780,28 +832,34 @@ def goal_target(goal):
 
 
 def target_found(target, obs):
-    """True if the observation plausibly contains the searched-for thing.
+    """True only when the observation matches the target strongly enough.
+
+    A single word is far too weak. "a pink object that looks like a toy"
+    matches "toy" while being neither yellow nor a car, and one loose hit is
+    enough to make the robot announce success. So: require at least TWO of
+    the target words, and if a colour was asked for it must be one of them.
 
     Word-boundary matching with a short suffix allowance, so "car" matches
-    "car" and "cars" but NOT "carpet" - which matters a great deal when the
-    thing you are looking for is a toy car sitting on a carpet.
-
-    Colour words alone do not count: "yellow" matching "a yellow wall" is a
-    false stop when the goal is a yellow toy.
+    "cars" but not "carpet".
     """
     if not target:
         return False
 
     COLOURS = {"red", "blue", "green", "yellow", "pink", "purple", "orange",
                "black", "white", "brown", "grey", "gray", "silver", "gold"}
-    nouns = {t for t in target if t not in COLOURS}
-    check = nouns or target          # colour-only goals fall back to colour
 
-    for t in check:
-        # allow plural/simple inflection, but require a word boundary
-        if re.search(rf"\b{re.escape(t)}(s|es|ing)?\b", obs, re.I):
-            return True
-    return False
+    def present(t):
+        return bool(re.search(rf"\b{re.escape(t)}(s|es|ing)?\b", obs, re.I))
+
+    hits = {t for t in target if present(t)}
+    if len(hits) < min(2, len(target)):
+        return False
+
+    # If the goal named a colour, that colour must actually be in the frame.
+    wanted_colours = target & COLOURS
+    if wanted_colours and not (wanted_colours & hits):
+        return False
+    return True
 
 
 def ungrounded_claims(text, goal, history):
@@ -819,7 +877,16 @@ def ungrounded_claims(text, goal, history):
     words = text.split()
     suspects = []
     for i, w in enumerate(words):
-        bare = w.strip(".,!?'\"")
+        bare = w.strip(".,!?'\"%")
+
+        # Numbers are claims too. "1876" or "12 feet" stated without a
+        # source is the same failure as an invented name, and it slips
+        # through a capitalisation check because digits are not upper case.
+        if bare and any(c.isdigit() for c in bare):
+            if bare.lower() not in grounded:
+                suspects.append(bare)
+            continue
+
         if not bare or not bare[0].isupper():
             continue
         if i == 0 or words[i - 1].endswith((".", "!", "?")):
@@ -925,16 +992,20 @@ def react(goal, hw, verbose=True):
             repeats = seen_actions.count(key) + 1
             if action == "LOOK":
                 _here = f"@{hw.heading}#{hw.position}"
-                tried = {a.split(":")[1].split("@")[0].strip()
+                # Keys look like "LOOK: left down@0#0" - pull out the full
+                # two-word direction, not just the first token, or every cell
+                # reads as untried and the hint sends the model in circles.
+                tried = {a.split(":", 1)[1].split("@")[0].strip()
                          for a in seen_actions
                          if a.startswith("LOOK") and a.endswith(_here)}
-                untried = [d for d in ("left", "center", "right", "down")
-                           if d not in tried]
-                note = (f"that direction is done. Only the {untried[0]} side "
-                        "is still unchecked."
+                # Fixed sweep: three heights at centre pan, then rotate.
+                # Twelve views covers the room in four quarters.
+                cells = ["center down", "center level", "center up"]
+                untried = [c for c in cells if c not in tried]
+                note = (f"that view is done. Still unchecked here: {untried[0]}."
                         if untried else
-                        "all three directions here are done. Rotate to face a "
-                        "new part of the room.")
+                        "every view here is done. Rotate to face a new part "
+                        "of the room.")
             elif action == "ASK":
                 note = "that lookup is already done. Report the answer above."
             else:
@@ -955,8 +1026,10 @@ def react(goal, hw, verbose=True):
             stuck_streak += 1
             plan = []          # plan is stale once something was rejected
 
-            # give up on steering and terminate with whatever was learned
-            if repeats >= 3:
+            # Terminate on CONSECUTIVE failures only. Counting total repeats
+            # of one key ends the run even when the model made real progress
+            # between the duplicates - which is not being stuck.
+            if stuck_streak >= 3:
                 if verbose:
                     print("[loop] stuck - terminating and reporting")
                 report(hw, history)
@@ -989,6 +1062,14 @@ def react(goal, hw, verbose=True):
                 continue
             hw.speak(arg)
             history.append((f"SAY: {arg}", "spoken"))
+            # The goal has been answered out loud. Waiting for the model to
+            # emit DONE: is unreliable - it keeps searching instead. Once the
+            # answer is grounded and spoken, the loop is over.
+            if nudged:
+                if verbose:
+                    print("[loop] answer given - finishing")
+                finished = True
+                break
             continue
 
         searched = {AREA[int(a.split("@")[1].split("#")[0]) % 360]
@@ -996,7 +1077,11 @@ def react(goal, hw, verbose=True):
                     if a.startswith("LOOK") and "@" in a}
         obs = execute(hw, budget, action, arg, searched=searched,
                       planned=from_plan)
-        refused = obs.startswith(("refused", "invalid", "unknown", "cannot"))
+        # "nothing identifiable" is a real observation - it means this spot is
+        # empty, which is exactly what a search needs to learn. Counting it as
+        # a refusal ends the sweep after three empty looks.
+        refused = obs.startswith(("refused", "invalid", "unknown", "cannot",
+                                  "could not"))
         if refused:
             stuck_streak += 1
             plan = []          # plan is stale once something was refused

@@ -49,6 +49,17 @@ TIMING         = os.environ.get("AGENT_TIMING", "1") != "0"     # seconds per mo
 TRANSCRIPT_DIR = os.path.expanduser("~/kids-robot/agent_runs")
 FRAME_DIR      = os.path.expanduser("~/kids-robot/agent_runs/frames")
 SAVE_FRAMES    = os.environ.get("SAVE_FRAMES", "1") != "0"
+
+# SWEEP=floor (default) - full horizontal coverage at floor level, one view
+# ahead. SWEEP=full adds level views left and right. SWEEP=quick is the old
+# centre-only pattern.
+_SWEEPS = {
+    "floor": ["left down", "center down", "right down", "center level"],
+    "full":  ["left down", "center down", "right down",
+              "left level", "center level", "right level"],
+    "quick": ["center down", "center level", "center up"],
+}
+SWEEP_CELLS = _SWEEPS.get(os.environ.get("SWEEP", "floor"), _SWEEPS["floor"])
 RUN_ID         = datetime.now().strftime("%Y%m%d-%H%M%S")
 
 
@@ -66,9 +77,10 @@ DRY_RUN = False  # set by --dry-run
 class Hardware:
     """Thin wrapper over your existing modules."""
 
-    def __init__(self, dry_run=False, mute=False):
+    def __init__(self, dry_run=False, mute=False, speak_all=False):
         self.dry_run = dry_run
         self.mute = mute
+        self.speak_all = speak_all
         self.drive = None
         self.neck = None
         self.vision = None
@@ -300,7 +312,10 @@ class Hardware:
         except Exception as e:
             return f"cannot see ({e})"
 
-        question = "What objects are in this image? List them briefly."
+        # Ask for colours explicitly. Without this the model says "a colorful
+        # toy car" and a colour-aware search never matches on "yellow".
+        question = ("What objects are in this image? List them briefly, "
+                    "and always name the colour of each object.")
         try:
             _t = time.time()
             vision.capture()
@@ -515,12 +530,14 @@ DONE:
 Example - searching for something:
 Goal: find my red cup
 
-LOOK: center down
+LOOK: left down
 -> bare floor
+LOOK: center down
+-> a rug
+LOOK: right down
+-> the edge of a sofa
 LOOK: center level
 -> a wall and a lamp
-LOOK: center up
--> a ceiling
 TURN: left
 -> turned left, now in area D
 LOOK: center down
@@ -714,11 +731,32 @@ def execute(hw, budget, action, arg, searched=None, planned=False):
         # turns - it silently loses the ability to finish a sweep.
         budget.turns_since_look = 0
         t1 = time.time()
-        hw.speak("let me look")           # covers the vision latency
+        # Say where it is looking, not just that it is looking. During a demo
+        # the robot is silent for ~6s per view; naming the direction makes the
+        # search legible to anyone watching.
+        PHRASE = {
+            "center down": "let me look down at the floor",
+            "center level": "let me look straight ahead",
+            "center up": "let me look up",
+            "left down":  "let me look down to my left",
+            "left level": "let me look to my left",
+            "left up":    "let me look up to my left",
+            "right down": "let me look down to my right",
+            "right level": "let me look to my right",
+            "right up":   "let me look up to my right",
+        }
+        hw.speak(PHRASE.get(d, f"let me look {d}"))
         t2 = time.time()
         obs = hw.see()
-        if d == "center" and not obs.startswith(("cannot", "invalid")):
+        if "center" in d and not obs.startswith(("cannot", "invalid")):
             budget.looked_forward = True
+
+        # --speak-all narrates what the camera actually returned, so anyone
+        # watching hears the observation the model is reasoning over rather
+        # than only the final answer.
+        if hw.speak_all and not obs.startswith(("cannot", "invalid",
+                                                "nothing identifiable")):
+            hw.speak(obs[:180])
         t3 = time.time()
         if TIMING:
             print(f"       [t] neck {t1-t0:.1f}s  say {t2-t1:.1f}s  "
@@ -798,6 +836,7 @@ def execute(hw, budget, action, arg, searched=None, planned=False):
         # area, then state explicitly what is still unsearched.
         remaining = [v for k, v in sorted(AREA.items())
                      if v not in (searched or set())]
+        hw.speak(f"turning {direction}")
         if remaining:
             return (f"turned {direction}, now in area {here}. "
                     f"Areas not yet searched: {', '.join(remaining)}")
@@ -851,15 +890,22 @@ def target_found(target, obs):
     def present(t):
         return bool(re.search(rf"\b{re.escape(t)}(s|es|ing)?\b", obs, re.I))
 
-    hits = {t for t in target if present(t)}
-    if len(hits) < min(2, len(target)):
-        return False
+    nouns = target - COLOURS
+    hit_nouns = {t for t in nouns if present(t)}
+    hit_colour = bool((target & COLOURS) and
+                      any(present(c) for c in target & COLOURS))
 
-    # If the goal named a colour, that colour must actually be in the frame.
-    wanted_colours = target & COLOURS
-    if wanted_colours and not (wanted_colours & hits):
-        return False
-    return True
+    # Two nouns is enough on its own: "a colorful toy car" is the object even
+    # though the vision model said "colorful" rather than "yellow". One noun
+    # needs the colour to back it up, or "some toys on the floor" would match.
+    # Colour alone never counts - "a yellow chair" is not a yellow toy car.
+    if len(hit_nouns) >= 2:
+        return True
+    if len(hit_nouns) == 1 and hit_colour:
+        return True
+    if not nouns and hit_colour:          # colour-only goal
+        return True
+    return False
 
 
 def ungrounded_claims(text, goal, history):
@@ -998,9 +1044,13 @@ def react(goal, hw, verbose=True):
                 tried = {a.split(":", 1)[1].split("@")[0].strip()
                          for a in seen_actions
                          if a.startswith("LOOK") and a.endswith(_here)}
-                # Fixed sweep: three heights at centre pan, then rotate.
-                # Twelve views covers the room in four quarters.
-                cells = ["center down", "center level", "center up"]
+                # The camera sees roughly 60-70 degrees but the robot turns
+                # 90, so centre-only views leave an unseen wedge between
+                # headings. Panning the neck left and right closes that gap
+                # without extra body turns. Floor level gets full horizontal
+                # coverage because that is where objects are; straight ahead
+                # gets one level view for things on furniture.
+                cells = SWEEP_CELLS
                 untried = [c for c in cells if c not in tried]
                 note = (f"that view is done. Still unchecked here: {untried[0]}."
                         if untried else
@@ -1045,6 +1095,22 @@ def react(goal, hw, verbose=True):
             break
 
         if action == "SAY":
+            # On a search goal, claiming to have found the thing requires the
+            # matcher to have actually seen it. The goal text alone counts as
+            # "grounded" for the general check, so "I found your yellow toy
+            # car" passes it trivially - the words came from the goal.
+            FOUND = ("found", "i see", "here it is", "spotted", "located")
+            if (target and not nudged
+                    and any(f in arg.lower() for f in FOUND)):
+                note = ("nothing matching the goal has been observed yet. "
+                        "Keep searching, or report what was actually seen.")
+                if verbose:
+                    print("  -> [grounding] blocked unconfirmed find")
+                history.append(("(note)", note))
+                stuck_streak += 1
+                plan = []
+                continue
+
             bad = ungrounded_claims(arg, goal, history)
             if bad:
                 note = ("that statement contains something you never observed: "
@@ -1138,6 +1204,28 @@ def react(goal, hw, verbose=True):
     return history
 
 
+def prune_frames(keep_runs=3):
+    """Keep frames from the last few runs, delete older ones.
+
+    Deleting at the end of the current run would remove exactly the frames
+    you want to look at. Pruning by run keeps the recent ones available to
+    copy while stopping the folder growing without limit.
+    """
+    try:
+        if not os.path.isdir(FRAME_DIR):
+            return
+        runs = sorted({f.split("_")[0] for f in os.listdir(FRAME_DIR)
+                       if f.endswith(".jpg")})
+        for old_run in runs[:-keep_runs]:
+            for f in os.listdir(FRAME_DIR):
+                if f.startswith(old_run):
+                    os.remove(os.path.join(FRAME_DIR, f))
+        if len(runs) > keep_runs:
+            print(f"[log] pruned frames from {len(runs) - keep_runs} old run(s)")
+    except Exception as e:
+        print(f"[log] frame prune failed: {e}")
+
+
 def save_transcript(goal, history, budget, finished):
     try:
         os.makedirs(TRANSCRIPT_DIR, exist_ok=True)
@@ -1153,6 +1241,9 @@ def save_transcript(goal, history, budget, finished):
                 "history": history,
             }, f, indent=2)
         print(f"\n[log] transcript -> {path}")
+        if SAVE_FRAMES:
+            print(f"[log] frames     -> {FRAME_DIR}")
+            prune_frames(int(os.environ.get("KEEP_FRAME_RUNS", "3")))
     except Exception as e:
         print(f"[log] could not save: {e}")
 
@@ -1165,6 +1256,8 @@ def main():
     ap.add_argument("--goal", default="find my water bottle")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--mute", action="store_true", help="skip TTS entirely")
+    ap.add_argument("--speak-all", action="store_true",
+                    help="also speak what the camera sees at each look")
     ap.add_argument("--model", default=MODEL_NAME)
     args = ap.parse_args()
 
@@ -1172,7 +1265,8 @@ def main():
     globals()["MODEL_NAME"] = args.model
 
     print(f"model: {MODEL_NAME} @ {AGENT_HOST}   goal: {args.goal!r}")
-    hw = Hardware(dry_run=args.dry_run, mute=args.mute)
+    hw = Hardware(dry_run=args.dry_run, mute=args.mute,
+                  speak_all=args.speak_all)
 
     t0 = time.time()
     history = react(args.goal, hw)
